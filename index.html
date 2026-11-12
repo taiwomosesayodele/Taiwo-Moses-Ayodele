@@ -2,1207 +2,644 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#11152f">
-  <meta name="description" content="Taiwo Moses Ayodele — Executive Virtual Assistant and Executive Personal Assistant. Professional administrative, executive and operations support.">
-  <title>Taiwo Moses Ayodele | Executive Virtual Assistant</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Taiwo Moses Ayodele — Executive Virtual Assistant, Executive Support and Administrative Operations Professional.">
+<meta name="theme-color" content="#14243b">
+<title>Taiwo Moses Ayodele | Executive Virtual Assistant</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:#14243b;
+  --gold:#c6a46a;
+  --cream:#f5f7fa;
+  --text:#39485c;
+  --white:#ffffff;
+}
+* {margin:0;padding:0;box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:85px}
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  line-height:1.7;
+  background:white;
+}
+a {text-decoration:none}
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--navy);
+  padding:16px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+  box-shadow:0 3px 15px #00000012;
+}
+.logo {
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+nav {display:flex;gap:19px;flex-wrap:wrap}
+nav a {color:white;font-size:12px;transition:.3s}
+nav a:hover {color:var(--gold)}
 
-  <style>
-    :root {
-      --navy: #11152f;
-      --navy2: #191e40;
-      --blue: #4f46e5;
-      --violet: #8b5cf6;
-      --pink: #ec4899;
-      --cyan: #06b6d4;
-      --ink: #20233f;
-      --muted: #737895;
-      --light: #f7f7ff;
-      --white: #ffffff;
-      --line: #e8e9f5;
-      --shadow: 0 18px 55px rgba(30, 34, 85, .09);
-      --gradient: linear-gradient(120deg, #4f46e5, #8b5cf6 55%, #ec4899);
-    }
+.hero {
+  min-height:570px;
+  padding:75px 8%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+  background:linear-gradient(120deg,#f5f7fa,#edf1f6);
+}
+.hero-content {max-width:650px}
+.eyebrow {
+  color:#a47b35;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+h1 {
+  color:var(--navy);
+  font-size:clamp(38px,5vw,62px);
+  line-height:1.15;
+  margin:20px 0;
+}
+.hero p {font-size:16px;max-width:590px;margin-bottom:25px}
+.hero-photo {
+  width:300px;
+  height:360px;
+  object-fit:cover;
+  object-position:center;
+  border-radius:12px;
+  border:6px solid white;
+  box-shadow:0 15px 45px #14243b25;
+}
+.btn {
+  display:inline-block;
+  padding:12px 23px;
+  border-radius:5px;
+  background:var(--navy);
+  color:white;
+  font-size:13px;
+  font-weight:bold;
+  margin:5px 5px 5px 0;
+  transition:.3s;
+}
+.btn:hover {background:#a47b35;transform:translateY(-3px)}
+.btn-outline {
+  background:transparent;
+  color:var(--navy);
+  border:1px solid var(--navy);
+}
+.btn-outline:hover {color:white}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
-    body {
-      font-family: "DM Sans", sans-serif;
-      color: var(--ink);
-      background: var(--light);
-      line-height: 1.7;
-      overflow-x: hidden;
-    }
-    h1, h2, h3, h4, .brand { font-family: "Manrope", sans-serif; }
-    a { color: inherit; text-decoration: none; }
-    button { font: inherit; cursor: pointer; }
-    img { max-width: 100%; display: block; }
-    .container { width: min(1160px, 90%); margin: auto; }
-    .section { padding: 100px 0; }
-    .section-heading { max-width: 720px; margin-bottom: 42px; }
-    .eyebrow {
-      color: var(--blue); font-size: .76rem; font-weight: 800;
-      text-transform: uppercase; letter-spacing: 2px; display: inline-block;
-      margin-bottom: 12px;
-    }
-    .section-heading h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 14px;
-    }
-    .section-heading p { color: var(--muted); max-width: 650px; }
-    .gradient-text {
-      background: var(--gradient); -webkit-background-clip: text;
-      background-clip: text; color: transparent;
-    }
-    .btn {
-      display: inline-flex; align-items: center; justify-content: center;
-      gap: 10px; border: 0; border-radius: 12px; padding: 13px 21px;
-      font-weight: 700; transition: .25s ease;
-    }
-    .btn-primary { color: white; background: var(--gradient); box-shadow: 0 10px 25px #6653dc35; }
-    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px #6653dc50; }
-    .btn-outline { color: var(--navy); border: 1px solid #d9daf0; background: white; }
-    .btn-outline:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-2px); }
-    .small-note { color: var(--muted); font-size: .83rem; }
+section {padding:75px 8%}
+.section-title {
+  color:var(--navy);
+  font-size:30px;
+  margin-bottom:12px;
+}
+.section-intro {max-width:730px;color:#69778a;margin-bottom:25px}
+.gold-line {width:48px;height:3px;background:var(--gold);margin:17px 0 25px}
+.light {background:var(--cream)}
 
-    /* Navigation */
-    .navbar {
-      position: sticky; top: 0; z-index: 1000; background: #ffffffed;
-      backdrop-filter: blur(16px); border-bottom: 1px solid #e9e9f3;
-    }
-    .nav-inner {
-      min-height: 76px; display: flex; align-items: center;
-      justify-content: space-between; gap: 25px;
-    }
-    .brand { font-weight: 800; font-size: 1.02rem; color: var(--navy); letter-spacing: -.5px; }
-    .brand span { color: var(--blue); }
-    .nav-links { display: flex; align-items: center; gap: 23px; list-style: none; }
-    .nav-links a { font-size: .86rem; color: #555a78; font-weight: 600; transition: .2s; }
-    .nav-links a:hover { color: var(--blue); }
-    .nav-cta { padding: 10px 16px; font-size: .82rem; }
-    .menu-toggle {
-      display: none; border: 1px solid var(--line); background: white;
-      width: 43px; height: 43px; border-radius: 10px; color: var(--navy);
-      font-size: 1.35rem;
-    }
+.about-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:40px;
+  align-items:start;
+}
+.about-note {
+  background:var(--navy);
+  color:white;
+  padding:28px;
+  border-radius:9px;
+}
+.about-note h3 {color:var(--gold);margin-bottom:12px}
+.about-note p {font-size:14px;margin:7px 0}
 
-    /* Hero */
-    .hero {
-      min-height: 680px; display: flex; align-items: center; position: relative;
-      overflow: hidden; color: white;
-      background:
-        radial-gradient(circle at 82% 22%, #8b5cf64a, transparent 28%),
-        radial-gradient(circle at 10% 85%, #06b6d426, transparent 30%),
-        linear-gradient(125deg, #10142e, #191d45 60%, #252052);
-    }
-    .hero::before, .hero::after {
-      content: ""; position: absolute; border: 1px solid #ffffff12;
-      border-radius: 50%; pointer-events: none;
-    }
-    .hero::before { width: 550px; height: 550px; right: -130px; top: -180px; }
-    .hero::after { width: 390px; height: 390px; right: -50px; top: -100px; }
-    .hero-grid {
-      position: relative; z-index: 1; display: grid;
-      grid-template-columns: 1.2fr .8fr; gap: 65px; align-items: center;
-      padding-top: 80px; padding-bottom: 90px;
-    }
-    .hero-kicker {
-      display: inline-flex; align-items: center; gap: 9px; color: #d7d5ff;
-      background: #ffffff12; border: 1px solid #ffffff25;
-      padding: 8px 13px; border-radius: 30px; font-size: .78rem; margin-bottom: 25px;
-    }
-    .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #56e6b0; box-shadow: 0 0 0 5px #56e6b01c; }
-    .hero h1 { font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1.05; letter-spacing: -3px; margin-bottom: 20px; }
-    .hero h1 span {
-      background: linear-gradient(90deg, #a5a2ff, #f09ad5, #65d9e9);
-      -webkit-background-clip: text; background-clip: text; color: transparent;
-    }
-    .hero-role { color: #d8d9f3; font-weight: 700; letter-spacing: 1px; font-size: .9rem; margin-bottom: 18px; }
-    .hero-copy { max-width: 620px; color: #c4c8e1; font-size: 1.02rem; margin-bottom: 27px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 27px; }
-    .hero .btn-outline { color: white; background: #ffffff0d; border-color: #ffffff45; }
-    .hero .btn-outline:hover { background: #ffffff18; color: white; }
-    .hero-socials { display: flex; gap: 18px; color: #c8c9e5; font-size: .88rem; }
-    .hero-socials a:hover { color: white; }
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.card {
+  padding:25px;
+  border:1px solid #e5e9ef;
+  border-radius:9px;
+  background:white;
+  transition:.3s;
+}
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px #14243b12;
+}
+.card h3 {color:var(--navy);font-size:17px;margin-bottom:10px}
+.card p {font-size:13px;color:#69778a}
+.icon {font-size:27px;margin-bottom:12px}
+.project-tag {
+  color:#a47b35;
+  font-size:10px;
+  letter-spacing:1.5px;
+  font-weight:bold;
+  margin-bottom:9px;
+}
 
-    .profile-wrap { display: flex; justify-content: center; perspective: 1200px; }
-    .profile-card {
-      width: min(350px, 100%); min-height: 445px; position: relative;
-      border-radius: 28px; padding: 13px; background: linear-gradient(145deg, #ffffff45, #ffffff0c);
-      border: 1px solid #ffffff4a; box-shadow: 0 25px 90px #05071970;
-      transform: rotate(2deg); transition: transform .5s;
-    }
-    .profile-card:hover { transform: rotate(0deg) translateY(-7px); }
-    .profile-photo {
-      width: 100%; height: 345px; object-fit: cover; object-position: center top;
-      border-radius: 19px; background: linear-gradient(145deg, #4f46e5, #ec4899);
-    }
-    .photo-placeholder {
-      height: 345px; border-radius: 19px; display: grid; place-items: center;
-      text-align: center; padding: 25px; color: white;
-      background: linear-gradient(145deg, #4f46e5, #8b5cf6 55%, #ec4899);
-    }
-    .photo-placeholder strong { display: block; font: 800 2.5rem Manrope; }
-    .photo-placeholder span { font-size: .85rem; opacity: .85; }
-    .profile-caption { padding: 17px 9px 8px; }
-    .profile-caption strong { display: block; font: 800 1.1rem Manrope; }
-    .profile-caption span { color: #d1d2ed; font-size: .83rem; }
-    .floating-label {
-      position: absolute; padding: 11px 14px; border-radius: 13px;
-      background: white; color: var(--navy); box-shadow: var(--shadow);
-      font-size: .78rem; font-weight: 800; animation: float 4s ease-in-out infinite;
-    }
-    .floating-one { left: -48px; top: 70px; }
-    .floating-two { right: -48px; bottom: 95px; animation-delay: 1s; }
-    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+/* MOVING TECHNOLOGY SHOWCASE */
+.tools-section {
+  background:var(--navy);
+  color:white;
+  overflow:hidden;
+}
+.tools-section .section-title {color:white}
+.tools-section .section-intro {color:#d3dce7}
+.tool-label {
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:bold;
+  margin:32px 0 12px;
+}
+.marquee {
+  width:100%;
+  overflow:hidden;
+  display:flex;
+  padding:12px 0;
+  position:relative;
+}
+.marquee-track {
+  display:flex;
+  flex-shrink:0;
+  gap:16px;
+  width:max-content;
+  animation:move-left 30s linear infinite;
+}
+.marquee.right .marquee-track {
+  animation-name:move-right;
+  animation-duration:34s;
+}
+.marquee:hover .marquee-track {
+  animation-play-state:paused;
+}
+.tool {
+  min-width:145px;
+  min-height:95px;
+  padding:15px 18px;
+  border:1px solid #ffffff35;
+  border-radius:10px;
+  background:#ffffff12;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-size:13px;
+  font-weight:bold;
+  transition:.3s;
+}
+.tool-symbol {
+  font-size:25px;
+  margin-bottom:5px;
+}
+.tool:hover {
+  background:var(--gold);
+  color:var(--navy);
+  transform:scale(1.06);
+}
+@keyframes move-left {
+  from {transform:translateX(0)}
+  to {transform:translateX(-50%)}
+}
+@keyframes move-right {
+  from {transform:translateX(-50%)}
+  to {transform:translateX(0)}
+}
 
-    /* Audio introduction */
-    .audio-panel {
-      display: flex; flex-wrap: wrap; align-items: center; gap: 15px;
-      max-width: 590px; padding: 15px 17px; border: 1px solid #ffffff2c;
-      background: #ffffff0c; border-radius: 17px;
-    }
-    .audio-icon {
-      width: 43px; height: 43px; border-radius: 13px; display: grid;
-      place-items: center; background: #8b5cf632; font-size: 1.2rem;
-    }
-    .audio-info { flex: 1; min-width: 130px; }
-    .audio-info strong { display: block; font-size: .88rem; }
-    .audio-info small { display: block; color: #b9bddb; font-size: .73rem; }
-    .audio-controls { display: flex; flex-wrap: wrap; gap: 7px; }
-    .audio-btn {
-      border: 1px solid #ffffff36; color: white; background: #ffffff10;
-      border-radius: 9px; padding: 8px 10px; font-size: .78rem; font-weight: 700;
-    }
-    .audio-btn:hover, .audio-btn.active { background: var(--blue); border-color: var(--blue); }
-    .audio-settings { display: flex; flex-wrap: wrap; gap: 12px; width: 100%; align-items: center; }
-    .audio-settings label { font-size: .72rem; color: #c7c9e4; }
-    .audio-settings select, .audio-settings input { accent-color: var(--violet); }
-    .audio-settings select {
-      color: white; background: #25294f; border: 1px solid #ffffff30;
-      border-radius: 7px; padding: 5px 7px; max-width: 180px;
-    }
+/* CERTIFICATES */
+.certificate-card {
+  display:flex;
+  flex-direction:column;
+  min-height:210px;
+}
+.certificate-card .cert-link {
+  display:inline-block;
+  margin-top:auto;
+  padding-top:20px;
+  color:#9b7130;
+  font-weight:bold;
+  font-size:13px;
+}
+.certificate-card .cert-link:hover {color:var(--navy)}
+.certificate-card .icon {margin-bottom:10px}
 
-    /* Highlights */
-    .highlights { margin-top: -35px; position: relative; z-index: 3; }
-    .highlight-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr); background: white;
-      border: 1px solid var(--line); border-radius: 19px; box-shadow: var(--shadow);
-      padding: 25px 15px;
-    }
-    .highlight { text-align: center; padding: 8px 12px; border-right: 1px solid var(--line); }
-    .highlight:last-child { border: 0; }
-    .highlight strong { display: block; font: 800 1.8rem Manrope; color: var(--blue); }
-    .highlight span { font-size: .78rem; color: var(--muted); }
+/* CV */
+.cv-section {
+  background:#edf1f6;
+  text-align:center;
+}
+.cv-section .section-intro {margin:0 auto 20px}
 
-    /* About */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: start; }
-    .about-copy p { color: var(--muted); margin-bottom: 16px; }
-    .about-note {
-      padding: 24px; background: white; border: 1px solid var(--line);
-      border-radius: 18px; box-shadow: var(--shadow);
-    }
-    .about-note h3 { margin-bottom: 10px; }
-    .about-note p { color: var(--muted); font-size: .92rem; }
-    .value-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 23px; }
-    .value-item { display: flex; align-items: center; gap: 9px; font-size: .87rem; font-weight: 700; }
-    .check { color: var(--blue); font-weight: 900; }
+/* CONTACT */
+.contact {
+  background:var(--navy);
+  color:white;
+  text-align:center;
+}
+.contact .section-title {color:white}
+.contact p {color:#d3dce7;margin:12px 0 20px}
+.contact-link {
+  color:var(--gold);
+  font-weight:bold;
+}
+footer {
+  background:#0b192a;
+  color:#bdc8d7;
+  padding:22px;
+  text-align:center;
+  font-size:12px;
+}
 
-    /* Services */
-    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 19px; }
-    .service-card {
-      background: white; border: 1px solid var(--line); border-radius: 18px;
-      padding: 25px; transition: .3s; height: 100%;
-    }
-    .service-card:hover { transform: translateY(-7px); border-color: #c8c3ff; box-shadow: var(--shadow); }
-    .service-icon {
-      width: 48px; height: 48px; display: grid; place-items: center;
-      border-radius: 14px; color: white; background: var(--gradient);
-      font-size: 1.2rem; margin-bottom: 18px;
-    }
-    .service-card h3 { font-size: 1.05rem; margin-bottom: 9px; }
-    .service-card p { color: var(--muted); font-size: .87rem; margin-bottom: 13px; }
-    .service-card ul { list-style: none; color: #5e6380; font-size: .82rem; }
-    .service-card li { margin-top: 5px; }
-    .service-card li::before { content: "✓"; color: var(--blue); margin-right: 8px; font-weight: 800; }
-
-    /* Skills */
-    .skills-area { background: white; }
-    .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .skill-card {
-      border: 1px solid var(--line); border-radius: 17px; padding: 23px;
-      background: linear-gradient(145deg, #fff, #fafaff);
-    }
-    .skill-card h3 { font-size: 1rem; margin-bottom: 15px; }
-    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
-    .skill-tag {
-      background: #f0efff; color: #5147a8; border: 1px solid #e6e3ff;
-      padding: 7px 10px; border-radius: 8px; font-size: .76rem; font-weight: 600;
-    }
-
-    /* Tools */
-    .tools-section {
-      background: linear-gradient(130deg, #11152f, #1c2050 65%, #30215b);
-      color: white; overflow: hidden;
-    }
-    .tools-section .section-heading p { color: #c2c6e1; }
-    .tools-section .eyebrow { color: #aaa4ff; }
-    .tools-filter { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 25px; }
-    .filter-btn {
-      color: #d5d7ef; background: #ffffff0b; border: 1px solid #ffffff26;
-      border-radius: 30px; padding: 8px 14px; font-size: .78rem; font-weight: 700;
-    }
-    .filter-btn.active, .filter-btn:hover { color: white; background: var(--blue); border-color: var(--blue); }
-    .tools-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 13px; }
-    .tool-card {
-      min-height: 112px; display: flex; flex-direction: column; align-items: center;
-      justify-content: center; gap: 9px; border-radius: 15px; padding: 15px 9px;
-      background: #ffffff0d; border: 1px solid #ffffff1a; transition: .25s;
-      text-align: center;
-    }
-    .tool-card:hover { transform: translateY(-6px); background: #ffffff18; border-color: #9d91ff; }
-    .tool-logo {
-      width: 35px; height: 35px; display: grid; place-items: center;
-      border-radius: 10px; background: white; color: var(--navy);
-      font: 800 .75rem Manrope; overflow: hidden;
-    }
-    .tool-logo img { width: 23px; height: 23px; object-fit: contain; }
-    .tool-card span:last-child { color: #e3e4f5; font-size: .76rem; font-weight: 600; }
-    .tool-footnote { color: #aeb3d2; font-size: .78rem; margin-top: 18px; }
-
-    .marquee-wrap { overflow: hidden; margin-top: 45px; padding: 15px 0; border-top: 1px solid #ffffff19; border-bottom: 1px solid #ffffff19; }
-    .marquee { display: flex; width: max-content; gap: 35px; animation: marquee 35s linear infinite; }
-    .marquee span { color: #d6d7f0; font-weight: 700; white-space: nowrap; font-size: .86rem; }
-    .marquee span::before { content: "✦"; color: #a69aff; margin-right: 12px; }
-    @keyframes marquee { to { transform: translateX(-50%); } }
-
-    /* Projects */
-    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .project-card {
-      overflow: hidden; background: white; border: 1px solid var(--line);
-      border-radius: 18px; transition: .3s;
-    }
-    .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-    .project-visual {
-      min-height: 165px; display: grid; place-items: center; color: white;
-      font: 800 2.3rem Manrope; background: linear-gradient(135deg, #4f46e5, #8b5cf6);
-    }
-    .project-card:nth-child(2) .project-visual { background: linear-gradient(135deg, #06b6d4, #4f46e5); }
-    .project-card:nth-child(3) .project-visual { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
-    .project-content { padding: 21px; }
-    .project-content h3 { font-size: 1.03rem; margin: 7px 0; }
-    .project-content p { color: var(--muted); font-size: .85rem; }
-    .project-type { color: var(--blue); font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
-    .project-disclaimer { color: var(--muted); font-size: .78rem; margin-top: 18px; }
-
-    /* Experience */
-    .experience-section { background: white; }
-    .timeline { max-width: 850px; border-left: 2px solid #e1defe; margin-left: 9px; padding-left: 30px; }
-    .timeline-item { position: relative; padding-bottom: 35px; }
-    .timeline-item:last-child { padding-bottom: 0; }
-    .timeline-item::before {
-      content: ""; position: absolute; left: -38px; top: 7px; width: 14px;
-      height: 14px; border-radius: 50%; background: var(--blue);
-      border: 4px solid #eeedff; box-shadow: 0 0 0 2px #b8b2ff;
-    }
-    .timeline-date { color: var(--blue); font-size: .77rem; font-weight: 800; letter-spacing: .6px; }
-    .timeline-item h3 { font-size: 1.1rem; margin: 5px 0 2px; }
-    .timeline-company { color: var(--muted); font-size: .87rem; margin-bottom: 10px; }
-    .timeline-item ul { padding-left: 19px; color: #666b86; font-size: .87rem; }
-    .timeline-item li { margin-bottom: 5px; }
-
-    /* Education and credentials */
-    .credentials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
-    .credential-panel { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 25px; }
-    .credential-panel h3 { margin-bottom: 17px; }
-    .education-item { padding: 16px 0; border-top: 1px solid var(--line); }
-    .education-item:first-of-type { border-top: 0; padding-top: 0; }
-    .education-item strong { display: block; }
-    .education-item span { color: var(--muted); font-size: .84rem; }
-    .certificate-list { display: grid; gap: 10px; }
-    .certificate {
-      display: flex; justify-content: space-between; align-items: center; gap: 10px;
-      border: 1px solid var(--line); padding: 12px 13px; border-radius: 11px;
-    }
-    .certificate span { font-size: .84rem; font-weight: 600; }
-    .certificate a { color: var(--blue); font-size: .78rem; font-weight: 800; white-space: nowrap; }
-    .certificate a:hover { text-decoration: underline; }
-
-    /* Interests */
-    .interests { display: flex; flex-wrap: wrap; gap: 10px; }
-    .interest {
-      border: 1px solid #e1defe; color: #5147a8; background: white;
-      padding: 10px 14px; border-radius: 30px; font-size: .82rem; font-weight: 600;
-    }
-
-    /* Contact */
-    .contact-section {
-      color: white; background:
-        radial-gradient(circle at 90% 10%, #8b5cf64a, transparent 30%),
-        linear-gradient(125deg, #11152f, #252052);
-    }
-    .contact-section .section-heading p { color: #c3c6e1; }
-    .contact-section .eyebrow { color: #b6afff; }
-    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 35px; }
-    .contact-details { display: grid; gap: 13px; align-content: start; }
-    .contact-item {
-      display: flex; gap: 13px; align-items: center; padding: 15px;
-      border-radius: 13px; background: #ffffff0c; border: 1px solid #ffffff1c;
-    }
-    .contact-item .contact-icon {
-      width: 40px; height: 40px; display: grid; place-items: center;
-      border-radius: 11px; background: #8b5cf638;
-    }
-    .contact-item small { display: block; color: #b9bdd9; }
-    .contact-item strong { font-size: .87rem; overflow-wrap: anywhere; }
-    .contact-form {
-      background: white; color: var(--ink); border-radius: 18px; padding: 27px;
-    }
-    .contact-form h3 { margin-bottom: 17px; }
-    .form-group { margin-bottom: 13px; }
-    .form-group label { display: block; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
-    .form-group input, .form-group textarea {
-      width: 100%; border: 1px solid #e1e2ef; border-radius: 9px;
-      padding: 12px; font: inherit; font-size: .88rem; outline: none;
-    }
-    .form-group input:focus, .form-group textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px #4f46e51a; }
-    .form-group textarea { min-height: 115px; resize: vertical; }
-    .contact-form .btn { width: 100%; }
-    .form-help { color: var(--muted); font-size: .74rem; margin-top: 9px; }
-
-    footer { background: #0b0e23; color: #aeb2ce; padding: 25px 0; font-size: .8rem; }
-    .footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
-    .footer-inner a { color: white; }
-    .back-top {
-      position: fixed; right: 22px; bottom: 22px; z-index: 90;
-      width: 44px; height: 44px; border-radius: 50%; border: 0;
-      color: white; background: var(--gradient); box-shadow: var(--shadow);
-      opacity: 0; pointer-events: none; transition: .25s;
-    }
-    .back-top.show { opacity: 1; pointer-events: auto; }
-
-    /* Scroll reveal */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    @media (max-width: 950px) {
-      .nav-links { gap: 13px; }
-      .nav-links a { font-size: .78rem; }
-      .hero-grid { gap: 35px; }
-      .tools-grid { grid-template-columns: repeat(4, 1fr); }
-      .services-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
-      .skill-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 760px) {
-      .section { padding: 75px 0; }
-      .menu-toggle { display: block; }
-      .nav-links {
-        display: none; position: absolute; top: 76px; left: 0; right: 0;
-        background: white; padding: 18px 5%; border-bottom: 1px solid var(--line);
-        box-shadow: var(--shadow); flex-direction: column; align-items: stretch; gap: 0;
-      }
-      .nav-links.open { display: flex; }
-      .nav-links li a { display: block; padding: 11px 0; font-size: .9rem; }
-      .nav-cta { display: none; }
-      .hero-grid { grid-template-columns: 1fr; padding-top: 65px; text-align: center; }
-      .hero-copy { margin-left: auto; margin-right: auto; }
-      .hero-actions, .hero-socials { justify-content: center; }
-      .audio-panel { margin: auto; text-align: left; }
-      .profile-wrap { margin-top: 10px; }
-      .profile-card { max-width: 310px; }
-      .floating-one { left: -20px; }
-      .floating-two { right: -20px; }
-      .highlight-grid { grid-template-columns: repeat(2, 1fr); gap: 14px 0; }
-      .highlight:nth-child(2) { border-right: 0; }
-      .about-grid, .contact-grid, .credentials-grid { grid-template-columns: 1fr; }
-      .services-grid, .projects-grid { grid-template-columns: 1fr 1fr; }
-      .tools-grid { grid-template-columns: repeat(3, 1fr); }
-    }
-    @media (max-width: 520px) {
-      .hero h1 { letter-spacing: -1.8px; }
-      .hero-actions .btn { width: 100%; }
-      .audio-controls { width: 100%; }
-      .audio-btn { flex: 1; }
-      .services-grid, .projects-grid, .skill-grid { grid-template-columns: 1fr; }
-      .tools-grid { grid-template-columns: repeat(2, 1fr); }
-      .value-list { grid-template-columns: 1fr; }
-      .highlight strong { font-size: 1.5rem; }
-      .highlight span { font-size: .72rem; }
-      .profile-photo, .photo-placeholder { height: 300px; }
-      .profile-card { min-height: 395px; }
-      .footer-inner { flex-direction: column; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        scroll-behavior: auto !important; animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important; transition-duration: .01ms !important;
-      }
-    }
-  </style>
+@media(max-width:750px) {
+  header {justify-content:center}
+  nav {justify-content:center;gap:12px}
+  .hero {
+    flex-direction:column-reverse;
+    text-align:center;
+    padding:55px 7%;
+  }
+  .hero-photo {width:230px;height:275px}
+  .about-grid {grid-template-columns:1fr}
+  section {padding:55px 7%}
+  .tool {min-width:125px}
+}
+@media(prefers-reduced-motion:reduce) {
+  html {scroll-behavior:auto}
+  .marquee-track {animation-duration:90s}
+}
+</style>
 </head>
 
 <body>
-  <!-- NAVIGATION -->
-  <nav class="navbar">
-    <div class="container nav-inner">
-      <a class="brand" href="#home">MOSES <span>TAIWO.</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#projects">Work</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a class="btn btn-primary nav-cta" href="#contact">Let's work together ↗</a>
-    </div>
+
+<header>
+  <div class="logo">TAIWO MOSES</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#tools">Tools</a>
+    <a href="#projects">Work</a>
+    <a href="#certifications">Certificates</a>
+    <a href="#contact">Contact</a>
   </nav>
+</header>
 
-  <!-- HERO -->
-  <header class="hero" id="home">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-kicker"><span class="live-dot"></span> Available for remote opportunities</div>
-        <p class="hero-role">EXECUTIVE VIRTUAL ASSISTANT | EXECUTIVE PERSONAL ASSISTANT</p>
-        <h1>Thoughtful support.<br><span>Better business days.</span></h1>
-        <p class="hero-copy">
-          Hello, I'm <strong>Taiwo Moses Ayodele</strong>. I help business leaders stay organised,
-          communicate effectively and keep important work moving through reliable executive
-          assistance, administrative coordination and operational support.
-        </p>
+<main>
 
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Hire me <span>↗</span></a>
-          <a class="btn btn-outline" href="assets/moses-taiwo-cv.pdf" download>Download my CV ↓</a>
-        </div>
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">EXECUTIVE VIRTUAL ASSISTANT</div>
+    <h1>Professional Support.<br>Organised Operations.</h1>
+    <p>
+      I'm Taiwo Moses Ayodele, an Executive Virtual Assistant
+      providing administrative support, professional communication
+      and operations coordination to help executives and business
+      owners stay organised and productive.
+    </p>
 
-        <div class="hero-socials">
-          <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="mailto:haywhymoses89@gmail.com">Email ↗</a>
-          <a href="#projects">View my work ↓</a>
-        </div>
+    <a href="#contact" class="btn">Let's Connect</a>
 
-        <!-- TEXT-TO-SPEECH AUDIO INTRODUCTION -->
-        <div class="audio-panel" aria-label="Listen to my introduction">
-          <div class="audio-icon">🔊</div>
-          <div class="audio-info">
-            <strong>Listen to my introduction</strong>
-            <small id="audioStatus" aria-live="polite">Hear a short introduction about me.</small>
-          </div>
-          <div class="audio-controls">
-            <button class="audio-btn" id="speakBtn" type="button">▶ Listen</button>
-            <button class="audio-btn" id="pauseBtn" type="button">Ⅱ Pause</button>
-            <button class="audio-btn" id="stopBtn" type="button">■ Stop</button>
-          </div>
-          <div class="audio-settings">
-            <label for="voiceSelect">Voice</label>
-            <select id="voiceSelect" aria-label="Choose narration voice">
-              <option value="">Default voice</option>
-            </select>
-            <label for="speechRate">Speed</label>
-            <input id="speechRate" type="range" min="0.75" max="1.2" step="0.05" value="1">
-          </div>
-        </div>
-      </div>
+    <a href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf"
+       class="btn btn-outline"
+       download>
+       Download My CV ↓
+    </a>
+  </div>
 
-      <div class="profile-wrap">
-        <div class="profile-card">
-          <!-- Professional photograph -->
-          <img class="profile-photo" src="assets/profile-picture.png" alt="Portrait of Taiwo Moses Ayodele"
-               onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';">
-          <div class="photo-placeholder" id="photoFallback" style="display:none;">
-            <div><strong>TMA</strong><span>Your professional photograph goes here</span></div>
-          </div>
-          <div class="profile-caption">
-            <strong>Taiwo Moses Ayodele</strong>
-            <span>Executive Virtual Assistant · Lagos, Nigeria</span>
-          </div>
-          <div class="floating-label floating-one">✦ Executive Support</div>
-          <div class="floating-label floating-two">✓ Organised & Reliable</div>
-        </div>
-      </div>
+  <img
+    src="./profile-picture.png"
+    alt="Taiwo Moses Ayodele - Executive Virtual Assistant"
+    class="hero-photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="gold-line"></div>
+
+  <div class="about-grid">
+    <div>
+      <p>
+        I'm an administrative and executive support professional
+        with experience in documentation, correspondence,
+        operational coordination and business administration.
+      </p>
+      <br>
+      <p>
+        I value organisation, clear communication, attention to
+        detail and dependable execution. My focus is to provide
+        structured support that allows executives and business
+        owners to concentrate on their priorities.
+      </p>
+      <br>
+      <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn">
+         Visit My LinkedIn Profile
+      </a>
     </div>
-  </header>
 
-  <!-- PROFESSIONAL HIGHLIGHTS -->
-  <div class="container highlights">
-    <div class="highlight-grid">
-      <div class="highlight"><strong>25+</strong><span>Team members supervised</span></div>
-      <div class="highlight"><strong>11%</strong><span>Annual sales growth contribution</span></div>
-      <div class="highlight"><strong>70%</strong><span>Reduction in monthly losses</span></div>
-      <div class="highlight"><strong>99%</strong><span>Typing test accuracy</span></div>
+    <div class="about-note">
+      <h3>Professional Focus</h3>
+      <p>✓ Executive assistance</p>
+      <p>✓ Administrative support</p>
+      <p>✓ Email management</p>
+      <p>✓ Documentation and reporting</p>
+      <p>✓ Operations coordination</p>
+      <p>✓ Project support</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="light">
+  <h2 class="section-title">Services</h2>
+  <p class="section-intro">
+    Professional support designed to make everyday business
+    activities more organised and manageable.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📅</div>
+      <h3>Executive Assistance</h3>
+      <p>Scheduling, appointment coordination, correspondence and follow-ups.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">✉️</div>
+      <h3>Email Management</h3>
+      <p>Inbox organisation, email drafting and professional communication.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Documentation & Reporting</h3>
+      <p>Document preparation, spreadsheets, reports and organised records.</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Operations Coordination</h3>
+      <p>Task tracking, workflow organisation and administrative coordination.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MOVING TOOLS -->
+<section id="tools" class="tools-section">
+  <h2 class="section-title">Tools & Technology</h2>
+  <p class="section-intro">
+    Digital platforms I work with for executive assistance,
+    communication, administration and productivity.
+    Watch the tools move in both directions.
+  </p>
+
+  <div class="tool-label">MICROSOFT OFFICE & GOOGLE WORKSPACE</div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="tool"><span class="tool-symbol">W</span>Microsoft Word</div>
+      <div class="tool"><span class="tool-symbol">X</span>Microsoft Excel</div>
+      <div class="tool"><span class="tool-symbol">P</span>PowerPoint</div>
+      <div class="tool"><span class="tool-symbol">O</span>Outlook</div>
+      <div class="tool"><span class="tool-symbol">G</span>Google Workspace</div>
+      <div class="tool"><span class="tool-symbol">D</span>Google Drive</div>
+      <div class="tool"><span class="tool-symbol">G</span>Google Docs</div>
+      <div class="tool"><span class="tool-symbol">S</span>Google Sheets</div>
+
+      <div class="tool"><span class="tool-symbol">W</span>Microsoft Word</div>
+      <div class="tool"><span class="tool-symbol">X</span>Microsoft Excel</div>
+      <div class="tool"><span class="tool-symbol">P</span>PowerPoint</div>
+      <div class="tool"><span class="tool-symbol">O</span>Outlook</div>
+      <div class="tool"><span class="tool-symbol">G</span>Google Workspace</div>
+      <div class="tool"><span class="tool-symbol">D</span>Google Drive</div>
+      <div class="tool"><span class="tool-symbol">G</span>Google Docs</div>
+      <div class="tool"><span class="tool-symbol">S</span>Google Sheets</div>
     </div>
   </div>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="container about-grid">
-      <div class="about-copy reveal">
-        <div class="section-heading">
-          <span class="eyebrow">A little about me</span>
-          <h2>Making busy workdays <span class="gradient-text">more manageable.</span></h2>
-        </div>
-        <p>
-          I am an organised and proactive Executive Virtual Assistant and Personal Assistant
-          with practical experience supporting leadership, managing administrative workflows
-          and coordinating business operations.
-        </p>
-        <p>
-          My experience includes executive correspondence, email and calendar management,
-          document preparation, online research, reporting, task tracking and follow-ups.
-          I understand the importance of discretion, clear communication, accuracy and
-          keeping commitments on track.
-        </p>
-        <p>
-          I also bring hands-on operations and team coordination experience. This allows me
-          to look beyond individual tasks, understand how work connects and provide support
-          that helps people and businesses operate more effectively.
-        </p>
-        <div class="value-list">
-          <div class="value-item"><span class="check">✓</span> Clear communication</div>
-          <div class="value-item"><span class="check">✓</span> Strong organisation</div>
-          <div class="value-item"><span class="check">✓</span> Attention to detail</div>
-          <div class="value-item"><span class="check">✓</span> Confidentiality</div>
-          <div class="value-item"><span class="check">✓</span> Reliable follow-through</div>
-          <div class="value-item"><span class="check">✓</span> Adaptability</div>
-        </div>
-      </div>
-      <div class="about-note reveal">
-        <span class="eyebrow">My approach</span>
-        <h3>Support that creates room to focus.</h3>
-        <p>
-          Good assistance is not simply about completing a list of tasks. It is about
-          understanding priorities, anticipating what needs attention, communicating
-          clearly and making sure details do not get lost.
-        </p>
-        <p>
-          I aim to bring structure to everyday work, help leaders protect their time
-          and make administrative processes easier to manage.
-        </p>
-        <br>
-        <a class="btn btn-primary" href="#services">Explore my services ↗</a>
-      </div>
+  <div class="tool-label">PROJECT MANAGEMENT & COMMUNICATION</div>
+
+  <div class="marquee right">
+    <div class="marquee-track">
+      <div class="tool"><span class="tool-symbol">T</span>Trello</div>
+      <div class="tool"><span class="tool-symbol">N</span>Notion</div>
+      <div class="tool"><span class="tool-symbol">S</span>Slack</div>
+      <div class="tool"><span class="tool-symbol">Z</span>Zoom</div>
+      <div class="tool"><span class="tool-symbol">C</span>Canva</div>
+      <div class="tool"><span class="tool-symbol">CRM</span>CRM Platforms</div>
+      <div class="tool"><span class="tool-symbol">E</span>Email Management</div>
+
+      <div class="tool"><span class="tool-symbol">T</span>Trello</div>
+      <div class="tool"><span class="tool-symbol">N</span>Notion</div>
+      <div class="tool"><span class="tool-symbol">S</span>Slack</div>
+      <div class="tool"><span class="tool-symbol">Z</span>Zoom</div>
+      <div class="tool"><span class="tool-symbol">C</span>Canva</div>
+      <div class="tool"><span class="tool-symbol">CRM</span>CRM Platforms</div>
+      <div class="tool"><span class="tool-symbol">E</span>Email Management</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SERVICES -->
-  <section class="section" id="services" style="background:#fff;">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">What I can help with</span>
-        <h2>Practical support for <span class="gradient-text">everyday business needs.</span></h2>
-        <p>Flexible administrative and executive support designed to help work stay organised and moving.</p>
-      </div>
-      <div class="services-grid">
-        <article class="service-card reveal">
-          <div class="service-icon">▣</div>
-          <h3>Executive Assistance</h3>
-          <p>Reliable day-to-day support that helps executives manage their time and priorities.</p>
-          <ul>
-            <li>Email and inbox management</li>
-            <li>Calendar and schedule coordination</li>
-            <li>Meeting preparation and follow-ups</li>
-            <li>Travel and appointment coordination</li>
-          </ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="service-icon">✉</div>
-          <h3>Administrative Support</h3>
-          <p>Organised handling of information, documents and routine administrative tasks.</p>
-          <ul>
-            <li>Document creation and formatting</li>
-            <li>Data entry and record keeping</li>
-            <li>File and digital folder organisation</li>
-            <li>Reports and presentations</li>
-          </ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="service-icon">⌕</div>
-          <h3>Research & Information</h3>
-          <p>Structured research that helps make information easier to understand and use.</p>
-          <ul>
-            <li>Internet and business research</li>
-            <li>Information gathering</li>
-            <li>Data organisation</li>
-            <li>Research summaries</li>
-          </ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="service-icon">◎</div>
-          <h3>Communication Support</h3>
-          <p>Professional communication and responsive coordination with people and teams.</p>
-          <ul>
-            <li>Email correspondence</li>
-            <li>Customer service support</li>
-            <li>Appointment coordination</li>
-            <li>Communication follow-ups</li>
-          </ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="service-icon">▤</div>
-          <h3>Project & Task Coordination</h3>
-          <p>Helping teams keep track of responsibilities, deadlines and outstanding actions.</p>
-          <ul>
-            <li>Task tracking and updates</li>
-            <li>Deadline monitoring</li>
-            <li>Meeting action points</li>
-            <li>Workflow organisation</li>
-          </ul>
-        </article>
-        <article class="service-card reveal">
-          <div class="service-icon">⌂</div>
-          <h3>Operations Coordination</h3>
-          <p>Administrative coordination informed by practical business operations experience.</p>
-          <ul>
-            <li>Operational documentation</li>
-            <li>Team and resource coordination</li>
-            <li>Routine reporting</li>
-            <li>Process and record organisation</li>
-          </ul>
-        </article>
-      </div>
+  <div class="tool-label">AI & DIGITAL PRODUCTIVITY</div>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="tool"><span class="tool-symbol">AI</span>ChatGPT</div>
+      <div class="tool"><span class="tool-symbol">G</span>Google Gemini</div>
+      <div class="tool"><span class="tool-symbol">R</span>Online Research</div>
+      <div class="tool"><span class="tool-symbol">D</span>Digital Documentation</div>
+
+      <div class="tool"><span class="tool-symbol">AI</span>ChatGPT</div>
+      <div class="tool"><span class="tool-symbol">G</span>Google Gemini</div>
+      <div class="tool"><span class="tool-symbol">R</span>Online Research</div>
+      <div class="tool"><span class="tool-symbol">D</span>Digital Documentation</div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CORE SKILLS -->
-  <section class="section skills-area" id="skills">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Core competencies</span>
-        <h2>The skills behind <span class="gradient-text">my support.</span></h2>
-        <p>A broad set of administrative, communication and coordination capabilities developed through practical work and professional learning.</p>
-      </div>
-      <div class="skill-grid">
-        <article class="skill-card reveal">
-          <h3>Executive & Personal Assistance</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Executive Support</span><span class="skill-tag">Calendar Management</span>
-            <span class="skill-tag">Inbox Management</span><span class="skill-tag">Meeting Coordination</span>
-            <span class="skill-tag">Appointment Scheduling</span><span class="skill-tag">Follow-up Management</span>
-            <span class="skill-tag">Confidential Handling</span>
-          </div>
-        </article>
-        <article class="skill-card reveal">
-          <h3>Administrative & Documentation</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Document Preparation</span><span class="skill-tag">Data Entry</span>
-            <span class="skill-tag">Record Keeping</span><span class="skill-tag">File Management</span>
-            <span class="skill-tag">Report Preparation</span><span class="skill-tag">Presentation Formatting</span>
-            <span class="skill-tag">Digital Organisation</span>
-          </div>
-        </article>
-        <article class="skill-card reveal">
-          <h3>Communication & Customer Support</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Professional Correspondence</span><span class="skill-tag">Email Communication</span>
-            <span class="skill-tag">Customer Service</span><span class="skill-tag">Active Listening</span>
-            <span class="skill-tag">Stakeholder Communication</span><span class="skill-tag">Issue Follow-up</span>
-          </div>
-        </article>
-        <article class="skill-card reveal">
-          <h3>Research & Information Management</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Online Research</span><span class="skill-tag">Information Gathering</span>
-            <span class="skill-tag">Data Organisation</span><span class="skill-tag">Research Summaries</span>
-            <span class="skill-tag">Attention to Detail</span><span class="skill-tag">Information Accuracy</span>
-          </div>
-        </article>
-        <article class="skill-card reveal">
-          <h3>Project & Operations Coordination</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Task Coordination</span><span class="skill-tag">Deadline Tracking</span>
-            <span class="skill-tag">Workflow Support</span><span class="skill-tag">Team Coordination</span>
-            <span class="skill-tag">Operational Reporting</span><span class="skill-tag">Resource Planning</span>
-          </div>
-        </article>
-        <article class="skill-card reveal">
-          <h3>Professional Strengths</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Time Management</span><span class="skill-tag">Problem Solving</span>
-            <span class="skill-tag">Adaptability</span><span class="skill-tag">Discretion</span>
-            <span class="skill-tag">Multitasking</span><span class="skill-tag">Initiative</span>
-            <span class="skill-tag">Dependability</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+<!-- SELECTED WORK -->
+<section id="projects">
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-intro">
+    Areas of practical administrative and executive support
+    demonstrated through professional work samples.
+  </p>
 
-  <!-- TOOLS -->
-  <section class="section tools-section" id="tools">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">My digital toolkit</span>
-        <h2>Technology that helps <span class="gradient-text">work flow.</span></h2>
-        <p>I use digital productivity, communication and organisation tools to support administrative work and collaborate effectively.</p>
-      </div>
-
-      <div class="tools-filter" id="toolFilters">
-        <button class="filter-btn active" data-filter="all">All tools</button>
-        <button class="filter-btn" data-filter="google">Google Workspace</button>
-        <button class="filter-btn" data-filter="microsoft">Microsoft 365</button>
-        <button class="filter-btn" data-filter="project">Project & Teamwork</button>
-        <button class="filter-btn" data-filter="communication">Communication</button>
-        <button class="filter-btn" data-filter="ai">AI & Creativity</button>
-        <button class="filter-btn" data-filter="crm">CRM & Business</button>
-      </div>
-
-      <div class="tools-grid" id="toolsGrid">
-        <!-- Google Workspace -->
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="" onerror="this.parentElement.textContent='G'"></span><span>Gmail</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googledocs/4285F4" alt="" onerror="this.parentElement.textContent='D'"></span><span>Google Docs</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="" onerror="this.parentElement.textContent='S'"></span><span>Google Sheets</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googleslides/FBBC04" alt="" onerror="this.parentElement.textContent='S'"></span><span>Google Slides</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googledrive/4285F4" alt="" onerror="this.parentElement.textContent='D'"></span><span>Google Drive</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlecalendar/4285F4" alt="" onerror="this.parentElement.textContent='C'"></span><span>Google Calendar</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googleforms/7248B9" alt="" onerror="this.parentElement.textContent='F'"></span><span>Google Forms</span></div>
-        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlemeet/00897B" alt="" onerror="this.parentElement.textContent='M'"></span><span>Google Meet</span></div>
-
-        <!-- Microsoft 365 -->
-        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftword/185ABD" alt="" onerror="this.parentElement.textContent='W'"></span><span>Microsoft Word</span></div>
-        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="" onerror="this.parentElement.textContent='X'"></span><span>Microsoft Excel</span></div>
-        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftpowerpoint/D24726" alt="" onerror="this.parentElement.textContent='P'"></span><span>PowerPoint</span></div>
-        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftoutlook/0078D4" alt="" onerror="this.parentElement.textContent='O'"></span><span>Outlook</span></div>
-        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftteams/6264A7" alt="" onerror="this.parentElement.textContent='T'"></span><span>Microsoft Teams</span></div>
-        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftonedrive/0078D4" alt="" onerror="this.parentElement.textContent='1'"></span><span>OneDrive</span></div>
-
-        <!-- Project management -->
-        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/trello/0052CC" alt="" onerror="this.parentElement.textContent='T'"></span><span>Trello</span></div>
-        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/notion/000000" alt="" onerror="this.parentElement.textContent='N'"></span><span>Notion</span></div>
-        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/asana/F06A6A" alt="" onerror="this.parentElement.textContent='A'"></span><span>Asana</span></div>
-        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="" onerror="this.parentElement.textContent='C'"></span><span>ClickUp</span></div>
-        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/slack/4A154B" alt="" onerror="this.parentElement.textContent='S'"></span><span>Slack</span></div>
-
-        <!-- Communication -->
-        <div class="tool-card" data-category="communication"><span class="tool-logo"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="" onerror="this.parentElement.textContent='Z'"></span><span>Zoom</span></div>
-        <div class="tool-card" data-category="communication"><span class="tool-logo"><img src="https://cdn.simpleicons.org/calendly/006BFF" alt="" onerror="this.parentElement.textContent='C'"></span><span>Calendly</span></div>
-        <div class="tool-card" data-category="communication"><span class="tool-logo"><img src="https://cdn.simpleicons.org/loom/625DF5" alt="" onerror="this.parentElement.textContent='L'"></span><span>Loom</span></div>
-
-        <!-- AI and creativity -->
-        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/openai/412991" alt="" onerror="this.parentElement.textContent='AI'"></span><span>ChatGPT</span></div>
-        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" onerror="this.parentElement.textContent='G'"></span><span>Google Gemini</span></div>
-        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="" onerror="this.parentElement.textContent='C'"></span><span>Canva</span></div>
-        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/grammarly/15C39A" alt="" onerror="this.parentElement.textContent='G'"></span><span>Grammarly</span></div>
-
-        <!-- CRM and business -->
-        <div class="tool-card" data-category="crm"><span class="tool-logo"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="" onerror="this.parentElement.textContent='H'"></span><span>HubSpot</span></div>
-        <div class="tool-card" data-category="crm"><span class="tool-logo"><img src="https://cdn.simpleicons.org/salesforce/00A1E0" alt="" onerror="this.parentElement.textContent='S'"></span><span>Salesforce</span></div>
-        <div class="tool-card" data-category="crm"><span class="tool-logo"><img src="https://cdn.simpleicons.org/zendesk/03363D" alt="" onerror="this.parentElement.textContent='Z'"></span><span>Zendesk</span></div>
-      </div>
-
-      <p class="tool-footnote">
-        My strongest day-to-day toolkit includes Google Workspace, Microsoft Office, Canva,
-        ChatGPT, Zoom and email management. Other platforms shown represent tools I am
-        familiar with or continuing to develop.
-      </p>
+  <div class="cards">
+    <div class="card">
+      <div class="project-tag">WORK SAMPLE</div>
+      <div class="icon">📅</div>
+      <h3>Executive Scheduling</h3>
+      <p>Calendar organisation, appointment planning and schedule management.</p>
     </div>
 
-    <div class="marquee-wrap" aria-label="Tools and capabilities">
-      <div class="marquee">
-        <span>Google Workspace</span><span>Microsoft 365</span><span>Executive Support</span>
-        <span>Project Coordination</span><span>Digital Organisation</span><span>AI Productivity</span>
-        <span>Google Workspace</span><span>Microsoft 365</span><span>Executive Support</span>
-        <span>Project Coordination</span><span>Digital Organisation</span><span>AI Productivity</span>
-      </div>
+    <div class="card">
+      <div class="project-tag">WORK SAMPLE</div>
+      <div class="icon">✉️</div>
+      <h3>Email Administration</h3>
+      <p>Professional correspondence, inbox organisation and follow-up management.</p>
     </div>
-  </section>
 
-  <!-- SELECTED WORK -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Selected work & capabilities</span>
-        <h2>How I bring <span class="gradient-text">work together.</span></h2>
-        <p>Examples of the types of administrative and coordination work I can support. These are capability showcases, not client-confidential documents.</p>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card reveal">
-          <div class="project-visual">01</div>
-          <div class="project-content">
-            <span class="project-type">Executive support</span>
-            <h3>Executive Administration & Follow-up</h3>
-            <p>Organising correspondence, preparing documents, tracking outstanding tasks and supporting leadership with day-to-day administrative coordination.</p>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual">02</div>
-          <div class="project-content">
-            <span class="project-type">Operations coordination</span>
-            <h3>Team & Operations Coordination</h3>
-            <p>Practical experience coordinating people, resources, routine reporting and operational activities in a busy business environment.</p>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-visual">03</div>
-          <div class="project-content">
-            <span class="project-type">Documentation</span>
-            <h3>Digital Records & Reporting</h3>
-            <p>Preparing, organising and maintaining information so that records, updates and business documents are easier to access and manage.</p>
-          </div>
-        </article>
-      </div>
-      <p class="project-disclaimer">Additional work samples can be added here as you prepare approved, non-confidential examples such as a calendar plan, meeting minutes, spreadsheet tracker or research brief.</p>
+    <div class="card">
+      <div class="project-tag">WORK SAMPLE</div>
+      <div class="icon">📊</div>
+      <h3>Business Documentation</h3>
+      <p>Structured reports, spreadsheets and administrative records.</p>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section experience-section" id="experience">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Professional experience</span>
-        <h2>Experience built through <span class="gradient-text">responsibility.</span></h2>
-        <p>Administrative support, customer service and operational coordination across different working environments.</p>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <span class="timeline-date">2024 – 2025</span>
-          <h3>Executive Assistant to CEO & Farm Operations Manager</h3>
-          <div class="timeline-company">HVC · Hybrid</div>
-          <ul>
-            <li>Provided administrative and executive support to the CEO, including correspondence, email management, scheduling and follow-ups.</li>
-            <li>Prepared documents, supported online research and assisted with reports and business information.</li>
-            <li>Tracked tasks and helped coordinate priorities across business activities.</li>
-            <li>Supported farm operations, including planning, budgeting, resource allocation and supervision of approximately 25 employees.</li>
-            <li>Contributed to an 11% increase in annual sales through operational and business support.</li>
-          </ul>
-        </article>
-        <article class="timeline-item reveal">
-          <span class="timeline-date">2022 – 2023</span>
-          <h3>Supermarket Supervisor</h3>
-          <div class="timeline-company">TASBIF Super Mall · Ogbomosho</div>
-          <ul>
-            <li>Supported daily store operations, staff coordination and customer service.</li>
-            <li>Monitored routine activities and helped maintain operational accountability.</li>
-            <li>Contributed to a 70% reduction in monthly losses.</li>
-          </ul>
-        </article>
-        <article class="timeline-item reveal">
-          <span class="timeline-date">2015 – 2017</span>
-          <h3>Production Assistant & Customer Service</h3>
-          <div class="timeline-company">Captain Cook</div>
-          <ul>
-            <li>Supported production activities and day-to-day service operations.</li>
-            <li>Assisted customers and helped maintain smooth daily workflows.</li>
-          </ul>
-        </article>
-        <article class="timeline-item reveal">
-          <span class="timeline-date">2012 – 2014</span>
-          <h3>Customer Service Representative</h3>
-          <div class="timeline-company">Hypo Limited</div>
-          <ul>
-            <li>Assisted customers with enquiries and service-related concerns.</li>
-            <li>Supported clear communication and customer-focused service delivery.</li>
-          </ul>
-        </article>
-      </div>
+    <div class="card">
+      <div class="project-tag">WORK SAMPLE</div>
+      <div class="icon">📋</div>
+      <h3>Project Coordination</h3>
+      <p>Task organisation, progress tracking and deadline coordination.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- EDUCATION & CERTIFICATES -->
-  <section class="section" id="credentials">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Education & professional development</span>
-        <h2>Learning, growth & <span class="gradient-text">professional development.</span></h2>
-      </div>
-      <div class="credentials-grid">
-        <div class="credential-panel reveal">
-          <h3>Education</h3>
-          <div class="education-item">
-            <strong>B.Sc. Computer Science</strong>
-            <span>ISCOM University, Benin Republic · 2021</span><br>
-            <span>Second Class Upper (2:1) · CGPA 3.56/5.00</span>
-          </div>
-          <h3 style="margin-top:25px;">Languages</h3>
-          <div class="education-item">
-            <strong>English</strong><span>Advanced · EF SET result: C1 Advanced, 63/100</span>
-          </div>
-          <div class="education-item">
-            <strong>Yoruba</strong><span>Fluent</span>
-          </div>
-        </div>
-        <div class="credential-panel reveal">
-          <h3>Training & certificates</h3>
-          <div class="certificate-list">
-            <div class="certificate"><span>Typing Skills Assessment · 26 WPM, 99% accuracy</span><a href="assets/certificates/Typing%20test%20certificate.pdf" target="_blank" rel="noopener noreferrer">View ↗</a></div>
-            <div class="certificate"><span>EF SET English Certificate</span><a href="assets/certificates/EF%20SET%20Certificate.pdf" target="_blank" rel="noopener noreferrer">View ↗</a></div>
-            <div class="certificate"><span>HSE Levels 1 & 2 · ISPON</span><a href="assets/certificates/hse-certificate.pdf" target="_blank">View ↗</a></div>
-            <div class="certificate"><span>Virtual Assistant Training · VSAVVY</span><a href="assets/certificates/virtual-assistant.pdf" target="_blank">View ↗</a></div>
-            <div class="certificate"><span>Project Management · Skill Up</span><a href="assets/certificates/project-management.pdf" target="_blank">View ↗</a></div>
-            <div class="certificate"><span>Google Drive · Skill Up</span><a href="assets/certificates/google-drive.pdf" target="_blank">View ↗</a></div>
-            <div class="certificate"><span>Operations Training · Lior Global</span><a href="assets/certificates/operations-training.pdf" target="_blank">View ↗</a></div>
-          </div>
-          <p class="small-note" style="margin-top:13px;">Replace these sample file links with your actual certificate PDFs before publishing.</p>
-        </div>
-      </div>
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="light">
+  <h2 class="section-title">Certifications & Achievements</h2>
+  <p class="section-intro">
+    Selected professional development, digital skills and
+    English proficiency certificates. Select any certificate
+    to view the original document.
+  </p>
+
+  <div class="cards">
+
+    <div class="card certificate-card">
+      <div class="icon">📋</div>
+      <h3>Project Management Completion Award</h3>
+      <p>Project management training and completion award.</p>
+      <a class="cert-link"
+         href="./Project-management-completion-award.png"
+         target="_blank" rel="noopener noreferrer">
+         View Certificate ↗
+      </a>
     </div>
-  </section>
 
-  <!-- PROFESSIONAL INTERESTS -->
-  <section class="section" style="padding-top:20px;">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Beyond the desk</span>
-        <h2>Professional interests</h2>
-        <p>Areas I enjoy learning about and developing as part of my professional growth.</p>
-      </div>
-      <div class="interests reveal">
-        <span class="interest">Executive Productivity</span>
-        <span class="interest">Business Administration</span>
-        <span class="interest">Digital Workflow Management</span>
-        <span class="interest">AI & Workplace Technology</span>
-        <span class="interest">Business Research</span>
-        <span class="interest">Project Coordination</span>
-        <span class="interest">Operations Management</span>
-        <span class="interest">Entrepreneurship</span>
-        <span class="interest">Continuous Learning</span>
-      </div>
+    <div class="card certificate-card">
+      <div class="icon">🌐</div>
+      <h3>Google Workspace Completion Award</h3>
+      <p>Google Workspace training and completion award.</p>
+      <a class="cert-link"
+         href="./Google-workspace-completion-award.png"
+         target="_blank" rel="noopener noreferrer">
+         View Certificate ↗
+      </a>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="section-heading reveal">
-        <span class="eyebrow">Let's connect</span>
-        <h2>Have something that needs <span class="gradient-text">a reliable hand?</span></h2>
-        <p>I'd be glad to hear about your business, your priorities and how I can support your work.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-details reveal">
-          <a class="contact-item" href="mailto:haywhymoses89@gmail.com">
-            <span class="contact-icon">✉</span>
-            <span><small>Email</small><strong>haywhymoses89@gmail.com</strong></span>
-          </a>
-          <a class="contact-item" href="tel:+2348130775384">
-            <span class="contact-icon">☎</span>
-            <span><small>Phone</small><strong>+234 813 077 5384</strong></span>
-          </a>
-          <a class="contact-item" href="tel:+2347015319848">
-            <span class="contact-icon">☎</span>
-            <span><small>Alternative phone</small><strong>+234 701 531 9848</strong></span>
-          </a>
-          <a class="contact-item" href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener">
-            <span class="contact-icon">in</span>
-            <span><small>LinkedIn</small><strong>Connect with me ↗</strong></span>
-          </a>
-          <div class="contact-item">
-            <span class="contact-icon">⌖</span>
-            <span><small>Location</small><strong>Lagos, Nigeria · Open to remote opportunities</strong></span>
-          </div>
-        </div>
-
-        <form class="contact-form reveal" id="contactForm">
-          <h3>Send me a message</h3>
-          <div class="form-group">
-            <label for="visitorName">Your name</label>
-            <input id="visitorName" name="name" type="text" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="visitorEmail">Your email</label>
-            <input id="visitorEmail" name="email" type="email" placeholder="Enter your email address" required>
-          </div>
-          <div class="form-group">
-            <label for="visitorMessage">How can I help?</label>
-            <textarea id="visitorMessage" name="message" placeholder="Tell me a little about what you need..." required></textarea>
-          </div>
-          <button class="btn btn-primary" type="submit">Prepare email message ↗</button>
-          <p class="form-help">This form opens your email application with your message ready to send. It does not store your information on this website.</p>
-        </form>
-      </div>
+    <div class="card certificate-card">
+      <div class="icon">✨</div>
+      <h3>Gemini Slides & Sheets Completion Award</h3>
+      <p>Training in Gemini-supported productivity tools.</p>
+      <a class="cert-link"
+         href="./Gemini-slides-sheets-completion-award.png"
+         target="_blank" rel="noopener noreferrer">
+         View Certificate ↗
+      </a>
     </div>
-  </section>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Taiwo Moses Ayodele. All rights reserved.</span>
-      <span>Designed with purpose · <a href="#home">Back to top ↑</a></span>
+    <div class="card certificate-card">
+      <div class="icon">🎓</div>
+      <h3>Google Workspace Completion Award – Additional</h3>
+      <p>Additional Google Workspace completion certificate.</p>
+      <a class="cert-link"
+         href="./Google-workspace-completion-award%20%282%29.png"
+         target="_blank" rel="noopener noreferrer">
+         View Certificate ↗
+      </a>
     </div>
-  </footer>
 
-  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+    <div class="card certificate-card">
+      <div class="icon">🌍</div>
+      <h3>EF SET English Certificate</h3>
+      <p>English language proficiency certification.</p>
+      <a class="cert-link"
+         href="./EF%20SET%20Certificate.PDF"
+         target="_blank" rel="noopener noreferrer">
+         View Certificate ↗
+      </a>
+    </div>
 
-  <script>
-    // MOBILE NAVIGATION
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
+    <div class="card certificate-card">
+      <div class="icon">⌨️</div>
+      <h3>Typing Test Certificate</h3>
+      <p>Typing speed and accuracy assessment.</p>
+      <a class="cert-link"
+         href="./Typing%20test%20certificate.PDF"
+         target="_blank" rel="noopener noreferrer">
+         View Certificate ↗
+      </a>
+    </div>
 
-    menuToggle.addEventListener("click", () => {
-      const open = navLinks.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", String(open));
-      menuToggle.textContent = open ? "×" : "☰";
-    });
+  </div>
+</section>
 
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.textContent = "☰";
-      });
-    });
+<!-- DOWNLOAD CV -->
+<section class="cv-section" id="cv">
+  <h2 class="section-title">My Professional Resume</h2>
+  <p class="section-intro">
+    Explore my professional background, experience, skills
+    and qualifications in my complete resume.
+  </p>
 
-    // TEXT-TO-SPEECH INTRODUCTION
-    const introText =
-      "Hello, and welcome to my portfolio. My name is Taiwo Moses Ayodele. " +
-      "I am an Executive Virtual Assistant and Executive Personal Assistant based in Lagos, Nigeria. " +
-      "I support business leaders with executive administration, email and calendar management, " +
-      "document preparation, online research, reporting, task tracking and professional communication. " +
-      "I also bring practical experience in business operations, team coordination and administrative organisation. " +
-      "My approach is simple: I value clear communication, attention to detail, discretion and dependable follow-through. " +
-      "Thank you for taking the time to learn about my work. I would be glad to discuss how I can support you and your business.";
+  <a href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf"
+     class="btn"
+     download>
+     ↓ Download My Resume (PDF)
+  </a>
+</section>
 
-    const speakBtn = document.getElementById("speakBtn");
-    const pauseBtn = document.getElementById("pauseBtn");
-    const stopBtn = document.getElementById("stopBtn");
-    const audioStatus = document.getElementById("audioStatus");
-    const voiceSelect = document.getElementById("voiceSelect");
-    const speechRate = document.getElementById("speechRate");
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Let's Work Together</h2>
+  <p>
+    Looking for reliable executive and administrative support?
+    I would be pleased to connect.
+  </p>
 
-    let availableVoices = [];
-    let currentUtterance = null;
+  <a class="contact-link"
+     href="https://www.linkedin.com/in/moses-taiwo-478b602a5/"
+     target="_blank"
+     rel="noopener noreferrer">
+     Connect with Me on LinkedIn ↗
+  </a>
 
-    function loadVoices() {
-      if (!("speechSynthesis" in window)) {
-        audioStatus.textContent = "Audio narration is not supported in this browser.";
-        speakBtn.disabled = true;
-        pauseBtn.disabled = true;
-        stopBtn.disabled = true;
-        return;
-      }
+  <br><br>
 
-      availableVoices = window.speechSynthesis.getVoices();
-      const previous = voiceSelect.value;
-      voiceSelect.innerHTML = '<option value="">Default voice</option>';
+  <a href="mailto:?subject=Professional%20Enquiry%20-%20Virtual%20Assistant"
+     class="btn">
+     Send Me an Email
+  </a>
+</section>
 
-      availableVoices.forEach((voice, index) => {
-        const option = document.createElement("option");
-        option.value = String(index);
-        option.textContent = `${voice.name} (${voice.lang})`;
-        voiceSelect.appendChild(option);
-      });
+</main>
 
-      if (previous) voiceSelect.value = previous;
-    }
+<footer>
+  © 2026 Taiwo Moses Ayodele. All Rights Reserved.
+</footer>
 
-    if ("speechSynthesis" in window) {
-      loadVoices();
-      window.speechSynthesis.onvoiceschanged = loadVoices;
-    } else {
-      loadVoices();
-    }
-
-    speakBtn.addEventListener("click", () => {
-      if (!("speechSynthesis" in window)) return;
-
-      window.speechSynthesis.cancel();
-      currentUtterance = new SpeechSynthesisUtterance(introText);
-      currentUtterance.rate = Number(speechRate.value);
-      currentUtterance.pitch = 1;
-      currentUtterance.lang = "en";
-
-      const selectedIndex = voiceSelect.value;
-      if (selectedIndex !== "" && availableVoices[Number(selectedIndex)]) {
-        currentUtterance.voice = availableVoices[Number(selectedIndex)];
-      }
-
-      currentUtterance.onstart = () => {
-        audioStatus.textContent = "Playing my introduction...";
-        speakBtn.classList.add("active");
-      };
-      currentUtterance.onend = () => {
-        audioStatus.textContent = "Thank you for listening.";
-        speakBtn.classList.remove("active");
-      };
-      currentUtterance.onerror = () => {
-        audioStatus.textContent = "Unable to play narration. Please try another browser voice.";
-        speakBtn.classList.remove("active");
-      };
-
-      window.speechSynthesis.speak(currentUtterance);
-    });
-
-    pauseBtn.addEventListener("click", () => {
-      if (!("speechSynthesis" in window)) return;
-      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
-        window.speechSynthesis.pause();
-        audioStatus.textContent = "Narration paused.";
-        pauseBtn.textContent = "▶ Resume";
-      } else if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-        audioStatus.textContent = "Continuing introduction...";
-        pauseBtn.textContent = "Ⅱ Pause";
-      }
-    });
-
-    stopBtn.addEventListener("click", () => {
-      if (!("speechSynthesis" in window)) return;
-      window.speechSynthesis.cancel();
-      audioStatus.textContent = "Narration stopped.";
-      speakBtn.classList.remove("active");
-      pauseBtn.textContent = "Ⅱ Pause";
-    });
-
-    // TOOLS FILTER
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const toolCards = document.querySelectorAll(".tool-card");
-
-    filterButtons.forEach(button => {
-      button.addEventListener("click", () => {
-        filterButtons.forEach(item => item.classList.remove("active"));
-        button.classList.add("active");
-
-        const filter = button.dataset.filter;
-        toolCards.forEach(card => {
-          card.style.display =
-            filter === "all" || card.dataset.category === filter ? "flex" : "none";
-        });
-      });
-    });
-
-    // CONTACT FORM: opens visitor's email application
-    document.getElementById("contactForm").addEventListener("submit", event => {
-      event.preventDefault();
-
-      const name = document.getElementById("visitorName").value.trim();
-      const email = document.getElementById("visitorEmail").value.trim();
-      const message = document.getElementById("visitorMessage").value.trim();
-
-      const subject = encodeURIComponent("Portfolio enquiry from " + name);
-      const body = encodeURIComponent(
-        "Hello Moses,\n\n" + message + "\n\nMy email: " + email + "\nName: " + name
-      );
-
-      window.location.href =
-        "mailto:haywhymoses89@gmail.com?subject=" + subject + "&body=" + body;
-    });
-
-    // SCROLL REVEAL ANIMATION
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll(".reveal").forEach(element => revealObserver.observe(element));
-
-    // BACK TO TOP + FOOTER YEAR
-    const backTop = document.getElementById("backTop");
-    window.addEventListener("scroll", () => {
-      backTop.classList.toggle("show", window.scrollY > 500);
-    });
-    backTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
