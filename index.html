@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Taiwo Moses Ayodele — Executive Virtual Assistant providing executive support, administrative coordination, documentation and digital workflow management.">
+  <meta name="theme-color" content="#11152f">
+  <meta name="description" content="Taiwo Moses Ayodele — Executive Virtual Assistant and Executive Personal Assistant. Professional administrative, executive and operations support.">
   <title>Taiwo Moses Ayodele | Executive Virtual Assistant</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,1763 +14,1034 @@
 
   <style>
     :root {
-      --navy: #101d35;
-      --blue: #3157d5;
-      --light-blue: #edf2ff;
-      --text: #263247;
-      --muted: #68758a;
+      --navy: #11152f;
+      --navy2: #191e40;
+      --blue: #4f46e5;
+      --violet: #8b5cf6;
+      --pink: #ec4899;
+      --cyan: #06b6d4;
+      --ink: #20233f;
+      --muted: #737895;
+      --light: #f7f7ff;
       --white: #ffffff;
-      --background: #f7f9fc;
-      --border: #e5eaf2;
-      --radius: 20px;
-      --shadow: 0 15px 45px rgba(16, 29, 53, .08);
+      --line: #e8e9f5;
+      --shadow: 0 18px 55px rgba(30, 34, 85, .09);
+      --gradient: linear-gradient(120deg, #4f46e5, #8b5cf6 55%, #ec4899);
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
     body {
       font-family: "DM Sans", sans-serif;
-      color: var(--text);
-      background: var(--background);
+      color: var(--ink);
+      background: var(--light);
       line-height: 1.7;
+      overflow-x: hidden;
     }
-
-    h1, h2, h3, h4 {
-      font-family: "Manrope", sans-serif;
-      color: var(--navy);
-      line-height: 1.25;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    button {
-      font: inherit;
-    }
-
-    .container {
-      width: min(1120px, 90%);
-      margin: auto;
-    }
-
-    .section {
-      padding: 90px 0;
-    }
-
-    .section-heading {
-      max-width: 680px;
-      margin-bottom: 42px;
-    }
-
+    h1, h2, h3, h4, .brand { font-family: "Manrope", sans-serif; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1160px, 90%); margin: auto; }
+    .section { padding: 100px 0; }
+    .section-heading { max-width: 720px; margin-bottom: 42px; }
     .eyebrow {
-      color: var(--blue);
-      text-transform: uppercase;
-      font-size: .76rem;
-      letter-spacing: 2px;
-      font-weight: 800;
+      color: var(--blue); font-size: .76rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 2px; display: inline-block;
       margin-bottom: 12px;
     }
-
     .section-heading h2 {
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      margin-bottom: 14px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 14px;
     }
-
-    .section-heading p {
-      color: var(--muted);
+    .section-heading p { color: var(--muted); max-width: 650px; }
+    .gradient-text {
+      background: var(--gradient); -webkit-background-clip: text;
+      background-clip: text; color: transparent;
     }
-
-    /* NAVIGATION */
-
-    .navbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255,255,255,.94);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-content {
-      min-height: 76px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 25px;
-    }
-
-    .logo {
-      font-family: "Manrope", sans-serif;
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--navy);
-    }
-
-    .logo span {
-      color: var(--blue);
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: .88rem;
-      font-weight: 600;
-      color: var(--text);
-      transition: .2s;
-    }
-
-    .nav-links a:hover {
-      color: var(--blue);
-    }
-
-    .nav-cta {
-      background: var(--blue);
-      color: white !important;
-      padding: 11px 19px;
-      border-radius: 9px;
-    }
-
-    .menu-toggle {
-      display: none;
-      border: 0;
-      background: none;
-      color: var(--navy);
-      font-size: 1.7rem;
-      cursor: pointer;
-    }
-
-    /* HERO */
-
-    .hero {
-      padding: 95px 0 85px;
-      background:
-        radial-gradient(circle at 85% 15%, #e2eaff 0, transparent 32%),
-        linear-gradient(135deg, #ffffff, #f4f7ff);
-      overflow: hidden;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.25fr .75fr;
-      align-items: center;
-      gap: 65px;
-    }
-
-    .availability {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      color: #23764d;
-      background: #e9f8ef;
-      border-radius: 50px;
-      padding: 8px 14px;
-      font-size: .8rem;
-      font-weight: 700;
-      margin-bottom: 25px;
-    }
-
-    .availability::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #2cba71;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.6rem, 5vw, 4.4rem);
-      letter-spacing: -2px;
-      margin-bottom: 13px;
-    }
-
-    .hero h1 span {
-      color: var(--blue);
-    }
-
-    .hero-title {
-      font-size: 1.12rem;
-      font-weight: 700;
-      color: #53627b;
-      margin-bottom: 20px;
-    }
-
-    .hero-description {
-      max-width: 620px;
-      color: var(--muted);
-      font-size: 1.02rem;
-      margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 13px;
-      margin-bottom: 27px;
-    }
-
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 13px 21px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: .9rem;
-      transition: .25s;
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 10px; border: 0; border-radius: 12px; padding: 13px 21px;
+      font-weight: 700; transition: .25s ease;
     }
+    .btn-primary { color: white; background: var(--gradient); box-shadow: 0 10px 25px #6653dc35; }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 30px #6653dc50; }
+    .btn-outline { color: var(--navy); border: 1px solid #d9daf0; background: white; }
+    .btn-outline:hover { border-color: var(--blue); color: var(--blue); transform: translateY(-2px); }
+    .small-note { color: var(--muted); font-size: .83rem; }
 
-    .btn-primary {
-      background: var(--blue);
-      color: white;
-      box-shadow: 0 8px 20px rgba(49,87,213,.2);
+    /* Navigation */
+    .navbar {
+      position: sticky; top: 0; z-index: 1000; background: #ffffffed;
+      backdrop-filter: blur(16px); border-bottom: 1px solid #e9e9f3;
     }
-
-    .btn-primary:hover {
-      transform: translateY(-3px);
-      background: #2448bd;
+    .nav-inner {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 25px;
     }
-
-    .btn-outline {
-      border: 1px solid #cbd5e7;
-      color: var(--navy);
-      background: white;
-    }
-
-    .btn-outline:hover {
-      border-color: var(--blue);
-      color: var(--blue);
-    }
-
-    .social-links {
-      display: flex;
-      gap: 22px;
-      flex-wrap: wrap;
-      color: var(--blue);
-      font-size: .9rem;
-      font-weight: 700;
-    }
-
-    .social-links a:hover {
-      text-decoration: underline;
-    }
-
-    .photo-wrap {
-      position: relative;
-      width: min(100%, 350px);
-      justify-self: center;
-    }
-
-    .photo-frame {
-      background: linear-gradient(145deg, #dce6ff, #aebff0);
-      padding: 12px;
-      border-radius: 35px;
-      transform: rotate(2deg);
-      box-shadow: var(--shadow);
-    }
-
-    .profile-photo {
-      width: 100%;
-      aspect-ratio: 4 / 5;
-      object-fit: cover;
-      display: block;
-      border-radius: 27px;
-      background: #e9edf5;
-    }
-
-    .photo-note {
-      position: absolute;
-      bottom: 25px;
-      left: -28px;
-      background: white;
-      padding: 15px 19px;
-      border-radius: 13px;
-      box-shadow: var(--shadow);
-      font-size: .82rem;
-      font-weight: 700;
-    }
-
-    .photo-note span {
-      display: block;
-      color: var(--muted);
-      font-size: .72rem;
-      font-weight: 500;
-    }
-
-    /* QUICK FACTS */
-
-    .facts {
-      margin-top: -1px;
-      background: white;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .facts-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 30px 0;
-      gap: 20px;
-    }
-
-    .fact {
-      text-align: center;
-      padding: 10px;
-    }
-
-    .fact strong {
-      display: block;
-      color: var(--blue);
-      font-family: "Manrope", sans-serif;
-      font-size: 1.8rem;
-    }
-
-    .fact span {
-      color: var(--muted);
-      font-size: .82rem;
-    }
-
-    /* ABOUT */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      align-items: start;
-    }
-
-    .about-copy p {
-      color: var(--muted);
-      margin-bottom: 17px;
-    }
-
-    .about-highlight {
-      background: white;
-      border: 1px solid var(--border);
-      padding: 27px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .about-highlight h3 {
-      margin-bottom: 18px;
-    }
-
-    .highlight-list {
-      list-style: none;
-      display: grid;
-      gap: 14px;
-    }
-
-    .highlight-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: var(--muted);
-      font-size: .92rem;
-    }
-
-    .check {
-      color: var(--blue);
-      font-weight: 900;
-    }
-
-    /* SERVICES */
-
-    .services {
-      background: white;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .service-card {
-      padding: 28px;
-      background: var(--background);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      transition: .25s;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow);
-      border-color: #c9d5ff;
-    }
-
-    .service-icon {
-      width: 48px;
-      height: 48px;
-      display: grid;
-      place-items: center;
-      border-radius: 14px;
-      background: var(--light-blue);
+    .brand { font-weight: 800; font-size: 1.02rem; color: var(--navy); letter-spacing: -.5px; }
+    .brand span { color: var(--blue); }
+    .nav-links { display: flex; align-items: center; gap: 23px; list-style: none; }
+    .nav-links a { font-size: .86rem; color: #555a78; font-weight: 600; transition: .2s; }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-cta { padding: 10px 16px; font-size: .82rem; }
+    .menu-toggle {
+      display: none; border: 1px solid var(--line); background: white;
+      width: 43px; height: 43px; border-radius: 10px; color: var(--navy);
       font-size: 1.35rem;
-      margin-bottom: 20px;
     }
 
-    .service-card h3 {
-      font-size: 1.08rem;
-      margin-bottom: 10px;
+    /* Hero */
+    .hero {
+      min-height: 680px; display: flex; align-items: center; position: relative;
+      overflow: hidden; color: white;
+      background:
+        radial-gradient(circle at 82% 22%, #8b5cf64a, transparent 28%),
+        radial-gradient(circle at 10% 85%, #06b6d426, transparent 30%),
+        linear-gradient(125deg, #10142e, #191d45 60%, #252052);
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; border: 1px solid #ffffff12;
+      border-radius: 50%; pointer-events: none;
+    }
+    .hero::before { width: 550px; height: 550px; right: -130px; top: -180px; }
+    .hero::after { width: 390px; height: 390px; right: -50px; top: -100px; }
+    .hero-grid {
+      position: relative; z-index: 1; display: grid;
+      grid-template-columns: 1.2fr .8fr; gap: 65px; align-items: center;
+      padding-top: 80px; padding-bottom: 90px;
+    }
+    .hero-kicker {
+      display: inline-flex; align-items: center; gap: 9px; color: #d7d5ff;
+      background: #ffffff12; border: 1px solid #ffffff25;
+      padding: 8px 13px; border-radius: 30px; font-size: .78rem; margin-bottom: 25px;
+    }
+    .live-dot { width: 8px; height: 8px; border-radius: 50%; background: #56e6b0; box-shadow: 0 0 0 5px #56e6b01c; }
+    .hero h1 { font-size: clamp(2.7rem, 6vw, 5rem); line-height: 1.05; letter-spacing: -3px; margin-bottom: 20px; }
+    .hero h1 span {
+      background: linear-gradient(90deg, #a5a2ff, #f09ad5, #65d9e9);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero-role { color: #d8d9f3; font-weight: 700; letter-spacing: 1px; font-size: .9rem; margin-bottom: 18px; }
+    .hero-copy { max-width: 620px; color: #c4c8e1; font-size: 1.02rem; margin-bottom: 27px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 27px; }
+    .hero .btn-outline { color: white; background: #ffffff0d; border-color: #ffffff45; }
+    .hero .btn-outline:hover { background: #ffffff18; color: white; }
+    .hero-socials { display: flex; gap: 18px; color: #c8c9e5; font-size: .88rem; }
+    .hero-socials a:hover { color: white; }
+
+    .profile-wrap { display: flex; justify-content: center; perspective: 1200px; }
+    .profile-card {
+      width: min(350px, 100%); min-height: 445px; position: relative;
+      border-radius: 28px; padding: 13px; background: linear-gradient(145deg, #ffffff45, #ffffff0c);
+      border: 1px solid #ffffff4a; box-shadow: 0 25px 90px #05071970;
+      transform: rotate(2deg); transition: transform .5s;
+    }
+    .profile-card:hover { transform: rotate(0deg) translateY(-7px); }
+    .profile-photo {
+      width: 100%; height: 345px; object-fit: cover; object-position: center top;
+      border-radius: 19px; background: linear-gradient(145deg, #4f46e5, #ec4899);
+    }
+    .photo-placeholder {
+      height: 345px; border-radius: 19px; display: grid; place-items: center;
+      text-align: center; padding: 25px; color: white;
+      background: linear-gradient(145deg, #4f46e5, #8b5cf6 55%, #ec4899);
+    }
+    .photo-placeholder strong { display: block; font: 800 2.5rem Manrope; }
+    .photo-placeholder span { font-size: .85rem; opacity: .85; }
+    .profile-caption { padding: 17px 9px 8px; }
+    .profile-caption strong { display: block; font: 800 1.1rem Manrope; }
+    .profile-caption span { color: #d1d2ed; font-size: .83rem; }
+    .floating-label {
+      position: absolute; padding: 11px 14px; border-radius: 13px;
+      background: white; color: var(--navy); box-shadow: var(--shadow);
+      font-size: .78rem; font-weight: 800; animation: float 4s ease-in-out infinite;
+    }
+    .floating-one { left: -48px; top: 70px; }
+    .floating-two { right: -48px; bottom: 95px; animation-delay: 1s; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+
+    /* Audio introduction */
+    .audio-panel {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 15px;
+      max-width: 590px; padding: 15px 17px; border: 1px solid #ffffff2c;
+      background: #ffffff0c; border-radius: 17px;
+    }
+    .audio-icon {
+      width: 43px; height: 43px; border-radius: 13px; display: grid;
+      place-items: center; background: #8b5cf632; font-size: 1.2rem;
+    }
+    .audio-info { flex: 1; min-width: 130px; }
+    .audio-info strong { display: block; font-size: .88rem; }
+    .audio-info small { display: block; color: #b9bddb; font-size: .73rem; }
+    .audio-controls { display: flex; flex-wrap: wrap; gap: 7px; }
+    .audio-btn {
+      border: 1px solid #ffffff36; color: white; background: #ffffff10;
+      border-radius: 9px; padding: 8px 10px; font-size: .78rem; font-weight: 700;
+    }
+    .audio-btn:hover, .audio-btn.active { background: var(--blue); border-color: var(--blue); }
+    .audio-settings { display: flex; flex-wrap: wrap; gap: 12px; width: 100%; align-items: center; }
+    .audio-settings label { font-size: .72rem; color: #c7c9e4; }
+    .audio-settings select, .audio-settings input { accent-color: var(--violet); }
+    .audio-settings select {
+      color: white; background: #25294f; border: 1px solid #ffffff30;
+      border-radius: 7px; padding: 5px 7px; max-width: 180px;
     }
 
-    .service-card p {
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
-    /* SKILLS */
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 25px;
-    }
-
-    .skill-panel {
-      background: white;
-      padding: 28px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-
-    .skill-panel h3 {
-      margin-bottom: 20px;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .tag {
-      background: var(--light-blue);
-      color: #2949a9;
-      padding: 9px 13px;
-      border-radius: 8px;
-      font-size: .82rem;
-      font-weight: 700;
-    }
-
-    /* MOVING TOOLS SHOWCASE */
-
-    .tools-section {
-      background: var(--navy);
-      padding: 65px 0;
-      overflow: hidden;
-    }
-
-    .tools-section h2 {
-      color: white;
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    .tools-section > .container > p {
-      text-align: center;
-      color: #b9c5da;
-      margin-bottom: 35px;
-    }
-
-    .marquee {
-      display: flex;
-      overflow: hidden;
-      user-select: none;
-      gap: 18px;
-      margin: 13px 0;
-    }
-
-    .marquee-track {
-      display: flex;
-      flex-shrink: 0;
-      gap: 18px;
-      min-width: 100%;
-      animation: scroll 30s linear infinite;
-    }
-
-    .marquee.reverse .marquee-track {
-      animation-direction: reverse;
-      animation-duration: 36s;
-    }
-
-    .marquee:hover .marquee-track {
-      animation-play-state: paused;
-    }
-
-    .tool {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      white-space: nowrap;
-      color: white;
-      background: rgba(255,255,255,.09);
-      border: 1px solid rgba(255,255,255,.13);
-      border-radius: 12px;
-      padding: 14px 19px;
-      font-weight: 700;
-    }
-
-    .tool span {
-      font-size: 1.2rem;
-    }
-
-    @keyframes scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-100%); }
-    }
-
-    /* SELECTED WORK */
-
-    .work {
-      background: white;
-    }
-
-    .work-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-
-    .work-card {
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px;
-      background: var(--background);
-    }
-
-    .work-label {
-      color: var(--blue);
-      font-size: .76rem;
-      text-transform: uppercase;
-      letter-spacing: 1.4px;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    .work-card h3 {
-      margin-bottom: 12px;
-    }
-
-    .work-card p {
-      color: var(--muted);
-      font-size: .92rem;
-      margin-bottom: 17px;
-    }
-
-    .work-card ul {
-      padding-left: 19px;
-      color: var(--muted);
-      font-size: .88rem;
-    }
-
-    /* EXPERIENCE */
-
-    .timeline {
-      max-width: 820px;
-      border-left: 2px solid #d8e1fa;
-      margin-left: 8px;
-      padding-left: 28px;
-      display: grid;
-      gap: 30px;
-    }
-
-    .timeline-item {
-      position: relative;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      width: 13px;
-      height: 13px;
-      border-radius: 50%;
-      background: var(--blue);
-      left: -36px;
-      top: 7px;
-      box-shadow: 0 0 0 5px #e7edff;
-    }
-
-    .timeline-item h3 {
-      font-size: 1.08rem;
-      margin-bottom: 5px;
-    }
-
-    .timeline-meta {
-      color: var(--blue);
-      font-size: .83rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .timeline-item p,
-    .timeline-item li {
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
-    .timeline-item ul {
-      padding-left: 19px;
-    }
-
-    /* CERTIFICATES */
-
-    .certificates {
-      background: white;
-    }
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .cert-card {
-      border: 1px solid var(--border);
-      background: var(--background);
-      padding: 23px;
-      border-radius: 15px;
-    }
-
-    .cert-card .cert-icon {
-      font-size: 1.7rem;
-      margin-bottom: 13px;
-    }
-
-    .cert-card h3 {
-      font-size: .98rem;
-      margin-bottom: 8px;
-    }
-
-    .cert-card p {
-      color: var(--muted);
-      font-size: .83rem;
-    }
-
-    .cert-link {
-      display: inline-block;
-      margin-top: 12px;
-      color: var(--blue);
-      font-size: .83rem;
-      font-weight: 700;
-    }
-
-    /* EDUCATION */
-
-    .education-card {
-      background: white;
-      padding: 30px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      max-width: 720px;
-    }
-
-    .education-card h3 {
-      margin-bottom: 8px;
-    }
-
-    .education-card p {
-      color: var(--muted);
-    }
-
-    /* CONTACT */
-
-    .contact {
-      background: var(--navy);
-      color: white;
-    }
-
-    .contact h2 {
-      color: white;
-      font-size: clamp(2rem, 4vw, 2.8rem);
-      margin-bottom: 15px;
-    }
-
-    .contact .section-heading p {
-      color: #c1cce0;
-    }
-
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 35px;
-      align-items: start;
-    }
-
-    .contact-details {
-      display: grid;
-      gap: 17px;
-    }
-
-    .contact-item {
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.12);
-      border-radius: 12px;
-      padding: 17px;
-    }
-
-    .contact-item small {
-      display: block;
-      color: #b9c5da;
-      margin-bottom: 5px;
-    }
-
-    .contact-item a,
-    .contact-item strong {
-      color: white;
-      overflow-wrap: anywhere;
-    }
-
-    .contact-message {
-      color: #c1cce0;
-      margin-bottom: 22px;
-    }
-
-    .contact .btn-outline {
-      background: transparent;
-      color: white;
-      border-color: rgba(255,255,255,.4);
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #0b1528;
-      color: #aab6ca;
-      text-align: center;
+    /* Highlights */
+    .highlights { margin-top: -35px; position: relative; z-index: 3; }
+    .highlight-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); background: white;
+      border: 1px solid var(--line); border-radius: 19px; box-shadow: var(--shadow);
       padding: 25px 15px;
-      font-size: .83rem;
+    }
+    .highlight { text-align: center; padding: 8px 12px; border-right: 1px solid var(--line); }
+    .highlight:last-child { border: 0; }
+    .highlight strong { display: block; font: 800 1.8rem Manrope; color: var(--blue); }
+    .highlight span { font-size: .78rem; color: var(--muted); }
+
+    /* About */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: start; }
+    .about-copy p { color: var(--muted); margin-bottom: 16px; }
+    .about-note {
+      padding: 24px; background: white; border: 1px solid var(--line);
+      border-radius: 18px; box-shadow: var(--shadow);
+    }
+    .about-note h3 { margin-bottom: 10px; }
+    .about-note p { color: var(--muted); font-size: .92rem; }
+    .value-list { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 23px; }
+    .value-item { display: flex; align-items: center; gap: 9px; font-size: .87rem; font-weight: 700; }
+    .check { color: var(--blue); font-weight: 900; }
+
+    /* Services */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 19px; }
+    .service-card {
+      background: white; border: 1px solid var(--line); border-radius: 18px;
+      padding: 25px; transition: .3s; height: 100%;
+    }
+    .service-card:hover { transform: translateY(-7px); border-color: #c8c3ff; box-shadow: var(--shadow); }
+    .service-icon {
+      width: 48px; height: 48px; display: grid; place-items: center;
+      border-radius: 14px; color: white; background: var(--gradient);
+      font-size: 1.2rem; margin-bottom: 18px;
+    }
+    .service-card h3 { font-size: 1.05rem; margin-bottom: 9px; }
+    .service-card p { color: var(--muted); font-size: .87rem; margin-bottom: 13px; }
+    .service-card ul { list-style: none; color: #5e6380; font-size: .82rem; }
+    .service-card li { margin-top: 5px; }
+    .service-card li::before { content: "✓"; color: var(--blue); margin-right: 8px; font-weight: 800; }
+
+    /* Skills */
+    .skills-area { background: white; }
+    .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .skill-card {
+      border: 1px solid var(--line); border-radius: 17px; padding: 23px;
+      background: linear-gradient(145deg, #fff, #fafaff);
+    }
+    .skill-card h3 { font-size: 1rem; margin-bottom: 15px; }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill-tag {
+      background: #f0efff; color: #5147a8; border: 1px solid #e6e3ff;
+      padding: 7px 10px; border-radius: 8px; font-size: .76rem; font-weight: 600;
     }
 
-    footer a {
-      color: white;
+    /* Tools */
+    .tools-section {
+      background: linear-gradient(130deg, #11152f, #1c2050 65%, #30215b);
+      color: white; overflow: hidden;
+    }
+    .tools-section .section-heading p { color: #c2c6e1; }
+    .tools-section .eyebrow { color: #aaa4ff; }
+    .tools-filter { display: flex; flex-wrap: wrap; gap: 9px; margin-bottom: 25px; }
+    .filter-btn {
+      color: #d5d7ef; background: #ffffff0b; border: 1px solid #ffffff26;
+      border-radius: 30px; padding: 8px 14px; font-size: .78rem; font-weight: 700;
+    }
+    .filter-btn.active, .filter-btn:hover { color: white; background: var(--blue); border-color: var(--blue); }
+    .tools-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 13px; }
+    .tool-card {
+      min-height: 112px; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; gap: 9px; border-radius: 15px; padding: 15px 9px;
+      background: #ffffff0d; border: 1px solid #ffffff1a; transition: .25s;
+      text-align: center;
+    }
+    .tool-card:hover { transform: translateY(-6px); background: #ffffff18; border-color: #9d91ff; }
+    .tool-logo {
+      width: 35px; height: 35px; display: grid; place-items: center;
+      border-radius: 10px; background: white; color: var(--navy);
+      font: 800 .75rem Manrope; overflow: hidden;
+    }
+    .tool-logo img { width: 23px; height: 23px; object-fit: contain; }
+    .tool-card span:last-child { color: #e3e4f5; font-size: .76rem; font-weight: 600; }
+    .tool-footnote { color: #aeb3d2; font-size: .78rem; margin-top: 18px; }
+
+    .marquee-wrap { overflow: hidden; margin-top: 45px; padding: 15px 0; border-top: 1px solid #ffffff19; border-bottom: 1px solid #ffffff19; }
+    .marquee { display: flex; width: max-content; gap: 35px; animation: marquee 35s linear infinite; }
+    .marquee span { color: #d6d7f0; font-weight: 700; white-space: nowrap; font-size: .86rem; }
+    .marquee span::before { content: "✦"; color: #a69aff; margin-right: 12px; }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    /* Projects */
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .project-card {
+      overflow: hidden; background: white; border: 1px solid var(--line);
+      border-radius: 18px; transition: .3s;
+    }
+    .project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .project-visual {
+      min-height: 165px; display: grid; place-items: center; color: white;
+      font: 800 2.3rem Manrope; background: linear-gradient(135deg, #4f46e5, #8b5cf6);
+    }
+    .project-card:nth-child(2) .project-visual { background: linear-gradient(135deg, #06b6d4, #4f46e5); }
+    .project-card:nth-child(3) .project-visual { background: linear-gradient(135deg, #ec4899, #8b5cf6); }
+    .project-content { padding: 21px; }
+    .project-content h3 { font-size: 1.03rem; margin: 7px 0; }
+    .project-content p { color: var(--muted); font-size: .85rem; }
+    .project-type { color: var(--blue); font-size: .7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; }
+    .project-disclaimer { color: var(--muted); font-size: .78rem; margin-top: 18px; }
+
+    /* Experience */
+    .experience-section { background: white; }
+    .timeline { max-width: 850px; border-left: 2px solid #e1defe; margin-left: 9px; padding-left: 30px; }
+    .timeline-item { position: relative; padding-bottom: 35px; }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-item::before {
+      content: ""; position: absolute; left: -38px; top: 7px; width: 14px;
+      height: 14px; border-radius: 50%; background: var(--blue);
+      border: 4px solid #eeedff; box-shadow: 0 0 0 2px #b8b2ff;
+    }
+    .timeline-date { color: var(--blue); font-size: .77rem; font-weight: 800; letter-spacing: .6px; }
+    .timeline-item h3 { font-size: 1.1rem; margin: 5px 0 2px; }
+    .timeline-company { color: var(--muted); font-size: .87rem; margin-bottom: 10px; }
+    .timeline-item ul { padding-left: 19px; color: #666b86; font-size: .87rem; }
+    .timeline-item li { margin-bottom: 5px; }
+
+    /* Education and credentials */
+    .credentials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+    .credential-panel { background: white; border: 1px solid var(--line); border-radius: 18px; padding: 25px; }
+    .credential-panel h3 { margin-bottom: 17px; }
+    .education-item { padding: 16px 0; border-top: 1px solid var(--line); }
+    .education-item:first-of-type { border-top: 0; padding-top: 0; }
+    .education-item strong { display: block; }
+    .education-item span { color: var(--muted); font-size: .84rem; }
+    .certificate-list { display: grid; gap: 10px; }
+    .certificate {
+      display: flex; justify-content: space-between; align-items: center; gap: 10px;
+      border: 1px solid var(--line); padding: 12px 13px; border-radius: 11px;
+    }
+    .certificate span { font-size: .84rem; font-weight: 600; }
+    .certificate a { color: var(--blue); font-size: .78rem; font-weight: 800; white-space: nowrap; }
+    .certificate a:hover { text-decoration: underline; }
+
+    /* Interests */
+    .interests { display: flex; flex-wrap: wrap; gap: 10px; }
+    .interest {
+      border: 1px solid #e1defe; color: #5147a8; background: white;
+      padding: 10px 14px; border-radius: 30px; font-size: .82rem; font-weight: 600;
     }
 
-    /* RESPONSIVE */
+    /* Contact */
+    .contact-section {
+      color: white; background:
+        radial-gradient(circle at 90% 10%, #8b5cf64a, transparent 30%),
+        linear-gradient(125deg, #11152f, #252052);
+    }
+    .contact-section .section-heading p { color: #c3c6e1; }
+    .contact-section .eyebrow { color: #b6afff; }
+    .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 35px; }
+    .contact-details { display: grid; gap: 13px; align-content: start; }
+    .contact-item {
+      display: flex; gap: 13px; align-items: center; padding: 15px;
+      border-radius: 13px; background: #ffffff0c; border: 1px solid #ffffff1c;
+    }
+    .contact-item .contact-icon {
+      width: 40px; height: 40px; display: grid; place-items: center;
+      border-radius: 11px; background: #8b5cf638;
+    }
+    .contact-item small { display: block; color: #b9bdd9; }
+    .contact-item strong { font-size: .87rem; overflow-wrap: anywhere; }
+    .contact-form {
+      background: white; color: var(--ink); border-radius: 18px; padding: 27px;
+    }
+    .contact-form h3 { margin-bottom: 17px; }
+    .form-group { margin-bottom: 13px; }
+    .form-group label { display: block; font-size: .78rem; font-weight: 700; margin-bottom: 6px; }
+    .form-group input, .form-group textarea {
+      width: 100%; border: 1px solid #e1e2ef; border-radius: 9px;
+      padding: 12px; font: inherit; font-size: .88rem; outline: none;
+    }
+    .form-group input:focus, .form-group textarea:focus { border-color: var(--blue); box-shadow: 0 0 0 3px #4f46e51a; }
+    .form-group textarea { min-height: 115px; resize: vertical; }
+    .contact-form .btn { width: 100%; }
+    .form-help { color: var(--muted); font-size: .74rem; margin-top: 9px; }
 
-    @media (max-width: 850px) {
+    footer { background: #0b0e23; color: #aeb2ce; padding: 25px 0; font-size: .8rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+    .footer-inner a { color: white; }
+    .back-top {
+      position: fixed; right: 22px; bottom: 22px; z-index: 90;
+      width: 44px; height: 44px; border-radius: 50%; border: 0;
+      color: white; background: var(--gradient); box-shadow: var(--shadow);
+      opacity: 0; pointer-events: none; transition: .25s;
+    }
+    .back-top.show { opacity: 1; pointer-events: auto; }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 950px) {
+      .nav-links { gap: 13px; }
+      .nav-links a { font-size: .78rem; }
+      .hero-grid { gap: 35px; }
+      .tools-grid { grid-template-columns: repeat(4, 1fr); }
+      .services-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+      .skill-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .section { padding: 75px 0; }
+      .menu-toggle { display: block; }
       .nav-links {
-        gap: 14px;
+        display: none; position: absolute; top: 76px; left: 0; right: 0;
+        background: white; padding: 18px 5%; border-bottom: 1px solid var(--line);
+        box-shadow: var(--shadow); flex-direction: column; align-items: stretch; gap: 0;
       }
-
-      .nav-links a {
-        font-size: .78rem;
-      }
-
-      .hero-grid {
-        gap: 30px;
-      }
-
-      .service-grid,
-      .cert-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .nav-links.open { display: flex; }
+      .nav-links li a { display: block; padding: 11px 0; font-size: .9rem; }
+      .nav-cta { display: none; }
+      .hero-grid { grid-template-columns: 1fr; padding-top: 65px; text-align: center; }
+      .hero-copy { margin-left: auto; margin-right: auto; }
+      .hero-actions, .hero-socials { justify-content: center; }
+      .audio-panel { margin: auto; text-align: left; }
+      .profile-wrap { margin-top: 10px; }
+      .profile-card { max-width: 310px; }
+      .floating-one { left: -20px; }
+      .floating-two { right: -20px; }
+      .highlight-grid { grid-template-columns: repeat(2, 1fr); gap: 14px 0; }
+      .highlight:nth-child(2) { border-right: 0; }
+      .about-grid, .contact-grid, .credentials-grid { grid-template-columns: 1fr; }
+      .services-grid, .projects-grid { grid-template-columns: 1fr 1fr; }
+      .tools-grid { grid-template-columns: repeat(3, 1fr); }
     }
-
-    @media (max-width: 700px) {
-      .section {
-        padding: 68px 0;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .nav-links {
-        display: none;
-        position: absolute;
-        top: 76px;
-        left: 0;
-        width: 100%;
-        padding: 20px 5%;
-        background: white;
-        border-bottom: 1px solid var(--border);
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .nav-links.open {
-        display: flex;
-      }
-
-      .hero {
-        padding: 65px 0;
-      }
-
-      .hero-grid,
-      .about-grid,
-      .skills-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-copy {
-        order: 1;
-      }
-
-      .photo-wrap {
-        order: 0;
-        width: min(75%, 290px);
-        margin-bottom: 15px;
-      }
-
-      .hero h1 {
-        font-size: 2.65rem;
-      }
-
-      .photo-note {
-        left: -12px;
-      }
-
-      .facts-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .service-grid,
-      .work-grid,
-      .cert-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section-heading {
-        margin-bottom: 30px;
-      }
+    @media (max-width: 520px) {
+      .hero h1 { letter-spacing: -1.8px; }
+      .hero-actions .btn { width: 100%; }
+      .audio-controls { width: 100%; }
+      .audio-btn { flex: 1; }
+      .services-grid, .projects-grid, .skill-grid { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+      .value-list { grid-template-columns: 1fr; }
+      .highlight strong { font-size: 1.5rem; }
+      .highlight span { font-size: .72rem; }
+      .profile-photo, .photo-placeholder { height: 300px; }
+      .profile-card { min-height: 395px; }
+      .footer-inner { flex-direction: column; }
     }
-
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
       *, *::before, *::after {
-        animation-duration: .01ms !important;
-        transition-duration: .01ms !important;
+        scroll-behavior: auto !important; animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important; transition-duration: .01ms !important;
       }
     }
-    
-/* =================================
-   PREMIUM COLOUR THEME
-   ================================= */
-
-:root {
-  --navy: #11152f;
-  --blue: #4f46e5;
-  --light-blue: #eef0ff;
-  --text: #252747;
-  --muted: #737894;
-  --white: #ffffff;
-  --background: #f7f7ff;
-  --border: #e5e4f5;
-
-  --purple: #8b5cf6;
-  --violet: #a855f7;
-  --pink: #ec4899;
-  --cyan: #06b6d4;
-  --gold: #f5b942;
-
-  --radius: 20px;
-  --shadow: 0 15px 45px rgba(79, 70, 229, .10);
-}
-
-/* GENERAL BACKGROUND */
-
-body {
-  background: #f8f8ff;
-  color: var(--text);
-}
-
-/* NAVIGATION */
-
-.navbar {
-  background: rgba(255,255,255,.92);
-  border-bottom: 1px solid #e8e5ff;
-  box-shadow: 0 4px 25px rgba(35, 30, 100, .04);
-}
-
-.logo span {
-  color: var(--purple);
-}
-
-.nav-links a:hover {
-  color: var(--purple);
-}
-
-.nav-cta {
-  background: linear-gradient(135deg, #4f46e5, #9333ea);
-  box-shadow: 0 6px 18px rgba(79,70,229,.22);
-}
-
-/* HERO SECTION */
-
-.hero {
-  background:
-    radial-gradient(circle at 85% 15%, rgba(168,85,247,.20), transparent 30%),
-    radial-gradient(circle at 10% 90%, rgba(6,182,212,.12), transparent 28%),
-    linear-gradient(135deg, #ffffff 0%, #f1efff 50%, #edf6ff 100%);
-}
-
-.hero h1 span {
-  background: linear-gradient(90deg, #4f46e5, #9333ea, #ec4899);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.availability {
-  color: #147a53;
-  background: #e5f9ee;
-  border: 1px solid #c7f0d9;
-}
-
-/* BUTTONS */
-
-.btn-primary {
-  background: linear-gradient(135deg, #4f46e5, #9333ea);
-  box-shadow: 0 9px 25px rgba(79,70,229,.25);
-}
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #3730a3, #7e22ce);
-  box-shadow: 0 12px 30px rgba(147,51,234,.30);
-}
-
-.btn-outline:hover {
-  color: #7c3aed;
-  border-color: #8b5cf6;
-  background: #f5f0ff;
-}
-
-/* PROFILE PHOTO */
-
-.photo-frame {
-  background: linear-gradient(145deg, #4f46e5, #a855f7, #ec4899);
-  box-shadow: 0 25px 60px rgba(79,70,229,.22);
-}
-
-.photo-note {
-  border-left: 4px solid #8b5cf6;
-}
-
-/* PROFESSIONAL HIGHLIGHTS */
-
-.facts {
-  background: linear-gradient(100deg, #ffffff, #f5f2ff, #f0f8ff);
-}
-
-.fact strong {
-  background: linear-gradient(90deg, #4f46e5, #a855f7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* SECTION HEADINGS */
-
-.eyebrow {
-  color: #7c3aed;
-}
-
-.section-heading h2 {
-  background: linear-gradient(90deg, #171b3d, #4f46e5);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* ABOUT SECTION */
-
-.about-highlight {
-  background: linear-gradient(145deg, #ffffff, #f6f3ff);
-  border: 1px solid #e7dcff;
-  box-shadow: 0 15px 40px rgba(139,92,246,.08);
-}
-
-.check {
-  color: #8b5cf6;
-}
-
-/* SERVICE CARDS */
-
-.services {
-  background: linear-gradient(180deg, #ffffff, #f6f5ff);
-}
-
-.service-card {
-  background: linear-gradient(145deg, #ffffff, #f7f5ff);
-  border: 1px solid #e9e2ff;
-  box-shadow: 0 8px 25px rgba(79,70,229,.035);
-}
-
-.service-card:hover {
-  border-color: #a78bfa;
-  box-shadow: 0 18px 40px rgba(139,92,246,.13);
-}
-
-.service-icon {
-  background: linear-gradient(135deg, #e9e7ff, #fce7f3);
-  color: #6d28d9;
-}
-
-/* SKILLS */
-
-.skill-panel {
-  background: linear-gradient(145deg, #ffffff, #f8f6ff);
-  border-color: #e6e1ff;
-  box-shadow: 0 10px 30px rgba(79,70,229,.045);
-}
-
-.tag {
-  background: linear-gradient(135deg, #ecebff, #f5eaff);
-  color: #5935b5;
-  border: 1px solid #e1d7ff;
-  transition: .25s;
-}
-
-.tag:hover {
-  background: linear-gradient(135deg, #4f46e5, #9333ea);
-  color: white;
-  transform: translateY(-3px);
-}
-
-/* ANIMATED TOOLS */
-
-.tools-section {
-  background:
-    radial-gradient(circle at 15% 20%, rgba(139,92,246,.35), transparent 30%),
-    radial-gradient(circle at 85% 80%, rgba(6,182,212,.22), transparent 30%),
-    linear-gradient(120deg, #10152f, #25205b, #35145d);
-}
-
-.tool {
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(255,255,255,.18);
-  backdrop-filter: blur(10px);
-  transition: .25s;
-}
-
-.tool:hover {
-  background: linear-gradient(135deg, #4f46e5, #9333ea);
-  border-color: #c4b5fd;
-  transform: translateY(-4px);
-}
-
-/* WORK CARDS */
-
-.work {
-  background: linear-gradient(180deg, #ffffff, #f7f6ff);
-}
-
-.work-card {
-  background: linear-gradient(145deg, #ffffff, #f7f5ff);
-  border-color: #e8e2ff;
-  box-shadow: 0 10px 30px rgba(79,70,229,.04);
-  transition: .25s;
-}
-
-.work-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 38px rgba(79,70,229,.12);
-}
-
-.work-label {
-  color: #9333ea;
-}
-
-/* EXPERIENCE TIMELINE */
-
-.timeline {
-  border-left-color: #c4b5fd;
-}
-
-.timeline-item::before {
-  background: linear-gradient(135deg, #4f46e5, #ec4899);
-  box-shadow: 0 0 0 5px #f0eaff;
-}
-
-.timeline-meta {
-  color: #7c3aed;
-}
-
-/* CERTIFICATES */
-
-.certificates {
-  background: linear-gradient(135deg, #f4f2ff, #ffffff, #f0f8ff);
-}
-
-.cert-card {
-  background: linear-gradient(145deg, #ffffff, #f7f4ff);
-  border-color: #e4dcff;
-  box-shadow: 0 8px 24px rgba(79,70,229,.05);
-  transition: .25s;
-}
-
-.cert-card:hover {
-  transform: translateY(-5px);
-  border-color: #a78bfa;
-  box-shadow: 0 16px 35px rgba(139,92,246,.12);
-}
-
-.cert-link {
-  color: #7c3aed;
-}
-
-/* EDUCATION */
-
-.education-card {
-  background: linear-gradient(135deg, #ffffff, #f3f0ff);
-  border-color: #e2d9ff;
-  box-shadow: var(--shadow);
-}
-
-/* CONTACT */
-
-.contact {
-  background:
-    radial-gradient(circle at 85% 10%, rgba(168,85,247,.30), transparent 30%),
-    linear-gradient(120deg, #11152f, #28205d, #321452);
-}
-
-.contact-item {
-  background: rgba(255,255,255,.08);
-  border-color: rgba(255,255,255,.16);
-  transition: .25s;
-}
-
-.contact-item:hover {
-  background: rgba(255,255,255,.14);
-  border-color: #a78bfa;
-}
-
-.contact .btn-primary {
-  background: linear-gradient(135deg, #7c3aed, #db2777);
-}
-
-/* FOOTER */
-
-footer {
-  background: #090d20;
-  border-top: 1px solid rgba(255,255,255,.08);
-}
-
-/* SMALL DECORATIVE FINISH */
-
-::selection {
-  background: #c4b5fd;
-  color: #171b3d;
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 3px solid #a78bfa;
-  outline-offset: 4px;
-}
-
   </style>
 </head>
 
 <body>
-
   <!-- NAVIGATION -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <a href="#home" class="logo">TAIWO<span>.</span></a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-        ☰
-      </button>
-
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">MOSES <span>TAIWO.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#tools">Tools</a></li>
-        <li><a href="#work">Portfolio</a></li>
-        <li><a href="#certifications">Certificates</a></li>
-        <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <a class="btn btn-primary nav-cta" href="#contact">Let's work together ↗</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-kicker"><span class="live-dot"></span> Available for remote opportunities</div>
+        <p class="hero-role">EXECUTIVE VIRTUAL ASSISTANT | EXECUTIVE PERSONAL ASSISTANT</p>
+        <h1>Thoughtful support.<br><span>Better business days.</span></h1>
+        <p class="hero-copy">
+          Hello, I'm <strong>Taiwo Moses Ayodele</strong>. I help business leaders stay organised,
+          communicate effectively and keep important work moving through reliable executive
+          assistance, administrative coordination and operational support.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Hire me <span>↗</span></a>
+          <a class="btn btn-outline" href="assets/moses-taiwo-cv.pdf" download>Download my CV ↓</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="mailto:haywhymoses89@gmail.com">Email ↗</a>
+          <a href="#projects">View my work ↓</a>
+        </div>
+
+        <!-- TEXT-TO-SPEECH AUDIO INTRODUCTION -->
+        <div class="audio-panel" aria-label="Listen to my introduction">
+          <div class="audio-icon">🔊</div>
+          <div class="audio-info">
+            <strong>Listen to my introduction</strong>
+            <small id="audioStatus" aria-live="polite">Hear a short introduction about me.</small>
+          </div>
+          <div class="audio-controls">
+            <button class="audio-btn" id="speakBtn" type="button">▶ Listen</button>
+            <button class="audio-btn" id="pauseBtn" type="button">Ⅱ Pause</button>
+            <button class="audio-btn" id="stopBtn" type="button">■ Stop</button>
+          </div>
+          <div class="audio-settings">
+            <label for="voiceSelect">Voice</label>
+            <select id="voiceSelect" aria-label="Choose narration voice">
+              <option value="">Default voice</option>
+            </select>
+            <label for="speechRate">Speed</label>
+            <input id="speechRate" type="range" min="0.75" max="1.2" step="0.05" value="1">
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-wrap">
+        <div class="profile-card">
+          <!-- Upload your photograph as assets/profile.jpg -->
+          <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Taiwo Moses Ayodele"
+               onerror="this.style.display='none';document.getElementById('photoFallback').style.display='grid';">
+          <div class="photo-placeholder" id="photoFallback" style="display:none;">
+            <div><strong>TMA</strong><span>Your professional photograph goes here</span></div>
+          </div>
+          <div class="profile-caption">
+            <strong>Taiwo Moses Ayodele</strong>
+            <span>Executive Virtual Assistant · Lagos, Nigeria</span>
+          </div>
+          <div class="floating-label floating-one">✦ Executive Support</div>
+          <div class="floating-label floating-two">✓ Organised & Reliable</div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
+  <!-- PROFESSIONAL HIGHLIGHTS -->
+  <div class="container highlights">
+    <div class="highlight-grid">
+      <div class="highlight"><strong>25+</strong><span>Team members supervised</span></div>
+      <div class="highlight"><strong>11%</strong><span>Annual sales growth contribution</span></div>
+      <div class="highlight"><strong>70%</strong><span>Reduction in monthly losses</span></div>
+      <div class="highlight"><strong>99%</strong><span>Typing test accuracy</span></div>
+    </div>
+  </div>
 
-        <div class="hero-copy">
-          <div class="availability">Available for remote opportunities</div>
-
-          <h1>Hello, I'm<br><span>Taiwo Moses</span></h1>
-
-          <p class="hero-title">
-            Executive Virtual Assistant | Executive & Administrative Support
-          </p>
-
-          <p class="hero-description">
-            I help CEOs, founders and busy professionals stay organised,
-            manage priorities and keep their daily operations moving through
-            dependable executive assistance, clear communication and
-            structured digital workflows.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="assets/moses-taiwo-cv.pdf" class="btn btn-primary" download>
-              Download My CV ↓
-            </a>
-            <a href="#contact" class="btn btn-outline">
-              Let's Work Together
-            </a>
-          </div>
-
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <a href="https://taiwomosesayodele.github.io/Taiwo-Moses-Ayodele/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
-            <a href="mailto:haywhymoses89@gmail.com">Email Me ↗</a>
-          </div>
-        </div>
-
-        <div class="photo-wrap">
-          <div class="photo-frame">
-            <img
-              src="assets/profile.jpg"
-              alt="Professional portrait of Taiwo Moses Ayodele"
-              class="profile-photo"
-              onerror="this.style.display='none'; this.parentElement.style.minHeight='380px'; this.parentElement.style.display='grid'; this.parentElement.style.placeItems='center'; this.parentElement.innerHTML='<div style=&quot;text-align:center;color:#3157d5;padding:30px&quot;><div style=&quot;font-size:5rem&quot;>TM</div><strong>Add your professional photo</strong><p style=&quot;color:#53627b;font-size:.85rem&quot;>Save it as assets/profile.jpg</p></div>';"
-            >
-          </div>
-          <div class="photo-note">
-            Executive & Administrative Support
-            <span>Organised. Reliable. Professional.</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL HIGHLIGHTS -->
-    <section class="facts">
-      <div class="container facts-grid">
-        <div class="fact">
-          <strong>25+</strong>
-          <span>Team members supervised</span>
-        </div>
-        <div class="fact">
-          <strong>11%</strong>
-          <span>Annual sales growth contribution</span>
-        </div>
-        <div class="fact">
-          <strong>70%</strong>
-          <span>Reduction in monthly losses contributed to</span>
-        </div>
-        <div class="fact">
-          <strong>99%</strong>
-          <span>Typing test accuracy</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
         <div class="section-heading">
-          <div class="eyebrow">Get to know me</div>
-          <h2>About Me</h2>
-          <p>Professional support that brings structure, clarity and consistency to everyday business.</p>
+          <span class="eyebrow">A little about me</span>
+          <h2>Making busy workdays <span class="gradient-text">more manageable.</span></h2>
         </div>
-
-        <div class="about-grid">
-          <div class="about-copy">
-            <p>
-              I am an Executive Virtual Assistant with experience supporting
-              business leadership, coordinating administrative responsibilities
-              and helping teams maintain organised workflows. My background
-              combines direct executive support with practical experience in
-              operations, team supervision and customer service.
-            </p>
-
-            <p>
-              At Harvest Value Chain, I worked in a hybrid capacity with the
-              CEO, providing remote administrative support while also
-              contributing to farm operations. My responsibilities included
-              executive correspondence, email management, scheduling,
-              document preparation, online research, reporting, task tracking
-              and follow-ups.
-            </p>
-
-            <p>
-              I enjoy bringing order to busy schedules, keeping important
-              information accessible, following through on pending tasks and
-              communicating professionally. I use digital tools to work
-              efficiently and continue to strengthen my knowledge of modern
-              workplace technology.
-            </p>
-
-            <p>
-              My goal is simple: to become a dependable support partner who
-              gives business leaders more time to focus on decisions,
-              relationships and growth.
-            </p>
-          </div>
-
-          <div class="about-highlight">
-            <h3>What I bring to your team</h3>
-            <ul class="highlight-list">
-              <li><span class="check">✓</span> Organised executive and administrative support</li>
-              <li><span class="check">✓</span> Clear, professional written communication</li>
-              <li><span class="check">✓</span> Calendar, inbox and task coordination</li>
-              <li><span class="check">✓</span> Document preparation and digital recordkeeping</li>
-              <li><span class="check">✓</span> Online research and information management</li>
-              <li><span class="check">✓</span> Follow-through, accountability and discretion</li>
-            </ul>
-          </div>
+        <p>
+          I am an organised and proactive Executive Virtual Assistant and Personal Assistant
+          with practical experience supporting leadership, managing administrative workflows
+          and coordinating business operations.
+        </p>
+        <p>
+          My experience includes executive correspondence, email and calendar management,
+          document preparation, online research, reporting, task tracking and follow-ups.
+          I understand the importance of discretion, clear communication, accuracy and
+          keeping commitments on track.
+        </p>
+        <p>
+          I also bring hands-on operations and team coordination experience. This allows me
+          to look beyond individual tasks, understand how work connects and provide support
+          that helps people and businesses operate more effectively.
+        </p>
+        <div class="value-list">
+          <div class="value-item"><span class="check">✓</span> Clear communication</div>
+          <div class="value-item"><span class="check">✓</span> Strong organisation</div>
+          <div class="value-item"><span class="check">✓</span> Attention to detail</div>
+          <div class="value-item"><span class="check">✓</span> Confidentiality</div>
+          <div class="value-item"><span class="check">✓</span> Reliable follow-through</div>
+          <div class="value-item"><span class="check">✓</span> Adaptability</div>
         </div>
       </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">How I can help</div>
-          <h2>My Services</h2>
-          <p>Practical support designed to make everyday work easier and more organised.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-icon">📅</div>
-            <h3>Executive Assistance</h3>
-            <p>Calendar coordination, appointment scheduling, meeting preparation, reminders and follow-ups.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">✉️</div>
-            <h3>Email & Inbox Management</h3>
-            <p>Professional correspondence, inbox organisation, message prioritisation and response support.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">📄</div>
-            <h3>Document Management</h3>
-            <p>Document preparation, formatting, digital filing, recordkeeping and administrative documentation.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🔎</div>
-            <h3>Online Research</h3>
-            <p>Information gathering, internet research, data organisation and concise research summaries.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">📊</div>
-            <h3>Administrative & Operations Support</h3>
-            <p>Task tracking, reporting, workflow coordination and support for day-to-day business activities.</p>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon">🤝</div>
-            <h3>Customer & Stakeholder Support</h3>
-            <p>Professional communication, enquiry handling, relationship support and issue follow-through.</p>
-          </article>
-        </div>
+      <div class="about-note reveal">
+        <span class="eyebrow">My approach</span>
+        <h3>Support that creates room to focus.</h3>
+        <p>
+          Good assistance is not simply about completing a list of tasks. It is about
+          understanding priorities, anticipating what needs attention, communicating
+          clearly and making sure details do not get lost.
+        </p>
+        <p>
+          I aim to bring structure to everyday work, help leaders protect their time
+          and make administrative processes easier to manage.
+        </p>
+        <br>
+        <a class="btn btn-primary" href="#services">Explore my services ↗</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">My capabilities</div>
-          <h2>Skills & Competencies</h2>
-          <p>A combination of executive support, organisation, communication and digital working skills.</p>
-        </div>
+  <!-- SERVICES -->
+  <section class="section" id="services" style="background:#fff;">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">What I can help with</span>
+        <h2>Practical support for <span class="gradient-text">everyday business needs.</span></h2>
+        <p>Flexible administrative and executive support designed to help work stay organised and moving.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">▣</div>
+          <h3>Executive Assistance</h3>
+          <p>Reliable day-to-day support that helps executives manage their time and priorities.</p>
+          <ul>
+            <li>Email and inbox management</li>
+            <li>Calendar and schedule coordination</li>
+            <li>Meeting preparation and follow-ups</li>
+            <li>Travel and appointment coordination</li>
+          </ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">✉</div>
+          <h3>Administrative Support</h3>
+          <p>Organised handling of information, documents and routine administrative tasks.</p>
+          <ul>
+            <li>Document creation and formatting</li>
+            <li>Data entry and record keeping</li>
+            <li>File and digital folder organisation</li>
+            <li>Reports and presentations</li>
+          </ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">⌕</div>
+          <h3>Research & Information</h3>
+          <p>Structured research that helps make information easier to understand and use.</p>
+          <ul>
+            <li>Internet and business research</li>
+            <li>Information gathering</li>
+            <li>Data organisation</li>
+            <li>Research summaries</li>
+          </ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">◎</div>
+          <h3>Communication Support</h3>
+          <p>Professional communication and responsive coordination with people and teams.</p>
+          <ul>
+            <li>Email correspondence</li>
+            <li>Customer service support</li>
+            <li>Appointment coordination</li>
+            <li>Communication follow-ups</li>
+          </ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">▤</div>
+          <h3>Project & Task Coordination</h3>
+          <p>Helping teams keep track of responsibilities, deadlines and outstanding actions.</p>
+          <ul>
+            <li>Task tracking and updates</li>
+            <li>Deadline monitoring</li>
+            <li>Meeting action points</li>
+            <li>Workflow organisation</li>
+          </ul>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">⌂</div>
+          <h3>Operations Coordination</h3>
+          <p>Administrative coordination informed by practical business operations experience.</p>
+          <ul>
+            <li>Operational documentation</li>
+            <li>Team and resource coordination</li>
+            <li>Routine reporting</li>
+            <li>Process and record organisation</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-        <div class="skills-grid">
-          <div class="skill-panel">
-            <h3>Executive & Administrative Skills</h3>
-            <div class="tags">
-              <span class="tag">Executive Assistance</span>
-              <span class="tag">Calendar Management</span>
-              <span class="tag">Email Management</span>
-              <span class="tag">Meeting Coordination</span>
-              <span class="tag">Document Preparation</span>
-              <span class="tag">Online Research</span>
-              <span class="tag">Task Tracking</span>
-              <span class="tag">Reporting</span>
-              <span class="tag">Digital Filing</span>
-              <span class="tag">Customer Support</span>
-              <span class="tag">Communication</span>
-              <span class="tag">Time Management</span>
-            </div>
+  <!-- CORE SKILLS -->
+  <section class="section skills-area" id="skills">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Core competencies</span>
+        <h2>The skills behind <span class="gradient-text">my support.</span></h2>
+        <p>A broad set of administrative, communication and coordination capabilities developed through practical work and professional learning.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card reveal">
+          <h3>Executive & Personal Assistance</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Executive Support</span><span class="skill-tag">Calendar Management</span>
+            <span class="skill-tag">Inbox Management</span><span class="skill-tag">Meeting Coordination</span>
+            <span class="skill-tag">Appointment Scheduling</span><span class="skill-tag">Follow-up Management</span>
+            <span class="skill-tag">Confidential Handling</span>
           </div>
-
-          <div class="skill-panel">
-            <h3>Digital & Workplace Tools</h3>
-            <div class="tags">
-              <span class="tag">Google Workspace</span>
-              <span class="tag">Microsoft Word</span>
-              <span class="tag">Microsoft Excel</span>
-              <span class="tag">PowerPoint</span>
-              <span class="tag">Outlook</span>
-              <span class="tag">Google Drive</span>
-              <span class="tag">Canva</span>
-              <span class="tag">ChatGPT</span>
-              <span class="tag">Gemini</span>
-              <span class="tag">Zoom</span>
-              <span class="tag">CRM Platforms</span>
-              <span class="tag">Trello</span>
-              <span class="tag">Notion</span>
-              <span class="tag">Slack</span>
-            </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Administrative & Documentation</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Document Preparation</span><span class="skill-tag">Data Entry</span>
+            <span class="skill-tag">Record Keeping</span><span class="skill-tag">File Management</span>
+            <span class="skill-tag">Report Preparation</span><span class="skill-tag">Presentation Formatting</span>
+            <span class="skill-tag">Digital Organisation</span>
           </div>
-        </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Communication & Customer Support</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Professional Correspondence</span><span class="skill-tag">Email Communication</span>
+            <span class="skill-tag">Customer Service</span><span class="skill-tag">Active Listening</span>
+            <span class="skill-tag">Stakeholder Communication</span><span class="skill-tag">Issue Follow-up</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Research & Information Management</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Online Research</span><span class="skill-tag">Information Gathering</span>
+            <span class="skill-tag">Data Organisation</span><span class="skill-tag">Research Summaries</span>
+            <span class="skill-tag">Attention to Detail</span><span class="skill-tag">Information Accuracy</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Project & Operations Coordination</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Task Coordination</span><span class="skill-tag">Deadline Tracking</span>
+            <span class="skill-tag">Workflow Support</span><span class="skill-tag">Team Coordination</span>
+            <span class="skill-tag">Operational Reporting</span><span class="skill-tag">Resource Planning</span>
+          </div>
+        </article>
+        <article class="skill-card reveal">
+          <h3>Professional Strengths</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Time Management</span><span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Adaptability</span><span class="skill-tag">Discretion</span>
+            <span class="skill-tag">Multitasking</span><span class="skill-tag">Initiative</span>
+            <span class="skill-tag">Dependability</span>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ANIMATED TOOLS -->
-    <section class="tools-section" id="tools">
-      <div class="container">
-        <div class="eyebrow" style="text-align:center;color:#aebfff">My digital workspace</div>
-        <h2>Tools I Work With</h2>
-        <p>Technology that helps me stay organised, connected and productive.</p>
+  <!-- TOOLS -->
+  <section class="section tools-section" id="tools">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">My digital toolkit</span>
+        <h2>Technology that helps <span class="gradient-text">work flow.</span></h2>
+        <p>I use digital productivity, communication and organisation tools to support administrative work and collaborate effectively.</p>
       </div>
 
+      <div class="tools-filter" id="toolFilters">
+        <button class="filter-btn active" data-filter="all">All tools</button>
+        <button class="filter-btn" data-filter="google">Google Workspace</button>
+        <button class="filter-btn" data-filter="microsoft">Microsoft 365</button>
+        <button class="filter-btn" data-filter="project">Project & Teamwork</button>
+        <button class="filter-btn" data-filter="communication">Communication</button>
+        <button class="filter-btn" data-filter="ai">AI & Creativity</button>
+        <button class="filter-btn" data-filter="crm">CRM & Business</button>
+      </div>
+
+      <div class="tools-grid" id="toolsGrid">
+        <!-- Google Workspace -->
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="" onerror="this.parentElement.textContent='G'"></span><span>Gmail</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googledocs/4285F4" alt="" onerror="this.parentElement.textContent='D'"></span><span>Google Docs</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="" onerror="this.parentElement.textContent='S'"></span><span>Google Sheets</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googleslides/FBBC04" alt="" onerror="this.parentElement.textContent='S'"></span><span>Google Slides</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googledrive/4285F4" alt="" onerror="this.parentElement.textContent='D'"></span><span>Google Drive</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlecalendar/4285F4" alt="" onerror="this.parentElement.textContent='C'"></span><span>Google Calendar</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googleforms/7248B9" alt="" onerror="this.parentElement.textContent='F'"></span><span>Google Forms</span></div>
+        <div class="tool-card" data-category="google"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlemeet/00897B" alt="" onerror="this.parentElement.textContent='M'"></span><span>Google Meet</span></div>
+
+        <!-- Microsoft 365 -->
+        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftword/185ABD" alt="" onerror="this.parentElement.textContent='W'"></span><span>Microsoft Word</span></div>
+        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="" onerror="this.parentElement.textContent='X'"></span><span>Microsoft Excel</span></div>
+        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftpowerpoint/D24726" alt="" onerror="this.parentElement.textContent='P'"></span><span>PowerPoint</span></div>
+        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftoutlook/0078D4" alt="" onerror="this.parentElement.textContent='O'"></span><span>Outlook</span></div>
+        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftteams/6264A7" alt="" onerror="this.parentElement.textContent='T'"></span><span>Microsoft Teams</span></div>
+        <div class="tool-card" data-category="microsoft"><span class="tool-logo"><img src="https://cdn.simpleicons.org/microsoftonedrive/0078D4" alt="" onerror="this.parentElement.textContent='1'"></span><span>OneDrive</span></div>
+
+        <!-- Project management -->
+        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/trello/0052CC" alt="" onerror="this.parentElement.textContent='T'"></span><span>Trello</span></div>
+        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/notion/000000" alt="" onerror="this.parentElement.textContent='N'"></span><span>Notion</span></div>
+        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/asana/F06A6A" alt="" onerror="this.parentElement.textContent='A'"></span><span>Asana</span></div>
+        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/clickup/7B68EE" alt="" onerror="this.parentElement.textContent='C'"></span><span>ClickUp</span></div>
+        <div class="tool-card" data-category="project"><span class="tool-logo"><img src="https://cdn.simpleicons.org/slack/4A154B" alt="" onerror="this.parentElement.textContent='S'"></span><span>Slack</span></div>
+
+        <!-- Communication -->
+        <div class="tool-card" data-category="communication"><span class="tool-logo"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="" onerror="this.parentElement.textContent='Z'"></span><span>Zoom</span></div>
+        <div class="tool-card" data-category="communication"><span class="tool-logo"><img src="https://cdn.simpleicons.org/calendly/006BFF" alt="" onerror="this.parentElement.textContent='C'"></span><span>Calendly</span></div>
+        <div class="tool-card" data-category="communication"><span class="tool-logo"><img src="https://cdn.simpleicons.org/loom/625DF5" alt="" onerror="this.parentElement.textContent='L'"></span><span>Loom</span></div>
+
+        <!-- AI and creativity -->
+        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/openai/412991" alt="" onerror="this.parentElement.textContent='AI'"></span><span>ChatGPT</span></div>
+        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" onerror="this.parentElement.textContent='G'"></span><span>Google Gemini</span></div>
+        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="" onerror="this.parentElement.textContent='C'"></span><span>Canva</span></div>
+        <div class="tool-card" data-category="ai"><span class="tool-logo"><img src="https://cdn.simpleicons.org/grammarly/15C39A" alt="" onerror="this.parentElement.textContent='G'"></span><span>Grammarly</span></div>
+
+        <!-- CRM and business -->
+        <div class="tool-card" data-category="crm"><span class="tool-logo"><img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="" onerror="this.parentElement.textContent='H'"></span><span>HubSpot</span></div>
+        <div class="tool-card" data-category="crm"><span class="tool-logo"><img src="https://cdn.simpleicons.org/salesforce/00A1E0" alt="" onerror="this.parentElement.textContent='S'"></span><span>Salesforce</span></div>
+        <div class="tool-card" data-category="crm"><span class="tool-logo"><img src="https://cdn.simpleicons.org/zendesk/03363D" alt="" onerror="this.parentElement.textContent='Z'"></span><span>Zendesk</span></div>
+      </div>
+
+      <p class="tool-footnote">
+        My strongest day-to-day toolkit includes Google Workspace, Microsoft Office, Canva,
+        ChatGPT, Zoom and email management. Other platforms shown represent tools I am
+        familiar with or continuing to develop.
+      </p>
+    </div>
+
+    <div class="marquee-wrap" aria-label="Tools and capabilities">
       <div class="marquee">
-        <div class="marquee-track">
-          <div class="tool"><span>📧</span> Gmail</div>
-          <div class="tool"><span>📅</span> Google Calendar</div>
-          <div class="tool"><span>📁</span> Google Drive</div>
-          <div class="tool"><span>📝</span> Google Docs</div>
-          <div class="tool"><span>📊</span> Google Sheets</div>
-          <div class="tool"><span>💻</span> Microsoft Word</div>
-          <div class="tool"><span>📈</span> Microsoft Excel</div>
-          <div class="tool"><span>📽️</span> PowerPoint</div>
-        </div>
-        <div class="marquee-track" aria-hidden="true">
-          <div class="tool"><span>📧</span> Gmail</div>
-          <div class="tool"><span>📅</span> Google Calendar</div>
-          <div class="tool"><span>📁</span> Google Drive</div>
-          <div class="tool"><span>📝</span> Google Docs</div>
-          <div class="tool"><span>📊</span> Google Sheets</div>
-          <div class="tool"><span>💻</span> Microsoft Word</div>
-          <div class="tool"><span>📈</span> Microsoft Excel</div>
-          <div class="tool"><span>📽️</span> PowerPoint</div>
-        </div>
+        <span>Google Workspace</span><span>Microsoft 365</span><span>Executive Support</span>
+        <span>Project Coordination</span><span>Digital Organisation</span><span>AI Productivity</span>
+        <span>Google Workspace</span><span>Microsoft 365</span><span>Executive Support</span>
+        <span>Project Coordination</span><span>Digital Organisation</span><span>AI Productivity</span>
       </div>
+    </div>
+  </section>
 
-      <div class="marquee reverse">
-        <div class="marquee-track">
-          <div class="tool"><span>🎨</span> Canva</div>
-          <div class="tool"><span>🤖</span> ChatGPT</div>
-          <div class="tool"><span>✨</span> Gemini</div>
-          <div class="tool"><span>🎥</span> Zoom</div>
-          <div class="tool"><span>📌</span> Trello</div>
-          <div class="tool"><span>📓</span> Notion</div>
-          <div class="tool"><span>💬</span> Slack</div>
-          <div class="tool"><span>🤝</span> CRM Platforms</div>
-        </div>
-        <div class="marquee-track" aria-hidden="true">
-          <div class="tool"><span>🎨</span> Canva</div>
-          <div class="tool"><span>🤖</span> ChatGPT</div>
-          <div class="tool"><span>✨</span> Gemini</div>
-          <div class="tool"><span>🎥</span> Zoom</div>
-          <div class="tool"><span>📌</span> Trello</div>
-          <div class="tool"><span>📓</span> Notion</div>
-          <div class="tool"><span>💬</span> Slack</div>
-          <div class="tool"><span>🤝</span> CRM Platforms</div>
-        </div>
+  <!-- SELECTED WORK -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Selected work & capabilities</span>
+        <h2>How I bring <span class="gradient-text">work together.</span></h2>
+        <p>Examples of the types of administrative and coordination work I can support. These are capability showcases, not client-confidential documents.</p>
       </div>
-    </section>
-
-    <!-- SELECTED WORK -->
-    <section class="section work" id="work">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">Experience in action</div>
-          <h2>Selected Work & Experience Highlights</h2>
-          <p>A look at the kind of responsibilities and business support I have contributed to.</p>
-        </div>
-
-        <div class="work-grid">
-          <article class="work-card">
-            <div class="work-label">Executive Support</div>
-            <h3>CEO Administrative Support</h3>
-            <p>
-              Supported the CEO at Harvest Value Chain through a hybrid
-              working arrangement, handling remote administrative
-              responsibilities alongside operational coordination.
-            </p>
-            <ul>
-              <li>Executive correspondence and email management</li>
-              <li>Scheduling, document preparation and online research</li>
-              <li>Reporting, task tracking and follow-ups</li>
-            </ul>
-          </article>
-
-          <article class="work-card">
-            <div class="work-label">Operations & Coordination</div>
-            <h3>Farm Operations Management</h3>
-            <p>
-              Contributed to the coordination of farm activities and
-              workforce responsibilities, helping management maintain
-              operational focus and productivity.
-            </p>
-            <ul>
-              <li>Supervised approximately 25 employees</li>
-              <li>Supported planning, budgeting and resource allocation</li>
-              <li>Contributed to an 11% annual sales increase</li>
-            </ul>
-          </article>
-
-          <article class="work-card">
-            <div class="work-label">Business Supervision</div>
-            <h3>Retail Operations & Loss Control</h3>
-            <p>
-              Supported daily supervision and operational monitoring at
-              TASBIF Super Mall, with attention to accountability and
-              business performance.
-            </p>
-            <ul>
-              <li>Staff and daily operations coordination</li>
-              <li>Monitoring of business activities</li>
-              <li>Contributed to a 70% reduction in monthly losses</li>
-            </ul>
-          </article>
-
-          <article class="work-card">
-            <div class="work-label">Customer Experience</div>
-            <h3>Customer Service & Communication</h3>
-            <p>
-              Developed customer-facing communication and service
-              experience through roles at Captain Cook and Hypo Limited.
-            </p>
-            <ul>
-              <li>Responding to customer enquiries</li>
-              <li>Providing product information and assistance</li>
-              <li>Supporting service delivery and issue resolution</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">My background</div>
-          <h2>Professional Experience</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <h3>Executive Assistant to CEO & Farm Operations Manager (Hybrid)</h3>
-            <div class="timeline-meta">Harvest Value Chain (HVC) | 2024–2025</div>
-            <ul>
-              <li>Provided remote administrative and executive support to the CEO.</li>
-              <li>Managed correspondence, email communication, scheduling and follow-ups.</li>
-              <li>Prepared documents, conducted online research and supported reporting.</li>
-              <li>Tracked assignments, pending tasks and deadlines.</li>
-              <li>Supervised approximately 25 employees and supported operational planning.</li>
-              <li>Contributed to an 11% annual sales increase.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <h3>Supervisor</h3>
-            <div class="timeline-meta">TASBIF Super Mall | 2022–2023</div>
-            <ul>
-              <li>Supervised daily business activities and coordinated staff responsibilities.</li>
-              <li>Monitored operations, identified issues and supported practical solutions.</li>
-              <li>Contributed to a 70% reduction in monthly losses.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <h3>Production Assistant / Customer Service</h3>
-            <div class="timeline-meta">Captain Cook | 2015–2017</div>
-            <ul>
-              <li>Supported daily production activities and operational routines.</li>
-              <li>Assisted customers and contributed to smooth service delivery.</li>
-            </ul>
-          </article>
-
-          <article class="timeline-item">
-            <h3>Customer Service Representative</h3>
-            <div class="timeline-meta">Hypo Limited | 2012–2014</div>
-            <ul>
-              <li>Responded to customer enquiries and provided product information.</li>
-              <li>Supported customer relationships and complaint resolution.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section certificates" id="certifications">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">Learning & development</div>
-          <h2>Certifications & Professional Development</h2>
-          <p>Selected credentials and training supporting my professional development.</p>
-        </div>
-
-        <div class="cert-grid">
-          <article class="cert-card">
-            <div class="cert-icon">⌨️</div>
-            <h3>Typing Test Certificate</h3>
-            <p>26 words per minute · 99% accuracy · November 2026</p>
-            <a class="cert-link" href="assets/certificates/typing-certificate.pdf" target="_blank">View certificate ↗</a>
-          </article>
-
-          <article class="cert-card">
-            <div class="cert-icon">🌍</div>
-            <h3>EF SET English Certificate</h3>
-            <p>C1 Advanced · Score: 63/100</p>
-            <a class="cert-link" href="assets/certificates/ef-set-certificate.pdf" target="_blank">View certificate ↗</a>
-          </article>
-
-          <article class="cert-card">
-            <div class="cert-icon">🦺</div>
-            <h3>Health, Safety & Environment</h3>
-            <p>HSE Levels 1 & 2 · ISPON</p>
-            <a class="cert-link" href="assets/certificates/hse-certificate.pdf" target="_blank">View certificate ↗</a>
-          </article>
-
-          <article class="cert-card">
-            <div class="cert-icon">📋</div>
-            <h3>Project Management Training</h3>
-            <p>Skill Up Project Management</p>
-            <a class="cert-link" href="assets/certificates/project-management.pdf" target="_blank">View certificate ↗</a>
-          </article>
-
-          <article class="cert-card">
-            <div class="cert-icon">☁️</div>
-            <h3>Google Drive Training</h3>
-            <p>Skill Up Google Drive</p>
-            <a class="cert-link" href="assets/certificates/google-drive.pdf" target="_blank">View certificate ↗</a>
-          </article>
-
-          <article class="cert-card">
-            <div class="cert-icon">💼</div>
-            <h3>Virtual Assistant Training</h3>
-            <p>VSAVVY Virtual Assistant Training</p>
-            <a class="cert-link" href="assets/certificates/virtual-assistant.pdf" target="_blank">View certificate ↗</a>
-          </article>
-
-          <article class="cert-card">
-            <div class="cert-icon">⚙️</div>
-            <h3>Operations Training</h3>
-            <p>Lior Global Operations</p>
-            <a class="cert-link" href="assets/certificates/operations-training.pdf" target="_blank">View certificate ↗</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow">Academic background</div>
-          <h2>Education</h2>
-        </div>
-
-        <div class="education-card">
-          <h3>Bachelor of Science (B.Sc.) in Computer Science</h3>
-          <p>ISCOM University, Benin Republic | 2021</p>
-          <p><strong>Second Class Upper Division (2:1)</strong> · CGPA: 3.56/5.00</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <div class="eyebrow" style="color:#aebfff">Let's connect</div>
-          <h2>Let's Make Work Easier.</h2>
-          <p>
-            Looking for dependable executive or administrative support?
-            I would be glad to discuss how I can contribute to your team.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <div>
-            <p class="contact-message">
-              Whether you are a founder, executive, consultant or growing
-              business, I am ready to support your work with organisation,
-              professionalism and consistent follow-through.
-            </p>
-            <a class="btn btn-primary" href="mailto:haywhymoses89@gmail.com?subject=Executive%20Assistant%20Opportunity">
-              Send Me an Email
-            </a>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-visual">01</div>
+          <div class="project-content">
+            <span class="project-type">Executive support</span>
+            <h3>Executive Administration & Follow-up</h3>
+            <p>Organising correspondence, preparing documents, tracking outstanding tasks and supporting leadership with day-to-day administrative coordination.</p>
           </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual">02</div>
+          <div class="project-content">
+            <span class="project-type">Operations coordination</span>
+            <h3>Team & Operations Coordination</h3>
+            <p>Practical experience coordinating people, resources, routine reporting and operational activities in a busy business environment.</p>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-visual">03</div>
+          <div class="project-content">
+            <span class="project-type">Documentation</span>
+            <h3>Digital Records & Reporting</h3>
+            <p>Preparing, organising and maintaining information so that records, updates and business documents are easier to access and manage.</p>
+          </div>
+        </article>
+      </div>
+      <p class="project-disclaimer">Additional work samples can be added here as you prepare approved, non-confidential examples such as a calendar plan, meeting minutes, spreadsheet tracker or research brief.</p>
+    </div>
+  </section>
 
-          <div class="contact-details">
-            <div class="contact-item">
-              <small>Email</small>
-              <a href="mailto:haywhymoses89@gmail.com">haywhymoses89@gmail.com</a>
-            </div>
+  <!-- EXPERIENCE -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Professional experience</span>
+        <h2>Experience built through <span class="gradient-text">responsibility.</span></h2>
+        <p>Administrative support, customer service and operational coordination across different working environments.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span class="timeline-date">2024 – 2025</span>
+          <h3>Executive Assistant to CEO & Farm Operations Manager</h3>
+          <div class="timeline-company">HVC · Hybrid</div>
+          <ul>
+            <li>Provided administrative and executive support to the CEO, including correspondence, email management, scheduling and follow-ups.</li>
+            <li>Prepared documents, supported online research and assisted with reports and business information.</li>
+            <li>Tracked tasks and helped coordinate priorities across business activities.</li>
+            <li>Supported farm operations, including planning, budgeting, resource allocation and supervision of approximately 25 employees.</li>
+            <li>Contributed to an 11% increase in annual sales through operational and business support.</li>
+          </ul>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-date">2022 – 2023</span>
+          <h3>Supermarket Supervisor</h3>
+          <div class="timeline-company">TASBIF Super Mall · Ogbomosho</div>
+          <ul>
+            <li>Supported daily store operations, staff coordination and customer service.</li>
+            <li>Monitored routine activities and helped maintain operational accountability.</li>
+            <li>Contributed to a 70% reduction in monthly losses.</li>
+          </ul>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-date">2015 – 2017</span>
+          <h3>Production Assistant & Customer Service</h3>
+          <div class="timeline-company">Captain Cook</div>
+          <ul>
+            <li>Supported production activities and day-to-day service operations.</li>
+            <li>Assisted customers and helped maintain smooth daily workflows.</li>
+          </ul>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-date">2012 – 2014</span>
+          <h3>Customer Service Representative</h3>
+          <div class="timeline-company">Hypo Limited</div>
+          <ul>
+            <li>Assisted customers with enquiries and service-related concerns.</li>
+            <li>Supported clear communication and customer-focused service delivery.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-            <div class="contact-item">
-              <small>Phone</small>
-              <a href="tel:+2348130775384">+234 813 077 5384</a>
-            </div>
-
-            <div class="contact-item">
-              <small>Location</small>
-              <strong>Lagos, Nigeria · Open to remote opportunities</strong>
-            </div>
-
-            <div class="contact-item">
-              <small>LinkedIn</small>
-              <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener noreferrer">
-                Connect with me ↗
-              </a>
-            </div>
+  <!-- EDUCATION & CERTIFICATES -->
+  <section class="section" id="credentials">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Education & professional development</span>
+        <h2>Learning, growth & <span class="gradient-text">professional development.</span></h2>
+      </div>
+      <div class="credentials-grid">
+        <div class="credential-panel reveal">
+          <h3>Education</h3>
+          <div class="education-item">
+            <strong>B.Sc. Computer Science</strong>
+            <span>ISCOM University, Benin Republic · 2021</span><br>
+            <span>Second Class Upper (2:1) · CGPA 3.56/5.00</span>
+          </div>
+          <h3 style="margin-top:25px;">Languages</h3>
+          <div class="education-item">
+            <strong>English</strong><span>Advanced · EF SET result: C1 Advanced, 63/100</span>
+          </div>
+          <div class="education-item">
+            <strong>Yoruba</strong><span>Fluent</span>
           </div>
         </div>
+        <div class="credential-panel reveal">
+          <h3>Training & certificates</h3>
+          <div class="certificate-list">
+            <div class="certificate"><span>Typing Skills Assessment · 26 WPM, 99% accuracy</span><a href="assets/certificates/typing-certificate.pdf" target="_blank">View ↗</a></div>
+            <div class="certificate"><span>EF SET English Certificate</span><a href="assets/certificates/ef-set-certificate.pdf" target="_blank">View ↗</a></div>
+            <div class="certificate"><span>HSE Levels 1 & 2 · ISPON</span><a href="assets/certificates/hse-certificate.pdf" target="_blank">View ↗</a></div>
+            <div class="certificate"><span>Virtual Assistant Training · VSAVVY</span><a href="assets/certificates/virtual-assistant.pdf" target="_blank">View ↗</a></div>
+            <div class="certificate"><span>Project Management · Skill Up</span><a href="assets/certificates/project-management.pdf" target="_blank">View ↗</a></div>
+            <div class="certificate"><span>Google Drive · Skill Up</span><a href="assets/certificates/google-drive.pdf" target="_blank">View ↗</a></div>
+            <div class="certificate"><span>Operations Training · Lior Global</span><a href="assets/certificates/operations-training.pdf" target="_blank">View ↗</a></div>
+          </div>
+          <p class="small-note" style="margin-top:13px;">Replace these sample file links with your actual certificate PDFs before publishing.</p>
+        </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <!-- FOOTER -->
+  <!-- PROFESSIONAL INTERESTS -->
+  <section class="section" style="padding-top:20px;">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Beyond the desk</span>
+        <h2>Professional interests</h2>
+        <p>Areas I enjoy learning about and developing as part of my professional growth.</p>
+      </div>
+      <div class="interests reveal">
+        <span class="interest">Executive Productivity</span>
+        <span class="interest">Business Administration</span>
+        <span class="interest">Digital Workflow Management</span>
+        <span class="interest">AI & Workplace Technology</span>
+        <span class="interest">Business Research</span>
+        <span class="interest">Project Coordination</span>
+        <span class="interest">Operations Management</span>
+        <span class="interest">Entrepreneurship</span>
+        <span class="interest">Continuous Learning</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Let's connect</span>
+        <h2>Have something that needs <span class="gradient-text">a reliable hand?</span></h2>
+        <p>I'd be glad to hear about your business, your priorities and how I can support your work.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details reveal">
+          <a class="contact-item" href="mailto:haywhymoses89@gmail.com">
+            <span class="contact-icon">✉</span>
+            <span><small>Email</small><strong>haywhymoses89@gmail.com</strong></span>
+          </a>
+          <a class="contact-item" href="tel:+2348130775384">
+            <span class="contact-icon">☎</span>
+            <span><small>Phone</small><strong>+234 813 077 5384</strong></span>
+          </a>
+          <a class="contact-item" href="tel:+2347015319848">
+            <span class="contact-icon">☎</span>
+            <span><small>Alternative phone</small><strong>+234 701 531 9848</strong></span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener">
+            <span class="contact-icon">in</span>
+            <span><small>LinkedIn</small><strong>Connect with me ↗</strong></span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-icon">⌖</span>
+            <span><small>Location</small><strong>Lagos, Nigeria · Open to remote opportunities</strong></span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send me a message</h3>
+          <div class="form-group">
+            <label for="visitorName">Your name</label>
+            <input id="visitorName" name="name" type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="visitorEmail">Your email</label>
+            <input id="visitorEmail" name="email" type="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="form-group">
+            <label for="visitorMessage">How can I help?</label>
+            <textarea id="visitorMessage" name="message" placeholder="Tell me a little about what you need..." required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Prepare email message ↗</button>
+          <p class="form-help">This form opens your email application with your message ready to send. It does not store your information on this website.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>
-      © <span id="year"></span> Taiwo Moses Ayodele.
-      Built with purpose and professionalism.
-    </p>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Taiwo Moses Ayodele. All rights reserved.</span>
+      <span>Designed with purpose · <a href="#home">Back to top ↑</a></span>
+    </div>
   </footer>
 
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
   <script>
-    // Mobile navigation
+    // MOBILE NAVIGATION
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
     menuToggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", isOpen);
-      menuToggle.textContent = isOpen ? "✕" : "☰";
+      const open = navLinks.classList.toggle("open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+      menuToggle.textContent = open ? "×" : "☰";
     });
 
-    // Close menu after selecting a section
-    document.querySelectorAll("#navLinks a").forEach(link => {
+    navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         navLinks.classList.remove("open");
         menuToggle.setAttribute("aria-expanded", "false");
@@ -1777,9 +1049,160 @@ button:focus-visible {
       });
     });
 
-    // Current year
+    // TEXT-TO-SPEECH INTRODUCTION
+    const introText =
+      "Hello, and welcome to my portfolio. My name is Taiwo Moses Ayodele. " +
+      "I am an Executive Virtual Assistant and Executive Personal Assistant based in Lagos, Nigeria. " +
+      "I support business leaders with executive administration, email and calendar management, " +
+      "document preparation, online research, reporting, task tracking and professional communication. " +
+      "I also bring practical experience in business operations, team coordination and administrative organisation. " +
+      "My approach is simple: I value clear communication, attention to detail, discretion and dependable follow-through. " +
+      "Thank you for taking the time to learn about my work. I would be glad to discuss how I can support you and your business.";
+
+    const speakBtn = document.getElementById("speakBtn");
+    const pauseBtn = document.getElementById("pauseBtn");
+    const stopBtn = document.getElementById("stopBtn");
+    const audioStatus = document.getElementById("audioStatus");
+    const voiceSelect = document.getElementById("voiceSelect");
+    const speechRate = document.getElementById("speechRate");
+
+    let availableVoices = [];
+    let currentUtterance = null;
+
+    function loadVoices() {
+      if (!("speechSynthesis" in window)) {
+        audioStatus.textContent = "Audio narration is not supported in this browser.";
+        speakBtn.disabled = true;
+        pauseBtn.disabled = true;
+        stopBtn.disabled = true;
+        return;
+      }
+
+      availableVoices = window.speechSynthesis.getVoices();
+      const previous = voiceSelect.value;
+      voiceSelect.innerHTML = '<option value="">Default voice</option>';
+
+      availableVoices.forEach((voice, index) => {
+        const option = document.createElement("option");
+        option.value = String(index);
+        option.textContent = `${voice.name} (${voice.lang})`;
+        voiceSelect.appendChild(option);
+      });
+
+      if (previous) voiceSelect.value = previous;
+    }
+
+    if ("speechSynthesis" in window) {
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+    } else {
+      loadVoices();
+    }
+
+    speakBtn.addEventListener("click", () => {
+      if (!("speechSynthesis" in window)) return;
+
+      window.speechSynthesis.cancel();
+      currentUtterance = new SpeechSynthesisUtterance(introText);
+      currentUtterance.rate = Number(speechRate.value);
+      currentUtterance.pitch = 1;
+      currentUtterance.lang = "en";
+
+      const selectedIndex = voiceSelect.value;
+      if (selectedIndex !== "" && availableVoices[Number(selectedIndex)]) {
+        currentUtterance.voice = availableVoices[Number(selectedIndex)];
+      }
+
+      currentUtterance.onstart = () => {
+        audioStatus.textContent = "Playing my introduction...";
+        speakBtn.classList.add("active");
+      };
+      currentUtterance.onend = () => {
+        audioStatus.textContent = "Thank you for listening.";
+        speakBtn.classList.remove("active");
+      };
+      currentUtterance.onerror = () => {
+        audioStatus.textContent = "Unable to play narration. Please try another browser voice.";
+        speakBtn.classList.remove("active");
+      };
+
+      window.speechSynthesis.speak(currentUtterance);
+    });
+
+    pauseBtn.addEventListener("click", () => {
+      if (!("speechSynthesis" in window)) return;
+      if (window.speechSynthesis.speaking && !window.speechSynthesis.paused) {
+        window.speechSynthesis.pause();
+        audioStatus.textContent = "Narration paused.";
+        pauseBtn.textContent = "▶ Resume";
+      } else if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+        audioStatus.textContent = "Continuing introduction...";
+        pauseBtn.textContent = "Ⅱ Pause";
+      }
+    });
+
+    stopBtn.addEventListener("click", () => {
+      if (!("speechSynthesis" in window)) return;
+      window.speechSynthesis.cancel();
+      audioStatus.textContent = "Narration stopped.";
+      speakBtn.classList.remove("active");
+      pauseBtn.textContent = "Ⅱ Pause";
+    });
+
+    // TOOLS FILTER
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const toolCards = document.querySelectorAll(".tool-card");
+
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        filterButtons.forEach(item => item.classList.remove("active"));
+        button.classList.add("active");
+
+        const filter = button.dataset.filter;
+        toolCards.forEach(card => {
+          card.style.display =
+            filter === "all" || card.dataset.category === filter ? "flex" : "none";
+        });
+      });
+    });
+
+    // CONTACT FORM: opens visitor's email application
+    document.getElementById("contactForm").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const name = document.getElementById("visitorName").value.trim();
+      const email = document.getElementById("visitorEmail").value.trim();
+      const message = document.getElementById("visitorMessage").value.trim();
+
+      const subject = encodeURIComponent("Portfolio enquiry from " + name);
+      const body = encodeURIComponent(
+        "Hello Moses,\n\n" + message + "\n\nMy email: " + email + "\nName: " + name
+      );
+
+      window.location.href =
+        "mailto:haywhymoses89@gmail.com?subject=" + subject + "&body=" + body;
+    });
+
+    // SCROLL REVEAL ANIMATION
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(element => revealObserver.observe(element));
+
+    // BACK TO TOP + FOOTER YEAR
+    const backTop = document.getElementById("backTop");
+    window.addEventListener("scroll", () => {
+      backTop.classList.toggle("show", window.scrollY > 500);
+    });
+    backTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
