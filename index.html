@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Taiwo Moses Ayodele - Executive Virtual Assistant and Administrative Support Professional.">
+<title>Taiwo Moses Ayodele | Executive Virtual Assistant</title>
+
+<style>
+:root {
+  --navy: #14243b;
+  --gold: #c6a46a;
+  --cream: #f7f8fa;
+  --text: #39485c;
+  --white: #ffffff;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family: Arial, sans-serif;
+  color:var(--text);
+  line-height:1.7;
+  background:white;
+}
+a { text-decoration:none; }
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:var(--navy);
+  padding:17px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+}
+.logo { color:white; font-weight:bold; letter-spacing:2px; }
+nav { display:flex; gap:22px; flex-wrap:wrap; }
+nav a { color:white; font-size:13px; }
+nav a:hover { color:var(--gold); }
+
+.hero {
+  min-height:570px;
+  padding:75px 8%;
+  background:var(--cream);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:50px;
+}
+.hero-content { max-width:650px; }
+.eyebrow {
+  color:#a47b35;
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+h1 {
+  color:var(--navy);
+  font-size:clamp(37px,5vw,62px);
+  line-height:1.15;
+  margin:20px 0;
+}
+.hero p { font-size:17px; max-width:580px; margin-bottom:28px; }
+.hero-photo {
+  width:290px;
+  height:340px;
+  object-fit:cover;
+  border-radius:12px;
+  background:#e1e5eb;
+  border:5px solid white;
+  box-shadow:0 15px 45px #14243b20;
+}
+.btn {
+  display:inline-block;
+  padding:12px 23px;
+  border-radius:4px;
+  background:var(--navy);
+  color:white;
+  font-size:14px;
+  margin:5px 5px 5px 0;
+  transition:.3s;
+}
+.btn:hover { background:#a47b35; transform:translateY(-2px); }
+.btn-outline {
+  background:transparent;
+  border:1px solid var(--navy);
+  color:var(--navy);
+}
+section { padding:75px 8%; }
+.section-title {
+  color:var(--navy);
+  font-size:31px;
+  margin-bottom:15px;
+}
+.section-intro { max-width:720px; margin-bottom:30px; color:#687589; }
+.gold-line { width:50px; height:3px; background:var(--gold); margin:15px 0 25px; }
+
+.cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.card {
+  padding:25px;
+  border:1px solid #e5e9ef;
+  border-radius:9px;
+  background:white;
+  transition:.3s;
+}
+.card:hover {
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px #14243b12;
+}
+.card h3 { color:var(--navy); font-size:18px; margin-bottom:10px; }
+.card p { font-size:14px; color:#687589; }
+.icon { font-size:26px; margin-bottom:12px; }
+
+.light { background:var(--cream); }
+.about-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr;
+  gap:40px;
+  align-items:start;
+}
+.about-note {
+  padding:25px;
+  background:var(--navy);
+  color:white;
+  border-radius:9px;
+}
+.about-note h3 { color:var(--gold); margin-bottom:10px; }
+
+/* ANIMATED TOOL SHOWCASE */
+.tools-section { overflow:hidden; background:var(--navy); color:white; }
+.tools-section .section-title { color:white; }
+.tools-section .section-intro { color:#d0d8e3; }
+.tool-label {
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:2px;
+  margin:30px 0 12px;
+  font-weight:bold;
+}
+.marquee {
+  display:flex;
+  overflow:hidden;
+  gap:15px;
+  padding:10px 0;
+  width:100%;
+  mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent);
+}
+.marquee-track {
+  display:flex;
+  flex-shrink:0;
+  gap:15px;
+  min-width:max-content;
+  animation:fly 28s linear infinite;
+}
+.marquee.reverse .marquee-track {
+  animation-direction:reverse;
+  animation-duration:32s;
+}
+.marquee:hover .marquee-track { animation-play-state:paused; }
+.tool {
+  min-width:145px;
+  padding:16px 20px;
+  border:1px solid #ffffff35;
+  border-radius:8px;
+  text-align:center;
+  background:#ffffff12;
+  color:white;
+  font-size:14px;
+  font-weight:bold;
+  transition:.3s;
+}
+.tool span { display:block; font-size:24px; margin-bottom:5px; }
+.tool:hover {
+  background:var(--gold);
+  color:var(--navy);
+  transform:translateY(-5px);
+}
+@keyframes fly {
+  from { transform:translateX(0); }
+  to { transform:translateX(-50%); }
+}
+
+.project-tag {
+  color:#a47b35;
+  font-size:11px;
+  font-weight:bold;
+  letter-spacing:1px;
+  margin-bottom:8px;
+}
+.cert-link { color:#9b7130; font-size:13px; font-weight:bold; }
+.contact {
+  background:var(--navy);
+  color:white;
+  text-align:center;
+}
+.contact .section-title { color:white; }
+.contact p { color:#d1d9e3; margin:10px 0 20px; }
+.contact a:not(.btn) { color:var(--gold); }
+footer {
+  background:#0b192a;
+  color:#bdc8d7;
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+}
+@media(max-width:750px) {
+  header { justify-content:center; }
+  nav { justify-content:center; gap:13px; }
+  .hero { flex-direction:column-reverse; text-align:center; padding:55px 7%; }
+  .hero-photo { width:220px; height:250px; }
+  .about-grid { grid-template-columns:1fr; }
+  section { padding:55px 7%; }
+}
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {
+    scroll-behavior:auto !important;
+    animation:none !important;
+    transition:none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">TAIWO MOSES</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#tools">Tools</a>
+    <a href="#projects">Portfolio</a>
+    <a href="#certifications">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">EXECUTIVE VIRTUAL ASSISTANT</div>
+    <h1>Professional Support.<br>Organised Operations.</h1>
+    <p>
+      I'm Taiwo Moses Ayodele. I provide executive assistance,
+      administrative support and operational coordination
+      to help business owners and executives stay organised
+      and focused on what matters.
+    </p>
+    <a href="#contact" class="btn">Let's Connect</a>
+    <a href="assets/moses-taiwo-cv.pdf" class="btn btn-outline" download>
+      Download My CV ↓
+    </a>
+  </div>
+
+  <img src="assets/profile.jpg"
+       alt="Taiwo Moses Ayodele"
+       class="hero-photo">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="gold-line"></div>
+
+  <div class="about-grid">
+    <div>
+      <p>
+        I'm an administrative and executive support professional
+        with experience in executive correspondence, email
+        management, documentation and operational coordination.
+      </p>
+      <br>
+      <p>
+        I value organisation, clear communication, attention
+        to detail and dependable support. My approach is to
+        make everyday business activities easier to manage.
+      </p>
+      <br>
+      <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/"
+         target="_blank" rel="noopener" class="btn">
+        View LinkedIn Profile
+      </a>
+    </div>
+
+    <div class="about-note">
+      <h3>My Professional Focus</h3>
+      <p>Executive assistance</p>
+      <p>Administrative management</p>
+      <p>Business documentation</p>
+      <p>Operations coordination</p>
+      <p>Professional communication</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="light">
+  <h2 class="section-title">Services</h2>
+  <p class="section-intro">Practical support designed to keep executives and business activities organised.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">📅</div>
+      <h3>Executive Assistance</h3>
+      <p>Scheduling, appointment coordination, correspondence and follow-ups.</p>
+    </div>
+    <div class="card">
+      <div class="icon">✉️</div>
+      <h3>Email Management</h3>
+      <p>Inbox organisation, email drafting and professional communication.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Documentation & Reporting</h3>
+      <p>Document preparation, spreadsheets, reports and record management.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Operations Coordination</h3>
+      <p>Task tracking, workflow organisation and administrative coordination.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="tools-section">
+  <h2 class="section-title">Tools & Technology</h2>
+  <p class="section-intro">
+    Digital tools I use and work with to support administrative,
+    communication and business activities. The tool showcase
+    moves automatically. Hover over it to pause.
+  </p>
+
+  <div class="tool-label">MICROSOFT & GOOGLE WORKSPACE</div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="tool"><span>📝</span>Microsoft Word</div>
+      <div class="tool"><span>📊</span>Excel</div>
+      <div class="tool"><span>📽️</span>PowerPoint</div>
+      <div class="tool"><span>📧</span>Outlook</div>
+      <div class="tool"><span>📁</span>Google Drive</div>
+      <div class="tool"><span>📄</span>Google Docs</div>
+      <div class="tool"><span>📈</span>Google Sheets</div>
+      <div class="tool"><span>📅</span>Google Calendar</div>
+      <div class="tool"><span>📝</span>Microsoft Word</div>
+      <div class="tool"><span>📊</span>Excel</div>
+      <div class="tool"><span>📽️</span>PowerPoint</div>
+      <div class="tool"><span>📧</span>Outlook</div>
+      <div class="tool"><span>📁</span>Google Drive</div>
+      <div class="tool"><span>📄</span>Google Docs</div>
+      <div class="tool"><span>📈</span>Google Sheets</div>
+      <div class="tool"><span>📅</span>Google Calendar</div>
+    </div>
+  </div>
+
+  <div class="tool-label">PROJECT MANAGEMENT & COMMUNICATION</div>
+  <div class="marquee reverse">
+    <div class="marquee-track">
+      <div class="tool"><span>📋</span>Trello</div>
+      <div class="tool"><span>🗂️</span>Notion</div>
+      <div class="tool"><span>💬</span>Slack</div>
+      <div class="tool"><span>🎥</span>Zoom</div>
+      <div class="tool"><span>🎨</span>Canva</div>
+      <div class="tool"><span>📋</span>CRM Tools</div>
+      <div class="tool"><span>📋</span>Trello</div>
+      <div class="tool"><span>🗂️</span>Notion</div>
+      <div class="tool"><span>💬</span>Slack</div>
+      <div class="tool"><span>🎥</span>Zoom</div>
+      <div class="tool"><span>🎨</span>Canva</div>
+      <div class="tool"><span>📋</span>CRM Tools</div>
+    </div>
+  </div>
+
+  <div class="tool-label">AI & PRODUCTIVITY</div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="tool"><span>🤖</span>ChatGPT</div>
+      <div class="tool"><span>📧</span>Email Management</div>
+      <div class="tool"><span>🔎</span>Online Research</div>
+      <div class="tool"><span>🤖</span>ChatGPT</div>
+      <div class="tool"><span>📧</span>Email Management</div>
+      <div class="tool"><span>🔎</span>Online Research</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-intro">
+    Practical demonstrations of my approach to executive
+    administration and business support.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="project-tag">DEMONSTRATION PROJECT</div>
+      <h3>Executive Calendar</h3>
+      <p>A sample weekly executive schedule and appointment planner.</p>
+      <a class="cert-link" href="projects/executive-calendar.pdf">View sample →</a>
+    </div>
+    <div class="card">
+      <div class="project-tag">DEMONSTRATION PROJECT</div>
+      <h3>Email Administration</h3>
+      <p>Sample professional correspondence and inbox organisation.</p>
+      <a class="cert-link" href="projects/email-management.pdf">View sample →</a>
+    </div>
+    <div class="card">
+      <div class="project-tag">DEMONSTRATION PROJECT</div>
+      <h3>Business Reporting</h3>
+      <p>A sample spreadsheet and structured business report.</p>
+      <a class="cert-link" href="projects/business-report.pdf">View sample →</a>
+    </div>
+    <div class="card">
+      <div class="project-tag">DEMONSTRATION PROJECT</div>
+      <h3>Meeting Administration</h3>
+      <p>Sample meeting agenda, minutes and action tracker.</p>
+      <a class="cert-link" href="projects/meeting-minutes.pdf">View sample →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="light">
+  <h2 class="section-title">Certifications</h2>
+  <p class="section-intro">
+    Professional training and educational certificates.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">⌨️</div>
+      <h3>Typing Skills Certificate</h3>
+      <p>Typing skills and computer proficiency.</p>
+      <a class="cert-link" href="certificates/typing-certificate.pdf" target="_blank">View certificate →</a>
+    </div>
+    <div class="card">
+      <div class="icon">🎓</div>
+      <h3>Computer Science Certificate</h3>
+      <p>Computer science education and training.</p>
+      <a class="cert-link" href="certificates/computer-science-certificate.pdf" target="_blank">View certificate →</a>
+    </div>
+    <div class="card">
+      <div class="icon">🌐</div>
+      <h3>Google Skill Up Certificate</h3>
+      <p>Google Skill Up professional learning.</p>
+      <a class="cert-link" href="certificates/google-skill-up-certificate.pdf" target="_blank">View certificate →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="section-title">Let's Work Together</h2>
+  <p>
+    Looking for dependable executive and administrative support?
+    I'd be happy to connect.
+  </p>
+  <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/"
+     target="_blank" rel="noopener">Connect on LinkedIn</a>
+  <br><br>
+  <a href="mailto:YOUR_EMAIL_ADDRESS" class="btn">Send Me an Email</a>
+</section>
+
+</main>
+
+<footer>
+  © 2026 Taiwo Moses Ayodele. All Rights Reserved.
+</footer>
+
+</body>
+</html>
