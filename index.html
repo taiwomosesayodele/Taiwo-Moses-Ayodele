@@ -2,644 +2,1358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Taiwo Moses Ayodele — Executive Virtual Assistant, Executive Support and Administrative Operations Professional.">
-<meta name="theme-color" content="#14243b">
-<title>Taiwo Moses Ayodele | Executive Virtual Assistant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eddd">
+  <meta name="description" content="Taiwo Moses Ayodele — Executive Virtual Assistant and Executive Personal Assistant. Executive support, administration, documentation and operations coordination.">
+  <title>Taiwo Moses Ayodele | Executive Virtual Assistant</title>
 
-<style>
-:root {
-  --navy:#14243b;
-  --gold:#c6a46a;
-  --cream:#f5f7fa;
-  --text:#39485c;
-  --white:#ffffff;
-}
-* {margin:0;padding:0;box-sizing:border-box}
-html {scroll-behavior:smooth;scroll-padding-top:85px}
-body {
-  font-family:Arial,Helvetica,sans-serif;
-  color:var(--text);
-  line-height:1.7;
-  background:white;
-}
-a {text-decoration:none}
-header {
-  position:sticky;
-  top:0;
-  z-index:100;
-  background:var(--navy);
-  padding:16px 7%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-  flex-wrap:wrap;
-  box-shadow:0 3px 15px #00000012;
-}
-.logo {
-  color:white;
-  font-size:18px;
-  font-weight:bold;
-  letter-spacing:2px;
-}
-nav {display:flex;gap:19px;flex-wrap:wrap}
-nav a {color:white;font-size:12px;transition:.3s}
-nav a:hover {color:var(--gold)}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
-.hero {
-  min-height:570px;
-  padding:75px 8%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:50px;
-  background:linear-gradient(120deg,#f5f7fa,#edf1f6);
-}
-.hero-content {max-width:650px}
-.eyebrow {
-  color:#a47b35;
-  font-size:12px;
-  font-weight:bold;
-  letter-spacing:3px;
-}
-h1 {
-  color:var(--navy);
-  font-size:clamp(38px,5vw,62px);
-  line-height:1.15;
-  margin:20px 0;
-}
-.hero p {font-size:16px;max-width:590px;margin-bottom:25px}
-.hero-photo {
-  width:300px;
-  height:360px;
-  object-fit:cover;
-  object-position:center;
-  border-radius:12px;
-  border:6px solid white;
-  box-shadow:0 15px 45px #14243b25;
-}
-.btn {
-  display:inline-block;
-  padding:12px 23px;
-  border-radius:5px;
-  background:var(--navy);
-  color:white;
-  font-size:13px;
-  font-weight:bold;
-  margin:5px 5px 5px 0;
-  transition:.3s;
-}
-.btn:hover {background:#a47b35;transform:translateY(-3px)}
-.btn-outline {
-  background:transparent;
-  color:var(--navy);
-  border:1px solid var(--navy);
-}
-.btn-outline:hover {color:white}
+  <style>
+    :root {
+      --cream: #f5eddd;
+      --cream-light: #fbf7ee;
+      --cream-dark: #e9dcc4;
+      --navy: #172b3a;
+      --navy-soft: #243d4d;
+      --gold: #b58a45;
+      --gold-light: #d8b879;
+      --text: #27343b;
+      --muted: #6d7475;
+      --white: #fffdf8;
+      --shadow: 0 15px 40px rgba(40, 40, 30, .09);
+      --radius: 22px;
+    }
 
-section {padding:75px 8%}
-.section-title {
-  color:var(--navy);
-  font-size:30px;
-  margin-bottom:12px;
-}
-.section-intro {max-width:730px;color:#69778a;margin-bottom:25px}
-.gold-line {width:48px;height:3px;background:var(--gold);margin:17px 0 25px}
-.light {background:var(--cream)}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.about-grid {
-  display:grid;
-  grid-template-columns:1.5fr 1fr;
-  gap:40px;
-  align-items:start;
-}
-.about-note {
-  background:var(--navy);
-  color:white;
-  padding:28px;
-  border-radius:9px;
-}
-.about-note h3 {color:var(--gold);margin-bottom:12px}
-.about-note p {font-size:14px;margin:7px 0}
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
 
-.cards {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  margin-top:30px;
-}
-.card {
-  padding:25px;
-  border:1px solid #e5e9ef;
-  border-radius:9px;
-  background:white;
-  transition:.3s;
-}
-.card:hover {
-  transform:translateY(-5px);
-  box-shadow:0 12px 30px #14243b12;
-}
-.card h3 {color:var(--navy);font-size:17px;margin-bottom:10px}
-.card p {font-size:13px;color:#69778a}
-.icon {font-size:27px;margin-bottom:12px}
-.project-tag {
-  color:#a47b35;
-  font-size:10px;
-  letter-spacing:1.5px;
-  font-weight:bold;
-  margin-bottom:9px;
-}
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.7;
+    }
 
-/* MOVING TECHNOLOGY SHOWCASE */
-.tools-section {
-  background:var(--navy);
-  color:white;
-  overflow:hidden;
-}
-.tools-section .section-title {color:white}
-.tools-section .section-intro {color:#d3dce7}
-.tool-label {
-  color:var(--gold);
-  font-size:12px;
-  letter-spacing:2px;
-  font-weight:bold;
-  margin:32px 0 12px;
-}
-.marquee {
-  width:100%;
-  overflow:hidden;
-  display:flex;
-  padding:12px 0;
-  position:relative;
-}
-.marquee-track {
-  display:flex;
-  flex-shrink:0;
-  gap:16px;
-  width:max-content;
-  animation:move-left 30s linear infinite;
-}
-.marquee.right .marquee-track {
-  animation-name:move-right;
-  animation-duration:34s;
-}
-.marquee:hover .marquee-track {
-  animation-play-state:paused;
-}
-.tool {
-  min-width:145px;
-  min-height:95px;
-  padding:15px 18px;
-  border:1px solid #ffffff35;
-  border-radius:10px;
-  background:#ffffff12;
-  color:white;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  font-size:13px;
-  font-weight:bold;
-  transition:.3s;
-}
-.tool-symbol {
-  font-size:25px;
-  margin-bottom:5px;
-}
-.tool:hover {
-  background:var(--gold);
-  color:var(--navy);
-  transform:scale(1.06);
-}
-@keyframes move-left {
-  from {transform:translateX(0)}
-  to {transform:translateX(-50%)}
-}
-@keyframes move-right {
-  from {transform:translateX(-50%)}
-  to {transform:translateX(0)}
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-/* CERTIFICATES */
-.certificate-card {
-  display:flex;
-  flex-direction:column;
-  min-height:210px;
-}
-.certificate-card .cert-link {
-  display:inline-block;
-  margin-top:auto;
-  padding-top:20px;
-  color:#9b7130;
-  font-weight:bold;
-  font-size:13px;
-}
-.certificate-card .cert-link:hover {color:var(--navy)}
-.certificate-card .icon {margin-bottom:10px}
+    button {
+      font: inherit;
+    }
 
-/* CV */
-.cv-section {
-  background:#edf1f6;
-  text-align:center;
-}
-.cv-section .section-intro {margin:0 auto 20px}
+    img {
+      max-width: 100%;
+    }
 
-/* CONTACT */
-.contact {
-  background:var(--navy);
-  color:white;
-  text-align:center;
-}
-.contact .section-title {color:white}
-.contact p {color:#d3dce7;margin:12px 0 20px}
-.contact-link {
-  color:var(--gold);
-  font-weight:bold;
-}
-footer {
-  background:#0b192a;
-  color:#bdc8d7;
-  padding:22px;
-  text-align:center;
-  font-size:12px;
-}
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
 
-@media(max-width:750px) {
-  header {justify-content:center}
-  nav {justify-content:center;gap:12px}
-  .hero {
-    flex-direction:column-reverse;
-    text-align:center;
-    padding:55px 7%;
-  }
-  .hero-photo {width:230px;height:275px}
-  .about-grid {grid-template-columns:1fr}
-  section {padding:55px 7%}
-  .tool {min-width:125px}
-}
-@media(prefers-reduced-motion:reduce) {
-  html {scroll-behavior:auto}
-  .marquee-track {animation-duration:90s}
-}
-</style>
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      margin-bottom: 38px;
+      max-width: 680px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1, h2, h3 {
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 4.8rem);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-weight: 700;
+      font-size: .92rem;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border-color: var(--gold);
+      color: var(--navy);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: white;
+    }
+
+    /* Navigation */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(245, 237, 221, .94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(181, 138, 69, .18);
+    }
+
+    nav {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .brand {
+      color: var(--navy);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: .2px;
+    }
+
+    .brand span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+      font-size: .86rem;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: none;
+      color: var(--navy);
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 75px 0 85px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(216,184,121,.18), transparent 28%),
+        linear-gradient(135deg, var(--cream), var(--cream-light));
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr .88fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-copy .intro {
+      max-width: 620px;
+      font-size: 1.08rem;
+      margin-bottom: 28px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-bottom: 28px;
+    }
+
+    .hero-note {
+      font-size: .88rem;
+      color: var(--muted);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .portrait-frame {
+      width: min(340px, 85%);
+      height: 410px;
+      padding: 12px;
+      background: var(--white);
+      border-radius: 180px 180px 28px 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(181,138,69,.3);
+      transform: rotate(2deg);
+    }
+
+    .portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 170px 170px 20px 20px;
+    }
+
+    .floating-label {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      padding: 13px 18px;
+      background: var(--navy);
+      color: white;
+      border-radius: 13px;
+      box-shadow: var(--shadow);
+      font-size: .85rem;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .floating-label strong {
+      display: block;
+      color: var(--gold-light);
+    }
+
+    /* Animated professional ID */
+
+    .id-card-wrap {
+      position: absolute;
+      top: 12px;
+      right: -12px;
+      width: 220px;
+      animation: float 5s ease-in-out infinite;
+      z-index: 3;
+    }
+
+    .id-card {
+      position: relative;
+      padding: 3px;
+      border-radius: 18px;
+      background: linear-gradient(120deg, var(--gold), #f4dfad, var(--navy), var(--gold));
+      background-size: 300% 300%;
+      animation: borderGlow 5s ease infinite;
+      box-shadow: 0 15px 35px rgba(23,43,58,.2);
+    }
+
+    .id-card-inner {
+      border-radius: 15px;
+      padding: 13px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .id-top {
+      font-size: .62rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 9px;
+    }
+
+    .id-photo {
+      width: 76px;
+      height: 76px;
+      margin: auto auto 9px;
+      border-radius: 50%;
+      border: 3px solid var(--gold-light);
+      overflow: hidden;
+    }
+
+    .id-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .id-card h3 {
+      font-size: .84rem;
+      margin-bottom: 4px;
+    }
+
+    .id-card p {
+      font-size: .65rem;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: .7px;
+    }
+
+    .id-status {
+      margin-top: 10px;
+      font-size: .6rem;
+      color: #4d795b;
+      font-weight: 700;
+    }
+
+    @keyframes borderGlow {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    /* Audio player */
+
+    .audio-panel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 18px;
+      margin-top: 22px;
+      background: rgba(255,253,248,.75);
+      border: 1px solid rgba(181,138,69,.25);
+      border-radius: 16px;
+      max-width: 570px;
+    }
+
+    .audio-panel p {
+      font-size: .82rem;
+      margin-right: auto;
+    }
+
+    .audio-controls {
+      display: flex;
+      gap: 7px;
+    }
+
+    .audio-controls button {
+      border: 1px solid var(--cream-dark);
+      background: var(--white);
+      color: var(--navy);
+      padding: 8px 12px;
+      border-radius: 9px;
+      cursor: pointer;
+      font-size: .8rem;
+      font-weight: 700;
+    }
+
+    .audio-controls button:hover {
+      background: var(--navy);
+      color: white;
+    }
+
+    #audioStatus {
+      width: 100%;
+      font-size: .75rem;
+      color: var(--gold);
+    }
+
+    /* About */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .about-highlight {
+      background: var(--navy);
+      color: white;
+      padding: 32px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .about-highlight h3 {
+      color: var(--gold-light);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+
+    .about-highlight p {
+      color: rgba(255,255,255,.78);
+      font-size: .93rem;
+    }
+
+    .about-copy p {
+      margin-bottom: 16px;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 20px;
+    }
+
+    .skill-tags span {
+      background: var(--cream-dark);
+      color: var(--navy);
+      border-radius: 30px;
+      padding: 8px 13px;
+      font-size: .8rem;
+      font-weight: 600;
+    }
+
+    /* Services */
+
+    .services-section {
+      background: var(--cream-light);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      background: var(--white);
+      padding: 25px;
+      border: 1px solid rgba(181,138,69,.18);
+      border-radius: 18px;
+      transition: .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: var(--gold-light);
+    }
+
+    .service-icon {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--cream);
+      color: var(--gold);
+      font-size: 1.35rem;
+      margin-bottom: 18px;
+    }
+
+    .service-card p {
+      font-size: .9rem;
+    }
+
+    /* Experience */
+
+    .experience-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .experience-card {
+      background: var(--white);
+      border-left: 4px solid var(--gold);
+      padding: 25px 28px;
+      border-radius: 0 17px 17px 0;
+      box-shadow: 0 8px 25px rgba(40,40,30,.04);
+    }
+
+    .experience-meta {
+      color: var(--gold);
+      font-size: .82rem;
+      font-weight: 700;
+      margin-bottom: 9px;
+    }
+
+    .experience-card p {
+      font-size: .92rem;
+    }
+
+    .experience-card ul {
+      padding-left: 20px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* Tools */
+
+    .tools-section {
+      background: var(--navy);
+      overflow: hidden;
+    }
+
+    .tools-section h2 {
+      color: var(--white);
+    }
+
+    .tools-section .section-heading p {
+      color: rgba(255,255,255,.7);
+    }
+
+    .marquee {
+      overflow: hidden;
+      width: 100%;
+      margin: 22px 0;
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      gap: 17px;
+      animation: moveLeft 38s linear infinite;
+    }
+
+    .marquee.right .marquee-track {
+      animation-name: moveRight;
+      animation-duration: 43s;
+    }
+
+    .marquee:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes moveLeft {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes moveRight {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0); }
+    }
+
+    .tool-card {
+      width: 155px;
+      min-height: 112px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 15px;
+      background: rgba(255,255,255,.97);
+      border: 1px solid rgba(216,184,121,.3);
+      border-radius: 17px;
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    .tool-card img {
+      width: 38px;
+      height: 38px;
+      object-fit: contain;
+    }
+
+    .tool-card span {
+      font-size: .78rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Work samples */
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .work-card {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 25px;
+      border: 1px solid rgba(181,138,69,.18);
+    }
+
+    .work-card .work-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .work-card p {
+      font-size: .9rem;
+    }
+
+    /* Certificates */
+
+    .certificates-section {
+      background: var(--cream-light);
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+    }
+
+    .cert-card {
+      background: var(--white);
+      border: 1px solid rgba(181,138,69,.2);
+      padding: 22px;
+      border-radius: 17px;
+      display: flex;
+      flex-direction: column;
+      min-height: 180px;
+    }
+
+    .cert-card .cert-icon {
+      font-size: 1.6rem;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+
+    .cert-card h3 {
+      font-size: 1rem;
+    }
+
+    .cert-card p {
+      font-size: .82rem;
+      margin-bottom: 15px;
+    }
+
+    .cert-card a {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: .85rem;
+      margin-top: auto;
+    }
+
+    .cert-card a:hover {
+      color: var(--navy);
+    }
+
+    /* Contact */
+
+    .contact-section {
+      background: var(--navy);
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: white;
+    }
+
+    .contact-section p {
+      color: rgba(255,255,255,.75);
+      max-width: 620px;
+      margin: 0 auto 25px;
+    }
+
+    .contact-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .contact-section .btn-outline {
+      color: white;
+      border-color: var(--gold-light);
+    }
+
+    footer {
+      background: #10212d;
+      color: rgba(255,255,255,.65);
+      padding: 22px 0;
+      text-align: center;
+      font-size: .82rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 850px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 440px;
+      }
+
+      .services-grid,
+      .work-grid,
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .section {
+        padding: 65px 0;
+      }
+
+      nav {
+        min-height: 68px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        padding: 22px 5%;
+        background: var(--cream-light);
+        flex-direction: column;
+        align-items: flex-start;
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero {
+        padding-top: 55px;
+      }
+
+      .hero-visual {
+        min-height: 390px;
+      }
+
+      .portrait-frame {
+        height: 350px;
+        width: 270px;
+      }
+
+      .id-card-wrap {
+        right: -2px;
+        top: 0;
+        width: 175px;
+      }
+
+      .id-card-inner {
+        padding: 10px;
+      }
+
+      .id-photo {
+        width: 60px;
+        height: 60px;
+      }
+
+      .floating-label {
+        left: 0;
+        bottom: 0;
+      }
+
+      .services-grid,
+      .work-grid,
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .audio-panel {
+        align-items: flex-start;
+      }
+
+      .audio-panel p {
+        width: 100%;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">TAIWO MOSES</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#tools">Tools</a>
-    <a href="#projects">Work</a>
-    <a href="#certifications">Certificates</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">TAIWO <span>MOSES</span> AYODELE</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <main>
 
-<!-- HOME -->
-<section class="hero" id="home">
-  <div class="hero-content">
-    <div class="eyebrow">EXECUTIVE VIRTUAL ASSISTANT</div>
-    <h1>Professional Support.<br>Organised Operations.</h1>
-    <p>
-      I'm Taiwo Moses Ayodele, an Executive Virtual Assistant
-      providing administrative support, professional communication
-      and operations coordination to help executives and business
-      owners stay organised and productive.
-    </p>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
 
-    <a href="#contact" class="btn">Let's Connect</a>
+      <div class="hero-copy">
+        <div class="eyebrow">Executive Support • Administration • Operations</div>
 
-    <a href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf"
-       class="btn btn-outline"
-       download>
-       Download My CV ↓
-    </a>
-  </div>
+        <h1>Reliable support for better organised work.</h1>
 
-  <img
-    src="./profile-picture.png"
-    alt="Taiwo Moses Ayodele - Executive Virtual Assistant"
-    class="hero-photo">
-</section>
+        <p class="intro">
+          Hello, I'm <strong>Taiwo Moses Ayodele</strong>, an Executive Virtual Assistant
+          and Executive Personal Assistant. I support busy professionals with
+          administrative tasks, communication, documentation, research and
+          day-to-day coordination, helping them stay organised and focused on
+          what matters most.
+        </p>
 
-<!-- ABOUT -->
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-  <div class="gold-line"></div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Work With Me ↗</a>
+          <a class="btn btn-outline" href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf" target="_blank" rel="noopener">View My CV ↓</a>
+        </div>
 
-  <div class="about-grid">
-    <div>
+        <p class="hero-note">Professional, organised, dependable and detail-conscious.</p>
+
+        <div class="audio-panel">
+          <p><strong>Prefer listening?</strong> Hear my professional introduction.</p>
+          <div class="audio-controls">
+            <button type="button" id="speakButton">▶ Listen</button>
+            <button type="button" id="pauseButton">Ⅱ Pause</button>
+            <button type="button" id="resumeButton">↻ Resume</button>
+            <button type="button" id="stopButton">■ Stop</button>
+          </div>
+          <span id="audioStatus" aria-live="polite">Press Listen to hear my introduction.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="./profile-picture.png" alt="Professional photograph of Taiwo Moses Ayodele">
+        </div>
+
+        <div class="id-card-wrap">
+          <div class="id-card">
+            <div class="id-card-inner">
+              <div class="id-top">PROFESSIONAL IDENTIFICATION</div>
+              <div class="id-photo">
+                <img src="./profile-picture.png" alt="Taiwo Moses Ayodele">
+              </div>
+              <h3>Taiwo Moses Ayodele</h3>
+              <p>EXECUTIVE VIRTUAL ASSISTANT</p>
+              <div class="id-status">● AVAILABLE FOR OPPORTUNITIES</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-label">
+          <strong>Executive Support</strong>
+          Organised. Efficient. Dependable.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">A little about me</div>
+        <h2>More than administrative support.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-highlight">
+          <h3>My approach to work</h3>
+          <p>
+            I believe good support is about more than completing tasks.
+            It is about understanding priorities, communicating clearly,
+            paying attention to details and making everyday work easier
+            for the people I support.
+          </p>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            My professional background spans operations, supervision,
+            logistics coordination and administrative responsibilities.
+            These experiences have helped me develop a practical approach
+            to organising work, handling information, communicating with
+            different people and keeping activities on track.
+          </p>
+
+          <p>
+            I am building on that experience as an Executive Virtual Assistant,
+            with a focus on supporting executives, entrepreneurs and
+            professionals who need dependable assistance with their daily
+            responsibilities.
+          </p>
+
+          <p>
+            I am comfortable working with digital productivity tools,
+            preparing documents, managing information, conducting online
+            research and supporting organised workflows. I value
+            confidentiality, professionalism, consistency and continuous
+            improvement.
+          </p>
+
+          <div class="skill-tags">
+            <span>Executive Assistance</span>
+            <span>Microsoft Office</span>
+            <span>Google Workspace</span>
+            <span>Documentation</span>
+            <span>Research</span>
+            <span>Communication</span>
+            <span>Operations Support</span>
+            <span>Time Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What I can do</div>
+        <h2>Services I provide</h2>
+        <p>Practical administrative and executive support designed to keep your work organised and moving forward.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-icon">✦</div>
+          <h3>Executive & Personal Assistance</h3>
+          <p>Day-to-day assistance with priorities, task organisation, follow-ups and the administrative details that support effective leadership.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">✉</div>
+          <h3>Email Management</h3>
+          <p>Inbox organisation, message drafting, correspondence support, email follow-ups and helping maintain clear communication.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">▦</div>
+          <h3>Calendar & Meeting Coordination</h3>
+          <p>Scheduling assistance, appointment coordination, meeting preparation and reminders to help keep commitments organised.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">▤</div>
+          <h3>Documentation & Reporting</h3>
+          <p>Professional document preparation, data entry, record keeping, spreadsheet updates and organised digital files.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⌕</div>
+          <h3>Online Research</h3>
+          <p>Gathering information, researching topics, organising findings and presenting useful information clearly.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⌘</div>
+          <h3>Operations & Project Support</h3>
+          <p>Task tracking, workflow coordination, administrative follow-ups and practical support for ongoing projects and operations.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Professional background</div>
+        <h2>Experience that informs how I work</h2>
+        <p>My previous roles have strengthened the coordination, communication, documentation and organisational skills I bring to executive support.</p>
+      </div>
+
+      <div class="experience-list">
+
+        <article class="experience-card">
+          <div class="experience-meta">2026 – Present · Logistics & Dispatch Operations</div>
+          <h3>Atreos / Bokku — Dispatch Operations</h3>
+          <p>Working within a warehouse and distribution environment, supporting the movement of goods and daily dispatch activities.</p>
+          <ul>
+            <li>Coordinate delivery activities and communicate around operational requirements.</li>
+            <li>Use route planning and delivery sequencing to support efficient trips.</li>
+            <li>Maintain attention to delivery details, operational records and safe handling procedures.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-meta">2023 – 2025 · Farm Management</div>
+          <h3>HVC — Farm Manager</h3>
+          <p>Managed farm activities, people and resources while supporting the planning and execution of daily operations.</p>
+          <ul>
+            <li>Supervised a team of approximately 25 workers.</li>
+            <li>Supported crop production planning, resource use and operational coordination.</li>
+            <li>Worked with budgets, daily activities and performance tracking.</li>
+          </ul>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-meta">Additional Operations & Supervisory Experience</div>
+          <h3>Supervision, Coordination & Business Operations</h3>
+          <p>Additional supervisory and business responsibilities have developed my ability to organise tasks, coordinate people, monitor activities and respond to operational needs.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="section tools-section" id="tools">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">My digital workspace</div>
+        <h2>Tools I work with</h2>
+        <p>Productivity and collaboration tools I use for communication, documentation, organisation and everyday digital tasks. Hover over the moving logos to pause them.</p>
+      </div>
+    </div>
+
+    <!-- First row -->
+    <div class="marquee">
+      <div class="marquee-track">
+
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftword/2B579A" alt="Microsoft Word"><span>Microsoft Word</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="Microsoft Excel"><span>Microsoft Excel</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftpowerpoint/B7472A" alt="PowerPoint"><span>PowerPoint</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftoutlook/0078D4" alt="Outlook"><span>Microsoft Outlook</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/googledrive/4285F4" alt="Google Drive"><span>Google Drive</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/googledocs/4285F4" alt="Google Docs"><span>Google Docs</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="Google Sheets"><span>Google Sheets</span></div>
+
+        <!-- Duplicate for seamless animation -->
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftword/2B579A" alt="Microsoft Word"><span>Microsoft Word</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftexcel/217346" alt="Microsoft Excel"><span>Microsoft Excel</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftpowerpoint/B7472A" alt="PowerPoint"><span>PowerPoint</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/microsoftoutlook/0078D4" alt="Outlook"><span>Microsoft Outlook</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/googledrive/4285F4" alt="Google Drive"><span>Google Drive</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/googledocs/4285F4" alt="Google Docs"><span>Google Docs</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/googlesheets/34A853" alt="Google Sheets"><span>Google Sheets</span></div>
+
+      </div>
+    </div>
+
+    <!-- Second row -->
+    <div class="marquee right">
+      <div class="marquee-track">
+
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello"><span>Trello</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/notion/000000" alt="Notion"><span>Notion</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack"><span>Slack</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom"><span>Zoom</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva"><span>Canva</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/openai/412991" alt="OpenAI"><span>ChatGPT</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail"><span>Gmail</span></div>
+
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello"><span>Trello</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/notion/000000" alt="Notion"><span>Notion</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack"><span>Slack</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom"><span>Zoom</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/canva/00C4CC" alt="Canva"><span>Canva</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/openai/412991" alt="OpenAI"><span>ChatGPT</span></div>
+        <div class="tool-card"><img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail"><span>Gmail</span></div>
+
+      </div>
+    </div>
+
+    <!-- Third row -->
+    <div class="marquee">
+      <div class="marquee-track">
+
+        <div class="tool-card"><span style="font-size:2rem">⌕</span><span>Online Research</span></div>
+        <div class="tool-card"><span style="font-size:2rem">▤</span><span>Digital Documentation</span></div>
+        <div class="tool-card"><span style="font-size:2rem">✉</span><span>Email Management</span></div>
+        <div class="tool-card"><span style="font-size:2rem">▦</span><span>Calendar Support</span></div>
+        <div class="tool-card"><span style="font-size:2rem">◫</span><span>CRM Platforms</span></div>
+
+        <div class="tool-card"><span style="font-size:2rem">⌕</span><span>Online Research</span></div>
+        <div class="tool-card"><span style="font-size:2rem">▤</span><span>Digital Documentation</span></div>
+        <div class="tool-card"><span style="font-size:2rem">✉</span><span>Email Management</span></div>
+        <div class="tool-card"><span style="font-size:2rem">▦</span><span>Calendar Support</span></div>
+        <div class="tool-card"><span style="font-size:2rem">◫</span><span>CRM Platforms</span></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">How I add value</div>
+        <h2>Areas of practical support</h2>
+        <p>Examples of the work I can support in an executive or administrative environment.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-number">01</div>
+          <h3>Administrative Organisation</h3>
+          <p>Organising digital documents, maintaining records, preparing reports and keeping important information accessible.</p>
+        </article>
+
+        <article class="work-card">
+          <div class="work-number">02</div>
+          <h3>Communication Support</h3>
+          <p>Supporting professional correspondence, drafting messages, organising follow-ups and helping maintain clear communication.</p>
+        </article>
+
+        <article class="work-card">
+          <div class="work-number">03</div>
+          <h3>Operations Coordination</h3>
+          <p>Tracking tasks, coordinating activities, following up on responsibilities and helping everyday workflows run smoothly.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section class="section certificates-section" id="certificates">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Learning & development</div>
+        <h2>Certificates & qualifications</h2>
+        <p>Click any certificate to open it and view the original document.</p>
+      </div>
+
+      <div class="cert-grid">
+
+        <article class="cert-card">
+          <div class="cert-icon">▤</div>
+          <h3>Project Management</h3>
+          <p>Project management learning and completion award.</p>
+          <a href="./Project-management-completion-award.png" target="_blank" rel="noopener">View Certificate ↗</a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">▤</div>
+          <h3>Google Workspace</h3>
+          <p>Google Workspace learning and completion award.</p>
+          <a href="./Google-workspace-completion-award.png" target="_blank" rel="noopener">View Certificate ↗</a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">▤</div>
+          <h3>Gemini Slides & Sheets</h3>
+          <p>Learning award for productivity with Gemini tools.</p>
+          <a href="./Gemini-slides-sheets-completion-award.png" target="_blank" rel="noopener">View Certificate ↗</a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">▤</div>
+          <h3>Google Workspace — Additional Award</h3>
+          <p>Additional Google Workspace completion award.</p>
+          <a href="./Google-workspace-completion-award%20%282%29.png" target="_blank" rel="noopener">View Certificate ↗</a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">🌐</div>
+          <h3>EF SET English Certificate</h3>
+          <p>English proficiency certificate — C1 Advanced, 63/100.</p>
+          <a href="./EF%20SET%20Certificate.PDF" target="_blank" rel="noopener">View Certificate ↗</a>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-icon">⌨</div>
+          <h3>Typing Test Certificate</h3>
+          <p>Typing assessment and certificate.</p>
+          <a href="./Typing%20test%20certificate.PDF" target="_blank" rel="noopener">View Certificate ↗</a>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:32px;">
+        <a class="btn btn-primary" href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf" target="_blank" rel="noopener">Open My Complete CV ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="eyebrow">Let's connect</div>
+      <h2>Need dependable executive support?</h2>
       <p>
-        I'm an administrative and executive support professional
-        with experience in documentation, correspondence,
-        operational coordination and business administration.
+        If you are looking for an organised, detail-conscious and dependable
+        professional to support your administrative or executive responsibilities,
+        I would be glad to connect.
       </p>
-      <br>
-      <p>
-        I value organisation, clear communication, attention to
-        detail and dependable execution. My focus is to provide
-        structured support that allows executives and business
-        owners to concentrate on their priorities.
-      </p>
-      <br>
-      <a href="https://www.linkedin.com/in/moses-taiwo-478b602a5/"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="btn">
-         Visit My LinkedIn Profile
-      </a>
+
+      <div class="contact-links">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/moses-taiwo-478b602a5/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+        <a class="btn btn-outline" href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf" target="_blank" rel="noopener">View My CV</a>
+      </div>
     </div>
-
-    <div class="about-note">
-      <h3>Professional Focus</h3>
-      <p>✓ Executive assistance</p>
-      <p>✓ Administrative support</p>
-      <p>✓ Email management</p>
-      <p>✓ Documentation and reporting</p>
-      <p>✓ Operations coordination</p>
-      <p>✓ Project support</p>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="light">
-  <h2 class="section-title">Services</h2>
-  <p class="section-intro">
-    Professional support designed to make everyday business
-    activities more organised and manageable.
-  </p>
-
-  <div class="cards">
-    <div class="card">
-      <div class="icon">📅</div>
-      <h3>Executive Assistance</h3>
-      <p>Scheduling, appointment coordination, correspondence and follow-ups.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">✉️</div>
-      <h3>Email Management</h3>
-      <p>Inbox organisation, email drafting and professional communication.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">📊</div>
-      <h3>Documentation & Reporting</h3>
-      <p>Document preparation, spreadsheets, reports and organised records.</p>
-    </div>
-
-    <div class="card">
-      <div class="icon">⚙️</div>
-      <h3>Operations Coordination</h3>
-      <p>Task tracking, workflow organisation and administrative coordination.</p>
-    </div>
-  </div>
-</section>
-
-<!-- MOVING TOOLS -->
-<section id="tools" class="tools-section">
-  <h2 class="section-title">Tools & Technology</h2>
-  <p class="section-intro">
-    Digital platforms I work with for executive assistance,
-    communication, administration and productivity.
-    Watch the tools move in both directions.
-  </p>
-
-  <div class="tool-label">MICROSOFT OFFICE & GOOGLE WORKSPACE</div>
-
-  <div class="marquee">
-    <div class="marquee-track">
-      <div class="tool"><span class="tool-symbol">W</span>Microsoft Word</div>
-      <div class="tool"><span class="tool-symbol">X</span>Microsoft Excel</div>
-      <div class="tool"><span class="tool-symbol">P</span>PowerPoint</div>
-      <div class="tool"><span class="tool-symbol">O</span>Outlook</div>
-      <div class="tool"><span class="tool-symbol">G</span>Google Workspace</div>
-      <div class="tool"><span class="tool-symbol">D</span>Google Drive</div>
-      <div class="tool"><span class="tool-symbol">G</span>Google Docs</div>
-      <div class="tool"><span class="tool-symbol">S</span>Google Sheets</div>
-
-      <div class="tool"><span class="tool-symbol">W</span>Microsoft Word</div>
-      <div class="tool"><span class="tool-symbol">X</span>Microsoft Excel</div>
-      <div class="tool"><span class="tool-symbol">P</span>PowerPoint</div>
-      <div class="tool"><span class="tool-symbol">O</span>Outlook</div>
-      <div class="tool"><span class="tool-symbol">G</span>Google Workspace</div>
-      <div class="tool"><span class="tool-symbol">D</span>Google Drive</div>
-      <div class="tool"><span class="tool-symbol">G</span>Google Docs</div>
-      <div class="tool"><span class="tool-symbol">S</span>Google Sheets</div>
-    </div>
-  </div>
-
-  <div class="tool-label">PROJECT MANAGEMENT & COMMUNICATION</div>
-
-  <div class="marquee right">
-    <div class="marquee-track">
-      <div class="tool"><span class="tool-symbol">T</span>Trello</div>
-      <div class="tool"><span class="tool-symbol">N</span>Notion</div>
-      <div class="tool"><span class="tool-symbol">S</span>Slack</div>
-      <div class="tool"><span class="tool-symbol">Z</span>Zoom</div>
-      <div class="tool"><span class="tool-symbol">C</span>Canva</div>
-      <div class="tool"><span class="tool-symbol">CRM</span>CRM Platforms</div>
-      <div class="tool"><span class="tool-symbol">E</span>Email Management</div>
-
-      <div class="tool"><span class="tool-symbol">T</span>Trello</div>
-      <div class="tool"><span class="tool-symbol">N</span>Notion</div>
-      <div class="tool"><span class="tool-symbol">S</span>Slack</div>
-      <div class="tool"><span class="tool-symbol">Z</span>Zoom</div>
-      <div class="tool"><span class="tool-symbol">C</span>Canva</div>
-      <div class="tool"><span class="tool-symbol">CRM</span>CRM Platforms</div>
-      <div class="tool"><span class="tool-symbol">E</span>Email Management</div>
-    </div>
-  </div>
-
-  <div class="tool-label">AI & DIGITAL PRODUCTIVITY</div>
-
-  <div class="marquee">
-    <div class="marquee-track">
-      <div class="tool"><span class="tool-symbol">AI</span>ChatGPT</div>
-      <div class="tool"><span class="tool-symbol">G</span>Google Gemini</div>
-      <div class="tool"><span class="tool-symbol">R</span>Online Research</div>
-      <div class="tool"><span class="tool-symbol">D</span>Digital Documentation</div>
-
-      <div class="tool"><span class="tool-symbol">AI</span>ChatGPT</div>
-      <div class="tool"><span class="tool-symbol">G</span>Google Gemini</div>
-      <div class="tool"><span class="tool-symbol">R</span>Online Research</div>
-      <div class="tool"><span class="tool-symbol">D</span>Digital Documentation</div>
-    </div>
-  </div>
-</section>
-
-<!-- SELECTED WORK -->
-<section id="projects">
-  <h2 class="section-title">Selected Work</h2>
-  <p class="section-intro">
-    Areas of practical administrative and executive support
-    demonstrated through professional work samples.
-  </p>
-
-  <div class="cards">
-    <div class="card">
-      <div class="project-tag">WORK SAMPLE</div>
-      <div class="icon">📅</div>
-      <h3>Executive Scheduling</h3>
-      <p>Calendar organisation, appointment planning and schedule management.</p>
-    </div>
-
-    <div class="card">
-      <div class="project-tag">WORK SAMPLE</div>
-      <div class="icon">✉️</div>
-      <h3>Email Administration</h3>
-      <p>Professional correspondence, inbox organisation and follow-up management.</p>
-    </div>
-
-    <div class="card">
-      <div class="project-tag">WORK SAMPLE</div>
-      <div class="icon">📊</div>
-      <h3>Business Documentation</h3>
-      <p>Structured reports, spreadsheets and administrative records.</p>
-    </div>
-
-    <div class="card">
-      <div class="project-tag">WORK SAMPLE</div>
-      <div class="icon">📋</div>
-      <h3>Project Coordination</h3>
-      <p>Task organisation, progress tracking and deadline coordination.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="light">
-  <h2 class="section-title">Certifications & Achievements</h2>
-  <p class="section-intro">
-    Selected professional development, digital skills and
-    English proficiency certificates. Select any certificate
-    to view the original document.
-  </p>
-
-  <div class="cards">
-
-    <div class="card certificate-card">
-      <div class="icon">📋</div>
-      <h3>Project Management Completion Award</h3>
-      <p>Project management training and completion award.</p>
-      <a class="cert-link"
-         href="./Project-management-completion-award.png"
-         target="_blank" rel="noopener noreferrer">
-         View Certificate ↗
-      </a>
-    </div>
-
-    <div class="card certificate-card">
-      <div class="icon">🌐</div>
-      <h3>Google Workspace Completion Award</h3>
-      <p>Google Workspace training and completion award.</p>
-      <a class="cert-link"
-         href="./Google-workspace-completion-award.png"
-         target="_blank" rel="noopener noreferrer">
-         View Certificate ↗
-      </a>
-    </div>
-
-    <div class="card certificate-card">
-      <div class="icon">✨</div>
-      <h3>Gemini Slides & Sheets Completion Award</h3>
-      <p>Training in Gemini-supported productivity tools.</p>
-      <a class="cert-link"
-         href="./Gemini-slides-sheets-completion-award.png"
-         target="_blank" rel="noopener noreferrer">
-         View Certificate ↗
-      </a>
-    </div>
-
-    <div class="card certificate-card">
-      <div class="icon">🎓</div>
-      <h3>Google Workspace Completion Award – Additional</h3>
-      <p>Additional Google Workspace completion certificate.</p>
-      <a class="cert-link"
-         href="./Google-workspace-completion-award%20%282%29.png"
-         target="_blank" rel="noopener noreferrer">
-         View Certificate ↗
-      </a>
-    </div>
-
-    <div class="card certificate-card">
-      <div class="icon">🌍</div>
-      <h3>EF SET English Certificate</h3>
-      <p>English language proficiency certification.</p>
-      <a class="cert-link"
-         href="./EF%20SET%20Certificate.PDF"
-         target="_blank" rel="noopener noreferrer">
-         View Certificate ↗
-      </a>
-    </div>
-
-    <div class="card certificate-card">
-      <div class="icon">⌨️</div>
-      <h3>Typing Test Certificate</h3>
-      <p>Typing speed and accuracy assessment.</p>
-      <a class="cert-link"
-         href="./Typing%20test%20certificate.PDF"
-         target="_blank" rel="noopener noreferrer">
-         View Certificate ↗
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- DOWNLOAD CV -->
-<section class="cv-section" id="cv">
-  <h2 class="section-title">My Professional Resume</h2>
-  <p class="section-intro">
-    Explore my professional background, experience, skills
-    and qualifications in my complete resume.
-  </p>
-
-  <a href="./Taiwo%20Moses%20Ayodele%20professional%20resume%29.pdf"
-     class="btn"
-     download>
-     ↓ Download My Resume (PDF)
-  </a>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2 class="section-title">Let's Work Together</h2>
-  <p>
-    Looking for reliable executive and administrative support?
-    I would be pleased to connect.
-  </p>
-
-  <a class="contact-link"
-     href="https://www.linkedin.com/in/moses-taiwo-478b602a5/"
-     target="_blank"
-     rel="noopener noreferrer">
-     Connect with Me on LinkedIn ↗
-  </a>
-
-  <br><br>
-
-  <a href="mailto:?subject=Professional%20Enquiry%20-%20Virtual%20Assistant"
-     class="btn">
-     Send Me an Email
-  </a>
-</section>
+  </section>
 
 </main>
 
 <footer>
-  © 2026 Taiwo Moses Ayodele. All Rights Reserved.
+  <div class="container">
+    © 2026 Taiwo Moses Ayodele. Executive Virtual Assistant & Executive Personal Assistant.
+  </div>
 </footer>
+
+<script>
+  // Mobile navigation
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.textContent = "☰";
+    });
+  });
+
+  // Profile audio using the browser's speech synthesis
+  const profileIntroduction = `
+    Hello, and welcome to my professional portfolio.
+    My name is Taiwo Moses Ayodele.
+    I am an Executive Virtual Assistant and Executive Personal Assistant.
+    I support busy professionals with administrative tasks, communication,
+    documentation, research and day-to-day coordination.
+    My professional background includes operations, supervision,
+    logistics coordination and administrative responsibilities.
+    These experiences have helped me develop practical organisational,
+    communication and problem-solving skills.
+    I can assist with executive and personal assistance, email management,
+    calendar coordination, document preparation, online research,
+    record keeping and operations support.
+    I value professionalism, confidentiality, consistency and attention to detail.
+    Thank you for visiting my portfolio. I look forward to connecting with you.
+  `;
+
+  const audioStatus = document.getElementById("audioStatus");
+
+  document.getElementById("speakButton").addEventListener("click", () => {
+    if (!("speechSynthesis" in window)) {
+      audioStatus.textContent = "Audio reading is not supported by this browser.";
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+
+    const utterance = new SpeechSynthesisUtterance(profileIntroduction);
+    utterance.lang = "en-GB";
+    utterance.rate = 0.92;
+    utterance.pitch = 1;
+
+    utterance.onstart = () => {
+      audioStatus.textContent = "Now reading my professional introduction...";
+    };
+
+    utterance.onend = () => {
+      audioStatus.textContent = "Introduction finished. Thank you for listening.";
+    };
+
+    utterance.onerror = () => {
+      audioStatus.textContent = "Audio could not play. Please try again.";
+    };
+
+    window.speechSynthesis.speak(utterance);
+  });
+
+  document.getElementById("pauseButton").addEventListener("click", () => {
+    if ("speechSynthesis" in window && window.speechSynthesis.speaking) {
+      window.speechSynthesis.pause();
+      audioStatus.textContent = "Reading paused.";
+    }
+  });
+
+  document.getElementById("resumeButton").addEventListener("click", () => {
+    if ("speechSynthesis" in window && window.speechSynthesis.paused) {
+      window.speechSynthesis.resume();
+      audioStatus.textContent = "Reading resumed.";
+    }
+  });
+
+  document.getElementById("stopButton").addEventListener("click", () => {
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+      audioStatus.textContent = "Reading stopped.";
+    }
+  });
+</script>
 
 </body>
 </html>
